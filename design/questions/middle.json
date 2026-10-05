@@ -1,0 +1,3132 @@
+{
+ "meta": {
+  "batch": "middle",
+  "created": "2026-10-03",
+  "language": "ru",
+  "schema": {
+   "id": "уникальный ID: j-/m-/s- + номер; 2xx — пул супервикторины (tier=super), остальные номера смысла не несут",
+   "level": "junior | middle | senior",
+   "pool": "practice — ситуации и процесс; theory — термины, законы, факты",
+   "question": "текст вопроса",
+   "image": "null или путь к картинке для вопроса-картинки",
+   "options": "ровно 4 варианта, каждый — не больше 2 слов и ≤ 24 символов; порядок перемешивается в игре",
+   "correct": "индекс верного варианта в options",
+   "funny": "индексы шуточных вариантов (всегда неверные)",
+   "explanation": "пояснение после ответа",
+   "source": "источник или null",
+   "status": "draft — не вычитан; approved — вычитан",
+   "area": "ux | ui | product — тема для квот уровня",
+   "tier": "regular — обычные 100 на уровень; super — отдельный пул супервикторины (35 на уровень)"
+  },
+  "notes": [
+   "2026-10-04: банк вычитан Степаном — все вопросы approved.",
+   "Ответ — не больше 2 слов (плитка 2×2, до 2 строк). Вопрос ≤ 90 символов (3 строки). См. design/game-brief.md.",
+   "Правило повторов: вопрос не показывается чаще раза в 25 показанных пользователю.",
+   "2026-10-03: банк уровня собран заново (v2) — рабочий словарь дизайнера: термины, методы, инструменты, известные законы; без эрудиции (авторы, годы, номера стандартов)."
+  ],
+  "targets": {
+   "regular": 100,
+   "super": 35,
+   "area_regular": {
+    "junior": {
+     "ux": 45,
+     "ui": 45,
+     "product": 10
+    },
+    "middle": {
+     "ux": 40,
+     "ui": 40,
+     "product": 20
+    },
+    "senior": {
+     "ux": 35,
+     "ui": 30,
+     "product": 35
+    }
+   }
+  },
+  "level": "middle",
+  "reviewed_not_duplicates": [
+   [
+    "j-004",
+    "m-059"
+   ],
+   [
+    "j-011",
+    "m-207"
+   ],
+   [
+    "j-011",
+    "m-208"
+   ],
+   [
+    "j-024",
+    "m-028"
+   ],
+   [
+    "j-114",
+    "m-020"
+   ],
+   [
+    "j-123",
+    "m-040"
+   ],
+   [
+    "j-132",
+    "m-076"
+   ],
+   [
+    "j-140",
+    "m-077"
+   ],
+   [
+    "j-141",
+    "m-099"
+   ],
+   [
+    "j-223",
+    "m-207"
+   ],
+   [
+    "j-232",
+    "m-083"
+   ],
+   [
+    "j-235",
+    "m-092"
+   ],
+   [
+    "j-167",
+    "m-217"
+   ],
+   [
+    "j-167",
+    "m-218"
+   ],
+   [
+    "j-168",
+    "m-219"
+   ],
+   [
+    "j-174",
+    "m-203"
+   ],
+   [
+    "m-009",
+    "m-010"
+   ],
+   [
+    "m-041",
+    "m-045"
+   ],
+   [
+    "m-042",
+    "m-207"
+   ],
+   [
+    "m-204",
+    "m-207"
+   ],
+   [
+    "m-207",
+    "m-208"
+   ],
+   [
+    "m-217",
+    "m-218"
+   ],
+   [
+    "j-004",
+    "m-215"
+   ],
+   [
+    "j-235",
+    "m-233"
+   ],
+   [
+    "m-059",
+    "m-215"
+   ],
+   [
+    "m-071",
+    "m-218"
+   ],
+   [
+    "m-092",
+    "m-233"
+   ]
+  ]
+ },
+ "questions": [
+  {
+   "id": "m-001",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Наблюдаем, как люди выполняют задачи в продукте, и ищем, где они спотыкаются. Это…",
+   "image": null,
+   "options": [
+    "Юзабилити-тест",
+    "Опрос",
+    "Фокус-группа",
+    "Гадание"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Главный метод проверки удобства: смотрим на поведение, а не спрашиваем мнение.",
+   "source": "NN/g, «Usability Testing 101»",
+   "status": "approved"
+  },
+  {
+   "id": "m-002",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Разговор один на один с пользователем о его опыте и задачах — это…",
+   "image": null,
+   "options": [
+    "Глубинное интервью",
+    "Опрос",
+    "A/B-тест",
+    "Допрос"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Интервью отвечает на «почему», опрос — на «сколько».",
+   "source": "NN/g, «User Interviews 101»",
+   "status": "approved"
+  },
+  {
+   "id": "m-003",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "«Если упростить форму, регистраций станет больше» — это…",
+   "image": null,
+   "options": [
+    "Гипотеза",
+    "Инсайт",
+    "Факт",
+    "Пророчество"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Гипотезу формулируют так, чтобы её можно было проверить.",
+   "source": "Jeff Gothelf, «Lean UX»",
+   "status": "approved"
+  },
+  {
+   "id": "m-004",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Неочевидный вывод о поведении людей, найденный в исследовании, — это…",
+   "image": null,
+   "options": [
+    "Инсайт",
+    "Гипотеза",
+    "Метрика",
+    "Озарение"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Инсайт объясняет, почему люди поступают именно так.",
+   "source": "NN/g, «Research Insights»",
+   "status": "approved"
+  },
+  {
+   "id": "m-005",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Собирательный портрет типичного пользователя с целями и болями — это…",
+   "image": null,
+   "options": [
+    "Персона",
+    "Аватар",
+    "Стейкхолдер",
+    "Фоторобот"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Персона помогает команде помнить, для кого делается продукт.",
+   "source": "NN/g, «Personas Make Users Memorable»",
+   "status": "approved"
+  },
+  {
+   "id": "m-006",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Схема всех страниц сайта и того, как они вложены друг в друга, — это…",
+   "image": null,
+   "options": [
+    "Карта сайта",
+    "User flow",
+    "Мудборд",
+    "Карта метро"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Sitemap показывает структуру, user flow — путь к цели.",
+   "source": "NN/g, «Sitemaps»",
+   "status": "approved"
+  },
+  {
+   "id": "m-007",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Подборка картинок, чтобы поймать настроение и стиль будущего дизайна, — это…",
+   "image": null,
+   "options": [
+    "Мудборд",
+    "Вайрфрейм",
+    "Гайдлайн",
+    "Фотоальбом"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Мудборд согласуют до макетов, чтобы не спорить о вкусе потом.",
+   "source": "NN/g, «Moodboards»",
+   "status": "approved"
+  },
+  {
+   "id": "m-008",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Схема экрана из блоков и подписей, без цветов и картинок, — это…",
+   "image": null,
+   "options": [
+    "Вайрфрейм",
+    "Мокап",
+    "Мудборд",
+    "Выкройка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Вайрфрейм фиксирует структуру и приоритеты контента.",
+   "source": "NN/g, «Wireframing»",
+   "status": "approved"
+  },
+  {
+   "id": "m-009",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Статичный макет, который выглядит как готовый продукт, но не кликается, — это…",
+   "image": null,
+   "options": [
+    "Мокап",
+    "Вайрфрейм",
+    "Прототип",
+    "Муляж"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Прототип можно «прокликать», мокап — нет.",
+   "source": "NN/g, «UX Prototypes: Low Fidelity vs. High Fidelity»",
+   "status": "approved"
+  },
+  {
+   "id": "m-010",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Прототип, который по виду не отличить от готового продукта, — это…",
+   "image": null,
+   "options": [
+    "High-fi",
+    "Low-fi",
+    "Mid-fi",
+    "Wi-Fi"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "High fidelity — высокая детализация: цвета, тексты, анимации.",
+   "source": "NN/g, «UX Prototypes: Low Fidelity vs. High Fidelity»",
+   "status": "approved"
+  },
+  {
+   "id": "m-011",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Компоненты, правила и стили, по которым собирают весь продукт, — это…",
+   "image": null,
+   "options": [
+    "Дизайн-система",
+    "Брендбук",
+    "Мудборд",
+    "Лего"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "UI-кит — набор деталей, дизайн-система — детали плюс правила и процессы.",
+   "source": "NN/g, «Design Systems 101»",
+   "status": "approved"
+  },
+  {
+   "id": "m-012",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Документ с правилами, как использовать элементы и стиль продукта, — это…",
+   "image": null,
+   "options": [
+    "Гайдлайн",
+    "Бриф",
+    "Бэклог",
+    "Инструкция"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, Material Design и Apple HIG — гайдлайны платформ.",
+   "source": "NN/g, «Design Systems 101»",
+   "status": "approved"
+  },
+  {
+   "id": "m-013",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Документ с задачей от заказчика, который заполняют до начала работы, — это…",
+   "image": null,
+   "options": [
+    "Бриф",
+    "Гайдлайн",
+    "Отчёт",
+    "Записка маме"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В брифе — цели, аудитория, сроки, ограничения и примеры.",
+   "source": "NN/g, «Design Brief»",
+   "status": "approved"
+  },
+  {
+   "id": "m-014",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Эксперт проверяет интерфейс по списку принципов, без пользователей. Метод…",
+   "image": null,
+   "options": [
+    "Эвристический анализ",
+    "Юзабилити-тест",
+    "Опрос",
+    "Интуиция"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Чаще всего проверяют по 10 эвристикам Нильсена.",
+   "source": "NN/g, «How to Conduct a Heuristic Evaluation»",
+   "status": "approved"
+  },
+  {
+   "id": "m-015",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Чем больше пунктов в меню, тем дольше выбирать. Чей это закон?",
+   "image": null,
+   "options": [
+    "Закон Хика",
+    "Закон Мура",
+    "Закон Ома",
+    "Закон джунглей"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Время выбора растёт вместе с числом вариантов.",
+   "source": "Laws of UX, Hick’s Law",
+   "status": "approved"
+  },
+  {
+   "id": "m-016",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Сколько элементов, по закону Миллера, человек держит в памяти одновременно?",
+   "image": null,
+   "options": [
+    "7 ± 2",
+    "2 ± 1",
+    "20 ± 5",
+    "Все пароли"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому длинные списки и номера разбивают на части.",
+   "source": "Laws of UX, Miller’s Law",
+   "status": "approved"
+  },
+  {
+   "id": "m-017",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Удобство продукта для людей с нарушениями зрения, слуха или моторики — это…",
+   "image": null,
+   "options": [
+    "Доступность",
+    "Адаптивность",
+    "Вовлечённость",
+    "Вежливость"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "По-английски — accessibility, сокращённо a11y.",
+   "source": "W3C, Introduction to Web Accessibility",
+   "status": "approved"
+  },
+  {
+   "id": "m-018",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Разница в яркости между текстом и фоном, от которой зависит читаемость, — это…",
+   "image": null,
+   "options": [
+    "Контраст",
+    "Насыщенность",
+    "Прозрачность",
+    "Харизма"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Минимум для обычного текста по WCAG AA — 4.5:1.",
+   "source": "WCAG 2.2, 1.4.3",
+   "status": "approved"
+  },
+  {
+   "id": "m-019",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Обводка вокруг кнопки, когда переходишь к ней клавишей Tab, показывает…",
+   "image": null,
+   "options": [
+    "Фокус",
+    "Наведение",
+    "Ошибку",
+    "Нервозность"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Без видимого фокуса интерфейсом невозможно пользоваться с клавиатуры.",
+   "source": "WCAG 2.2, 2.4.7 Focus Visible",
+   "status": "approved"
+  },
+  {
+   "id": "m-020",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Короткие тексты интерфейса: на кнопках, в подсказках, в ошибках — это…",
+   "image": null,
+   "options": [
+    "Микротексты",
+    "Лонгрид",
+    "Слоган",
+    "Мемы"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Microcopy — зона работы UX-райтера.",
+   "source": "NN/g, «Microcontent»",
+   "status": "approved"
+  },
+  {
+   "id": "m-021",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Единый характер и манера, с которой продукт «разговаривает», — это…",
+   "image": null,
+   "options": [
+    "Голос бренда",
+    "Слоган",
+    "Шрифт",
+    "Акцент"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Tone of voice: дружелюбный, строгий, ироничный…",
+   "source": "NN/g, «The Four Dimensions of Tone of Voice»",
+   "status": "approved"
+  },
+  {
+   "id": "m-022",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Цветом показано, где на странице чаще всего кликают. Как называется такая карта?",
+   "image": null,
+   "options": [
+    "Тепловая",
+    "Сайтмап",
+    "Ментальная",
+    "Карта погоды"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Heatmap показывает клики, движения курсора или глубину скролла.",
+   "source": "NN/g, «Heatmaps»",
+   "status": "approved"
+  },
+  {
+   "id": "m-023",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Инструмент Яндекс Метрики, который записывает действия посетителя как видео:",
+   "image": null,
+   "options": [
+    "Вебвизор",
+    "Тепловая карта",
+    "Скринкаст",
+    "Слежка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Помогает увидеть, где люди застревают на странице.",
+   "source": "Яндекс Метрика, Справка: Вебвизор",
+   "status": "approved"
+  },
+  {
+   "id": "m-024",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Подпись над полем формы, которая говорит, что в него вводить, — это…",
+   "image": null,
+   "options": [
+    "Лейбл",
+    "Плейсхолдер",
+    "Тултип",
+    "Бирка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Лейбл не исчезает при вводе, в отличие от плейсхолдера.",
+   "source": "NN/g, «Form Design: Labels»",
+   "status": "approved"
+  },
+  {
+   "id": "m-025",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Проверка, правильно ли заполнено поле формы, — это…",
+   "image": null,
+   "options": [
+    "Валидация",
+    "Авторизация",
+    "Модерация",
+    "Цензура"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Лучше проверять поле сразу после ввода, а не после отправки всей формы.",
+   "source": "NN/g, «Inline Validation in Forms»",
+   "status": "approved"
+  },
+  {
+   "id": "m-026",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Проверка, что вы — это вы (логин и пароль), называется…",
+   "image": null,
+   "options": [
+    "Аутентификация",
+    "Авторизация",
+    "Регистрация",
+    "Медитация"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Авторизация — следующий шаг: что вам разрешено делать.",
+   "source": "OWASP, Authentication Cheat Sheet",
+   "status": "approved"
+  },
+  {
+   "id": "m-027",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Задание «докажите, что вы не робот» — это…",
+   "image": null,
+   "options": [
+    "Капча",
+    "Куки",
+    "Пуш",
+    "Робокоп"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "CAPTCHA мешает ботам, но раздражает людей и бывает недоступна.",
+   "source": "W3C, Inaccessibility of CAPTCHA",
+   "status": "approved"
+  },
+  {
+   "id": "m-028",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Сообщение, которое приложение присылает на экран телефона, — это…",
+   "image": null,
+   "options": [
+    "Пуш",
+    "Тост",
+    "Баннер",
+    "Голубь"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Push-уведомления возвращают пользователя, но легко надоедают.",
+   "source": "NN/g, «Push Notifications»",
+   "status": "approved"
+  },
+  {
+   "id": "m-029",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Проблемы и раздражители пользователя на его пути — это…",
+   "image": null,
+   "options": [
+    "Боли",
+    "Цели",
+    "Инсайты",
+    "Мозоли"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Pain points ищут в интервью и отмечают на CJM.",
+   "source": "NN/g, «Pain Points»",
+   "status": "approved"
+  },
+  {
+   "id": "m-030",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Любое место, где клиент сталкивается с продуктом или компанией, — это…",
+   "image": null,
+   "options": [
+    "Точка контакта",
+    "Точка входа",
+    "Точка роста",
+    "Точка кипения"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Touchpoint: сайт, письмо, звонок в поддержку, упаковка.",
+   "source": "NN/g, «Journey Mapping 101»",
+   "status": "approved"
+  },
+  {
+   "id": "m-031",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Передача готовых макетов и спецификаций разработчикам — это…",
+   "image": null,
+   "options": [
+    "Хэндофф",
+    "Релиз",
+    "Деплой",
+    "Хэнд-мейд"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хороший хэндофф — это макеты, состояния, отступы и ответы на вопросы.",
+   "source": "Figma Help, Dev Mode",
+   "status": "approved"
+  },
+  {
+   "id": "m-032",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Быстрые наброски от руки, чтобы найти идею решения, — это…",
+   "image": null,
+   "options": [
+    "Скетчи",
+    "Мокапы",
+    "Рендеры",
+    "Каракули"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Скетчи дёшевы: их не жалко выбросить.",
+   "source": "NN/g, «Sketching»",
+   "status": "approved"
+  },
+  {
+   "id": "m-033",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Одностраничный сайт под одну цель — продать, записать, собрать заявки, — это…",
+   "image": null,
+   "options": [
+    "Лендинг",
+    "Портал",
+    "Блог",
+    "Лендлорд"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Landing page — страница, на которую «приземляется» трафик.",
+   "source": "NN/g, «Landing Pages»",
+   "status": "approved"
+  },
+  {
+   "id": "m-034",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Пользователь пришёл на страницу и сразу ушёл. Как это называется?",
+   "image": null,
+   "options": [
+    "Отказ",
+    "Конверсия",
+    "Сессия",
+    "Обида"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Доля таких визитов — показатель отказов, bounce rate.",
+   "source": "Google Analytics Help, Bounce rate",
+   "status": "approved"
+  },
+  {
+   "id": "m-035",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Сценарий, где что-то пошло не так: нет сети, ошибка оплаты, пустой ответ, — это…",
+   "image": null,
+   "options": [
+    "Негативный",
+    "Основной",
+    "Альтернативный",
+    "Драматичный"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Негативные сценарии проектируют наравне с основными.",
+   "source": "Алистер Кокберн, «Современные методы описания функциональных требований»",
+   "status": "approved"
+  },
+  {
+   "id": "m-036",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Пользователь подолгу сидит в продукте и регулярно возвращается. Это…",
+   "image": null,
+   "options": [
+    "Вовлечённость",
+    "Конверсия",
+    "Охват",
+    "Зависимость"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Engagement меряют частотой, длительностью и глубиной использования.",
+   "source": "Google, HEART framework",
+   "status": "approved"
+  },
+  {
+   "id": "m-037",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Сервис Яндекса, который считает посещения сайта, источники и цели, — это…",
+   "image": null,
+   "options": [
+    "Метрика",
+    "Директ",
+    "Дзен",
+    "Алиса"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Яндекс Метрика — веб-аналитика: визиты, отказы, конверсии в цели.",
+   "source": "Яндекс Метрика, Справка",
+   "status": "approved"
+  },
+  {
+   "id": "m-038",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Блок «Часто задаваемые вопросы» на сайте сокращённо называют…",
+   "image": null,
+   "options": [
+    "FAQ",
+    "CTA",
+    "SEO",
+    "ЧЗВ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Frequently Asked Questions.",
+   "source": "NN/g, «FAQs»",
+   "status": "approved"
+  },
+  {
+   "id": "m-039",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Команда за час накидывает как можно больше идей, не критикуя их. Это…",
+   "image": null,
+   "options": [
+    "Брейншторм",
+    "Ретро",
+    "Дейли",
+    "Мозгоправ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Критику оставляют на потом, чтобы не гасить идеи.",
+   "source": "Alex Osborn, «Applied Imagination»",
+   "status": "approved"
+  },
+  {
+   "id": "m-040",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Как называется вопрос в анкете, на который отвечают своими словами?",
+   "image": null,
+   "options": [
+    "Открытый",
+    "Закрытый",
+    "Шкальный",
+    "Риторический"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Закрытый — выбор из вариантов, шкальный — оценка по шкале.",
+   "source": "NN/g, «Open-Ended vs. Closed Questions»",
+   "status": "approved"
+  },
+  {
+   "id": "m-041",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Функция Figma, которая сама выстраивает элементы в ряд или столбец с отступами:",
+   "image": null,
+   "options": [
+    "Auto layout",
+    "Constraints",
+    "Layout grid",
+    "Автопилот"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Auto layout — аналог flexbox в коде.",
+   "source": "Figma Help, Auto layout",
+   "status": "approved"
+  },
+  {
+   "id": "m-042",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Копия главного компонента, размещённая в макете Figma, — это…",
+   "image": null,
+   "options": [
+    "Instance",
+    "Main",
+    "Group",
+    "Клон"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Экземпляр обновляется, когда меняется главный компонент.",
+   "source": "Figma Help, Components",
+   "status": "approved"
+  },
+  {
+   "id": "m-043",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Все состояния кнопки внутри одного компонента Figma — это…",
+   "image": null,
+   "options": [
+    "Variants",
+    "Pages",
+    "Styles",
+    "Варежки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Варианты переключаются свойствами: size, state, type.",
+   "source": "Figma Help, Variants",
+   "status": "approved"
+  },
+  {
+   "id": "m-044",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Сохранённые цвета, шрифты и тени для повторного использования в Figma — это…",
+   "image": null,
+   "options": [
+    "Стили",
+    "Плагины",
+    "Слои",
+    "Причёски"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поменяли стиль — обновились все элементы, где он применён.",
+   "source": "Figma Help, Styles",
+   "status": "approved"
+  },
+  {
+   "id": "m-045",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Расширение, которое добавляет Figma новые функции, — это…",
+   "image": null,
+   "options": [
+    "Плагин",
+    "Компонент",
+    "Фрейм",
+    "Заплатка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Плагины ставят из Figma Community.",
+   "source": "Figma Help, Plugins",
+   "status": "approved"
+  },
+  {
+   "id": "m-046",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Основной контейнер для экрана в Figma — это…",
+   "image": null,
+   "options": [
+    "Frame",
+    "Group",
+    "Rectangle",
+    "Рамочка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Фрейм умеет auto layout, сетки и обрезку содержимого, группа — нет.",
+   "source": "Figma Help, Frames",
+   "status": "approved"
+  },
+  {
+   "id": "m-047",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Спрятать часть картинки по форме другой фигуры в Figma — это…",
+   "image": null,
+   "options": [
+    "Маска",
+    "Фильтр",
+    "Обводка",
+    "Карнавал"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Нижний слой задаёт форму, верхние видны только внутри неё.",
+   "source": "Figma Help, Masks",
+   "status": "approved"
+  },
+  {
+   "id": "m-048",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Колонки-направляющие, которые накладывают на фрейм в Figma, — это…",
+   "image": null,
+   "options": [
+    "Layout grid",
+    "Constraints",
+    "Rulers",
+    "Клетка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Сетку настраивают в правой панели фрейма.",
+   "source": "Figma Help, Layout grids",
+   "status": "approved"
+  },
+  {
+   "id": "m-049",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как в Auto layout растянуть поле на всю ширину родителя?",
+   "image": null,
+   "options": [
+    "Fill container",
+    "Hug contents",
+    "Fixed width",
+    "Тянуть руками"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Fill — занять всё место, Hug — обнять содержимое, Fixed — свой размер.",
+   "source": "Figma Help, Auto layout",
+   "status": "approved"
+  },
+  {
+   "id": "m-050",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Чтобы выгрузить иконку из Figma в SVG, используют раздел…",
+   "image": null,
+   "options": [
+    "Export",
+    "Share",
+    "Publish",
+    "Ксерокс"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В Export выбирают формат: PNG, JPG, SVG или PDF.",
+   "source": "Figma Help, Export",
+   "status": "approved"
+  },
+  {
+   "id": "m-051",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Сочетание двух шрифтов: один для заголовков, другой для текста, — это…",
+   "image": null,
+   "options": [
+    "Шрифтовая пара",
+    "Гарнитура",
+    "Кегль",
+    "Тандем"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Классика — гротеск в заголовках и антиква в тексте или наоборот.",
+   "source": "Google Fonts Knowledge, Pairing typefaces",
+   "status": "approved"
+  },
+  {
+   "id": "m-052",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Regular, Bold и Italic одного шрифта — это разные…",
+   "image": null,
+   "options": [
+    "Начертания",
+    "Гарнитуры",
+    "Кегли",
+    "Настроения"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Гарнитура — семейство, начертание — вариант внутри него.",
+   "source": "Роберт Брингхерст, «Основы стиля в типографике»",
+   "status": "approved"
+  },
+  {
+   "id": "m-053",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как типографы называют размер шрифта?",
+   "image": null,
+   "options": [
+    "Кегль",
+    "Гарнитура",
+    "Начертание",
+    "Кегельбан"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В вебе кегль задают свойством font-size.",
+   "source": "Роберт Брингхерст, «Основы стиля в типографике»",
+   "status": "approved"
+  },
+  {
+   "id": "m-054",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Маленькие поперечные штрихи на концах букв — это…",
+   "image": null,
+   "options": [
+    "Засечки",
+    "Хвостики",
+    "Росчерки",
+    "Усики"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Шрифты с засечками — антиква, без засечек — гротески.",
+   "source": "Роберт Брингхерст, «Основы стиля в типографике»",
+   "status": "approved"
+  },
+  {
+   "id": "m-055",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Текст выровнен сразу по левому и правому краю. Это выравнивание…",
+   "image": null,
+   "options": [
+    "По ширине",
+    "По центру",
+    "По правому",
+    "Ёлочкой"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В вебе по ширине выравнивают редко: появляются «реки» пробелов.",
+   "source": "Matthew Butterick, «Practical Typography»",
+   "status": "approved"
+  },
+  {
+   "id": "m-056",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Ограниченный набор цветов, из которого собран интерфейс, — это…",
+   "image": null,
+   "options": [
+    "Палитра",
+    "Градиент",
+    "Пантон",
+    "Радуга"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Обычно: основной, акцентный, нейтральные и цвета статусов.",
+   "source": "Material Design 3, Color system",
+   "status": "approved"
+  },
+  {
+   "id": "m-057",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Плавный переход одного цвета в другой — это…",
+   "image": null,
+   "options": [
+    "Градиент",
+    "Палитра",
+    "Контраст",
+    "Закат"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Бывает линейный, радиальный, угловой.",
+   "source": "Figma Help, Gradients",
+   "status": "approved"
+  },
+  {
+   "id": "m-058",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Яркий цвет для главной кнопки и самых важных элементов — это…",
+   "image": null,
+   "options": [
+    "Акцентный",
+    "Фоновый",
+    "Нейтральный",
+    "Кислотный"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Акцентов мало — тогда они работают.",
+   "source": "Material Design 3, Color roles",
+   "status": "approved"
+  },
+  {
+   "id": "m-059",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Каким параметром в Figma задают прозрачность слоя?",
+   "image": null,
+   "options": [
+    "Opacity",
+    "Blur",
+    "Fill",
+    "Призрачность"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Прозрачность задаётся и для слоя, и отдельно для заливки.",
+   "source": "Figma Help, Layer opacity",
+   "status": "approved"
+  },
+  {
+   "id": "m-060",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Эффект Drop shadow в Figma — это…",
+   "image": null,
+   "options": [
+    "Внешняя тень",
+    "Внутренняя тень",
+    "Размытие",
+    "Загар"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Inner shadow — тень внутри фигуры.",
+   "source": "Figma Help, Effects",
+   "status": "approved"
+  },
+  {
+   "id": "m-061",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как в Figma размыть то, что лежит под полупрозрачной панелью?",
+   "image": null,
+   "options": [
+    "Background blur",
+    "Drop shadow",
+    "Inner shadow",
+    "Туман"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Layer blur размывает сам слой, background blur — то, что под ним.",
+   "source": "Figma Help, Effects",
+   "status": "approved"
+  },
+  {
+   "id": "m-062",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Иконки, нарисованные одним контуром, без заливки, называют…",
+   "image": null,
+   "options": [
+    "Контурными",
+    "Залитыми",
+    "Растровыми",
+    "Худыми"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Outline и filled — два основных стиля иконок.",
+   "source": "Material Symbols, Styles",
+   "status": "approved"
+  },
+  {
+   "id": "m-063",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Вёрстка совпадает с макетом с точностью до пикселя. Это…",
+   "image": null,
+   "options": [
+    "Pixel perfect",
+    "Адаптив",
+    "Резина",
+    "Перфекционизм"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Требование к точности переноса макета в код.",
+   "source": "Smashing Magazine, Pixel perfect",
+   "status": "approved"
+  },
+  {
+   "id": "m-064",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Ширина экрана, на которой меняется раскладка, — это…",
+   "image": null,
+   "options": [
+    "Брейкпоинт",
+    "Вьюпорт",
+    "Гаттер",
+    "Точка невозврата"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Брейкпоинты задают в медиазапросах CSS.",
+   "source": "MDN, Responsive design",
+   "status": "approved"
+  },
+  {
+   "id": "m-065",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Промежуток между колонками сетки называется…",
+   "image": null,
+   "options": [
+    "Гаттер",
+    "Маржин",
+    "Паддинг",
+    "Межа"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Margin — поля от края, gutter — промежутки между колонками.",
+   "source": "Material Design 3, Layout",
+   "status": "approved"
+  },
+  {
+   "id": "m-066",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Внешний отступ элемента от соседей — это…",
+   "image": null,
+   "options": [
+    "Margin",
+    "Padding",
+    "Border",
+    "Маржа"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Padding — внутренний отступ, margin — внешний.",
+   "source": "MDN, CSS box model",
+   "status": "approved"
+  },
+  {
+   "id": "m-067",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как в Figma называется обводка фигуры?",
+   "image": null,
+   "options": [
+    "Stroke",
+    "Fill",
+    "Effect",
+    "Окантовка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "У обводки задают толщину и положение: внутри, снаружи, по центру.",
+   "source": "Figma Help, Strokes",
+   "status": "approved"
+  },
+  {
+   "id": "m-068",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Какой цвет записан как #00FF00?",
+   "image": null,
+   "options": [
+    "Зелёный",
+    "Синий",
+    "Жёлтый",
+    "Цвет тоски"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Два знака на канал: красный 00, зелёный FF, синий 00.",
+   "source": "W3C, CSS Color Module Level 4",
+   "status": "approved"
+  },
+  {
+   "id": "m-069",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Светлый текст на тёмном фоне во всём интерфейсе — это…",
+   "image": null,
+   "options": [
+    "Тёмная тема",
+    "Светлая тема",
+    "Инверсия",
+    "Чёрная полоса"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Тёмную тему проектируют отдельно, а не простой инверсией цветов.",
+   "source": "Material Design 2, Dark theme",
+   "status": "approved"
+  },
+  {
+   "id": "m-070",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Кнопку нажали, запрос ещё идёт. Какое состояние показать на кнопке?",
+   "image": null,
+   "options": [
+    "Загрузка",
+    "Наведение",
+    "Disabled",
+    "Медитация"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Спиннер на кнопке защищает от повторного нажатия.",
+   "source": "Material Design 3, Buttons",
+   "status": "approved"
+  },
+  {
+   "id": "m-071",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как называется состояние кнопки в момент нажатия?",
+   "image": null,
+   "options": [
+    "Pressed",
+    "Hover",
+    "Focus",
+    "Стресс"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Основные состояния: default, hover, pressed, focus, disabled.",
+   "source": "Material Design 3, States",
+   "status": "approved"
+  },
+  {
+   "id": "m-072",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Нужно выбрать несколько вариантов из списка. Какой элемент подходит?",
+   "image": null,
+   "options": [
+    "Чекбоксы",
+    "Радиокнопки",
+    "Слайдер",
+    "Лотерея"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Радиокнопки — для одного варианта из нескольких.",
+   "source": "NN/g, «Checkboxes vs. Radio Buttons»",
+   "status": "approved"
+  },
+  {
+   "id": "m-073",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Ползунок, которым выбирают значение из диапазона, — это…",
+   "image": null,
+   "options": [
+    "Слайдер",
+    "Степпер",
+    "Тоггл",
+    "Самокат"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Слайдер хорош, когда точное значение не критично.",
+   "source": "Material Design 3, Sliders",
+   "status": "approved"
+  },
+  {
+   "id": "m-074",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Полоска «1 — 2 — 3» над формой заказа, показывающая шаги, — это…",
+   "image": null,
+   "options": [
+    "Степпер",
+    "Слайдер",
+    "Пагинация",
+    "Светофор"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Показывает, сколько шагов осталось.",
+   "source": "Material Design, Steppers",
+   "status": "approved"
+  },
+  {
+   "id": "m-075",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Кружок с числом непрочитанных на иконке — это…",
+   "image": null,
+   "options": [
+    "Бейдж",
+    "Тултип",
+    "Чип",
+    "Прыщик"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Badge привлекает внимание к новому.",
+   "source": "Material Design 3, Badges",
+   "status": "approved"
+  },
+  {
+   "id": "m-076",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Иконка из трёх вертикальных точек, которая открывает меню, — это…",
+   "image": null,
+   "options": [
+    "Кебаб",
+    "Бургер",
+    "Митбол",
+    "Шаурма"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Три горизонтальные полоски — бургер, три точки в столбик — кебаб.",
+   "source": "NN/g, «Kebab Menus»",
+   "status": "approved"
+  },
+  {
+   "id": "m-077",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Блоки, которые раскрываются и сворачиваются по клику на заголовок, — это…",
+   "image": null,
+   "options": [
+    "Аккордеон",
+    "Табы",
+    "Карусель",
+    "Баян"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хорош для FAQ и длинных настроек.",
+   "source": "NN/g, «Accordions on Desktop»",
+   "status": "approved"
+  },
+  {
+   "id": "m-078",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Переключатели разделов внутри одной области экрана — это…",
+   "image": null,
+   "options": [
+    "Табы",
+    "Аккордеон",
+    "Хлебные крошки",
+    "Табуретки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Вкладки показывают один раздел за раз.",
+   "source": "NN/g, «Tabs, Used Right»",
+   "status": "approved"
+  },
+  {
+   "id": "m-079",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Блок, в котором слайды листаются стрелками или свайпом, — это…",
+   "image": null,
+   "options": [
+    "Карусель",
+    "Аккордеон",
+    "Галерея",
+    "Качели"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "До последних слайдов карусели доходят немногие.",
+   "source": "NN/g, «Carousels»",
+   "status": "approved"
+  },
+  {
+   "id": "m-080",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Длинный список разбит на страницы с номерами внизу. Это…",
+   "image": null,
+   "options": [
+    "Пагинация",
+    "Сортировка",
+    "Фильтрация",
+    "Нумерология"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Альтернативы — «Показать ещё» и бесконечный скролл.",
+   "source": "NN/g, «Pagination»",
+   "status": "approved"
+  },
+  {
+   "id": "m-081",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Минимальная версия продукта, чтобы быстро проверить идею на людях, — это…",
+   "image": null,
+   "options": [
+    "MVP",
+    "PMF",
+    "MBA",
+    "VIP"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Minimum Viable Product — понятие из Lean Startup.",
+   "source": "Эрик Рис, «Бизнес с нуля»",
+   "status": "approved"
+  },
+  {
+   "id": "m-082",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Путь от визита до покупки, на каждом шаге которого часть людей отсеивается, — это…",
+   "image": null,
+   "options": [
+    "Воронка",
+    "Лестница",
+    "Карусель",
+    "Мясорубка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Анализ воронки показывает, на каком шаге теряем людей.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "m-083",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Доля пользователей, которые вернулись в продукт через несколько дней, — это…",
+   "image": null,
+   "options": [
+    "Удержание",
+    "Отток",
+    "Охват",
+    "Ностальгия"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Retention — главный признак того, что продукт нужен.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "m-084",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Число уникальных пользователей за месяц — метрика…",
+   "image": null,
+   "options": [
+    "MAU",
+    "DAU",
+    "CTR",
+    "Мяу"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "DAU — за день, WAU — за неделю, MAU — за месяц.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "m-085",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Доля кликов от числа показов баннера или ссылки — метрика…",
+   "image": null,
+   "options": [
+    "CTR",
+    "MAU",
+    "ROI",
+    "ГТО"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Click-Through Rate = клики / показы.",
+   "source": "Google Ads Help, CTR",
+   "status": "approved"
+  },
+  {
+   "id": "m-086",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "«Насколько вероятно, что вы порекомендуете нас друзьям?» — метрика…",
+   "image": null,
+   "options": [
+    "NPS",
+    "CTR",
+    "MAU",
+    "ЖКХ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Net Promoter Score — индекс готовности рекомендовать.",
+   "source": "Bain & Company, Net Promoter System",
+   "status": "approved"
+  },
+  {
+   "id": "m-087",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "План развития продукта по этапам и срокам — это…",
+   "image": null,
+   "options": [
+    "Роадмап",
+    "Бэклог",
+    "Бюджет",
+    "Карта сокровищ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Бэклог — список задач, роадмап — их план во времени.",
+   "source": "Roman Pichler, «Strategize»",
+   "status": "approved"
+  },
+  {
+   "id": "m-088",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Выпуск новой версии продукта для пользователей — это…",
+   "image": null,
+   "options": [
+    "Релиз",
+    "Спринт",
+    "Демо",
+    "Выпускной"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Перед релизом — тестирование, после — сбор обратной связи.",
+   "source": "Scrum Guide 2020",
+   "status": "approved"
+  },
+  {
+   "id": "m-089",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Отдельная функция продукта на сленге команды — это…",
+   "image": null,
+   "options": [
+    "Фича",
+    "Баг",
+    "Тикет",
+    "Фикус"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Feature — функция; «это не баг, это фича» — классика.",
+   "source": "Atlassian, Agile glossary",
+   "status": "approved"
+  },
+  {
+   "id": "m-090",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Ошибка в работе программы — это…",
+   "image": null,
+   "options": [
+    "Баг",
+    "Фича",
+    "Тикет",
+    "Таракан"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Bug — «жук»: так называли сбои ещё в эпоху ламповых машин.",
+   "source": "Atlassian, Agile glossary",
+   "status": "approved"
+  },
+  {
+   "id": "m-091",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Кто в Scrum следит, чтобы команда соблюдала процесс?",
+   "image": null,
+   "options": [
+    "Scrum Master",
+    "Product Owner",
+    "Тимлид",
+    "Завхоз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Product Owner отвечает за бэклог, Scrum Master — за процесс.",
+   "source": "Scrum Guide 2020",
+   "status": "approved"
+  },
+  {
+   "id": "m-092",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Встреча в конце спринта, где команда показывает, что сделала, — это…",
+   "image": null,
+   "options": [
+    "Демо",
+    "Дейли",
+    "Планирование",
+    "Утренник"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В Scrum Guide — Sprint Review.",
+   "source": "Scrum Guide 2020",
+   "status": "approved"
+  },
+  {
+   "id": "m-093",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Ключевой показатель эффективности по-английски сокращают как…",
+   "image": null,
+   "options": [
+    "KPI",
+    "OKR",
+    "MVP",
+    "ЕГЭ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Key Performance Indicator.",
+   "source": "Atlassian, KPI",
+   "status": "approved"
+  },
+  {
+   "id": "m-094",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Чем продукт отличается от всех конкурентов — это его…",
+   "image": null,
+   "options": [
+    "УТП",
+    "ЦА",
+    "КПД",
+    "ГТО"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Уникальное торговое предложение.",
+   "source": "Rosser Reeves, «Reality in Advertising»",
+   "status": "approved"
+  },
+  {
+   "id": "m-095",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Разбор продуктов соперников: что умеют, сколько стоят, как выглядят, — это…",
+   "image": null,
+   "options": [
+    "Анализ конкурентов",
+    "Юзабилити-тест",
+    "Код-ревью",
+    "Шпионаж"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Помогает найти, чем можно выделиться.",
+   "source": "NN/g, «Competitive Usability Evaluations»",
+   "status": "approved"
+  },
+  {
+   "id": "m-096",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Сильные и слабые стороны, возможности и угрозы — это анализ…",
+   "image": null,
+   "options": [
+    "SWOT",
+    "RICE",
+    "MVP",
+    "КВН"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Strengths, Weaknesses, Opportunities, Threats.",
+   "source": "Albert Humphrey, SWOT analysis",
+   "status": "approved"
+  },
+  {
+   "id": "m-097",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Способ, которым продукт зарабатывает деньги, — это…",
+   "image": null,
+   "options": [
+    "Монетизация",
+    "Масштабирование",
+    "Маркетинг",
+    "Копилка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Подписка, реклама, разовые покупки, комиссия…",
+   "source": "Alexander Osterwalder, «Business Model Generation»",
+   "status": "approved"
+  },
+  {
+   "id": "m-098",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Базовая версия бесплатно, расширенная — за деньги. Модель…",
+   "image": null,
+   "options": [
+    "Фримиум",
+    "Подписка",
+    "Аренда",
+    "Халява"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Freemium = free + premium.",
+   "source": "Chris Anderson, «Free»",
+   "status": "approved"
+  },
+  {
+   "id": "m-099",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Должность человека, который отвечает за развитие продукта целиком, — это…",
+   "image": null,
+   "options": [
+    "Продакт-менеджер",
+    "Арт-директор",
+    "Тестировщик",
+    "Завхоз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Продакт решает, что и зачем делать, команда — как.",
+   "source": "Marty Cagan, «Inspired»",
+   "status": "approved"
+  },
+  {
+   "id": "m-100",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Набор платных планов «Базовый / Про / Бизнес» на одной странице — это…",
+   "image": null,
+   "options": [
+    "Тарифы",
+    "Бэклог",
+    "Роадмап",
+    "Меню кафе"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Тарифы сравнивают в таблице, выделяя рекомендуемый.",
+   "source": "NN/g, «Pricing Pages»",
+   "status": "approved"
+  },
+  {
+   "id": "m-201",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Нильсен: в интернете люди не читают текст, а…",
+   "image": null,
+   "options": [
+    "Сканируют",
+    "Слушают",
+    "Учат",
+    "Жуют"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому важны заголовки, списки и выделения.",
+   "source": "NN/g, «How Users Read on the Web»",
+   "status": "approved"
+  },
+  {
+   "id": "m-202",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Как дизайнеры на сленге называют текст-заглушку в макете?",
+   "image": null,
+   "options": [
+    "Рыба",
+    "Вода",
+    "Каша",
+    "Котлета"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "«Рыбу» потом меняют на реальный текст — и макет часто разваливается.",
+   "source": "Артемий Лебедев, «Ководство»",
+   "status": "approved"
+  },
+  {
+   "id": "m-203",
+   "level": "middle",
+   "pool": "practice",
+   "area": "ui",
+   "tier": "super",
+   "question": "Каким сочетанием клавиш в Figma создают компонент (Windows)?",
+   "image": null,
+   "options": [
+    "Ctrl+Alt+K",
+    "Ctrl+G",
+    "Ctrl+D",
+    "Ctrl+Alt+Del"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "На Mac — Option+Cmd+K.",
+   "source": "Figma Help, Keyboard shortcuts",
+   "status": "approved"
+  },
+  {
+   "id": "m-204",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Свойство компонента Figma, чтобы прямо в экземпляре подменить иконку:",
+   "image": null,
+   "options": [
+    "Instance swap",
+    "Boolean",
+    "Variant",
+    "Подмена"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Не нужно отвязывать экземпляр.",
+   "source": "Figma Help, Component properties",
+   "status": "approved"
+  },
+  {
+   "id": "m-205",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Светлая и тёмная тема в одной коллекции Variables — это разные…",
+   "image": null,
+   "options": [
+    "Modes",
+    "Pages",
+    "Branches",
+    "Moods"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Фрейм переключается между режимами одним кликом.",
+   "source": "Figma Help, Modes for variables",
+   "status": "approved"
+  },
+  {
+   "id": "m-206",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Как в Figma называется контейнер со всеми вариантами компонента?",
+   "image": null,
+   "options": [
+    "Component set",
+    "Section",
+    "Frame",
+    "Комплект"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Обведён фиолетовой пунктирной рамкой.",
+   "source": "Figma Help, Variants",
+   "status": "approved"
+  },
+  {
+   "id": "m-207",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Отвязать экземпляр от главного компонента в Figma — это…",
+   "image": null,
+   "options": [
+    "Detach",
+    "Reset",
+    "Swap",
+    "Развод"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "После detach экземпляр становится обычным фреймом.",
+   "source": "Figma Help, Detach an instance",
+   "status": "approved"
+  },
+  {
+   "id": "m-208",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Изменения в экземпляре, которые не трогают главный компонент, — это…",
+   "image": null,
+   "options": [
+    "Overrides",
+    "Variants",
+    "Styles",
+    "Отсебятина"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, другой текст на кнопке.",
+   "source": "Figma Help, Overrides",
+   "status": "approved"
+  },
+  {
+   "id": "m-209",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Переход в прототипе Figma, который сам плавно двигает одинаковые слои:",
+   "image": null,
+   "options": [
+    "Smart animate",
+    "Dissolve",
+    "Instant",
+    "Магия"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Слои должны называться одинаково на обоих экранах.",
+   "source": "Figma Help, Smart animate",
+   "status": "approved"
+  },
+  {
+   "id": "m-210",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Все ссылки синие и подчёркнутые — и мы видим в них одну группу. Принцип…",
+   "image": null,
+   "options": [
+    "Сходства",
+    "Близости",
+    "Замкнутости",
+    "Родства"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Похожие по виду элементы кажутся связанными.",
+   "source": "Laws of UX, Law of Similarity",
+   "status": "approved"
+  },
+  {
+   "id": "m-211",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Рамка карточки объединяет всё внутри в одну группу. Принцип…",
+   "image": null,
+   "options": [
+    "Общей области",
+    "Сходства",
+    "Непрерывности",
+    "Коммуналки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Элементы внутри общей границы воспринимаются группой.",
+   "source": "Laws of UX, Law of Common Region",
+   "status": "approved"
+  },
+  {
+   "id": "m-212",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Card sorting, где названия групп придумывают сами участники, называют…",
+   "image": null,
+   "options": [
+    "Открытым",
+    "Закрытым",
+    "Гибридным",
+    "Секретным"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В закрытой сортировке группы заданы заранее.",
+   "source": "NN/g, «Card Sorting»",
+   "status": "approved"
+  },
+  {
+   "id": "m-213",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Хорошее сообщение об ошибке говорит, что случилось и…",
+   "image": null,
+   "options": [
+    "Как исправить",
+    "Код ошибки",
+    "Время сбоя",
+    "Кто виноват"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Без подсказки, что делать, ошибка — тупик.",
+   "source": "NN/g, «Error-Message Guidelines»",
+   "status": "approved"
+  },
+  {
+   "id": "m-214",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Анимация плавно разгоняется и плавно тормозит. Это кривая…",
+   "image": null,
+   "options": [
+    "Ease-in-out",
+    "Linear",
+    "Ease-in",
+    "Американская горка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ease-in — медленный старт, ease-out — медленный финиш.",
+   "source": "MDN, easing-function",
+   "status": "approved"
+  },
+  {
+   "id": "m-215",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Каким параметром в Figma меняют расстояние между всеми буквами?",
+   "image": null,
+   "options": [
+    "Letter spacing",
+    "Line height",
+    "Paragraph spacing",
+    "Растяжка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Line height — между строками, paragraph spacing — между абзацами.",
+   "source": "Figma Help, Text properties",
+   "status": "approved"
+  },
+  {
+   "id": "m-216",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Инструмент Figma, чтобы взять цвет с любого места экрана:",
+   "image": null,
+   "options": [
+    "Пипетка",
+    "Кисть",
+    "Лупа",
+    "Комар"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Горячая клавиша — I.",
+   "source": "Figma Help, Eyedropper",
+   "status": "approved"
+  },
+  {
+   "id": "m-217",
+   "level": "middle",
+   "pool": "practice",
+   "area": "ui",
+   "tier": "super",
+   "question": "Какой контраст по WCAG AA достаточен для крупного текста?",
+   "image": null,
+   "options": [
+    "3:1",
+    "4.5:1",
+    "7:1",
+    "1:1"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Крупный — от 18 pt или от 14 pt жирным.",
+   "source": "WCAG 2.2, 1.4.3",
+   "status": "approved"
+  },
+  {
+   "id": "m-218",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Обычное, наведение, нажатие, фокус и… Какое состояние кнопки пропущено?",
+   "image": null,
+   "options": [
+    "Неактивное",
+    "Удалённое",
+    "Спящее",
+    "Обиженное"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Disabled — действие сейчас недоступно.",
+   "source": "Material Design 3, States",
+   "status": "approved"
+  },
+  {
+   "id": "m-219",
+   "level": "middle",
+   "pool": "practice",
+   "area": "ui",
+   "tier": "super",
+   "question": "Минимальная зона нажатия по Material Design:",
+   "image": null,
+   "options": [
+    "48×48 dp",
+    "44×44 dp",
+    "24×24 dp",
+    "Ладошка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Иконка может быть меньше, зона касания — нет.",
+   "source": "Material Design 3, Accessibility",
+   "status": "approved"
+  },
+  {
+   "id": "m-220",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Atomic Design: атомы → молекулы → … → шаблоны → страницы. Что пропущено?",
+   "image": null,
+   "options": [
+    "Организмы",
+    "Клетки",
+    "Блоки",
+    "Динозавры"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Организм — сложный блок из молекул, например шапка сайта.",
+   "source": "Brad Frost, «Atomic Design»",
+   "status": "approved"
+  },
+  {
+   "id": "m-221",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Именованные значения цветов и отступов, общие для макета и кода, — это…",
+   "image": null,
+   "options": [
+    "Дизайн-токены",
+    "Стили слоёв",
+    "Компоненты",
+    "Жетоны"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, color-primary или space-16.",
+   "source": "W3C Design Tokens Community Group",
+   "status": "approved"
+  },
+  {
+   "id": "m-222",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Представление пользователя о том, как устроена система, — его…",
+   "image": null,
+   "options": [
+    "Ментальная модель",
+    "Карта эмпатии",
+    "Персона",
+    "Тараканы"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удобно, когда интерфейс совпадает с этим представлением.",
+   "source": "NN/g, «Mental Models»",
+   "status": "approved"
+  },
+  {
+   "id": "m-223",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Редкие настройки спрятаны под «Дополнительно». Этот приём называется…",
+   "image": null,
+   "options": [
+    "Прогрессивное раскрытие",
+    "Ленивая загрузка",
+    "Бесконечный список",
+    "Матрёшка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Сначала главное, сложное — по запросу.",
+   "source": "NN/g, «Progressive Disclosure»",
+   "status": "approved"
+  },
+  {
+   "id": "m-224",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Кнопка выглядит так, что понятно: её можно нажать. Это свойство называют…",
+   "image": null,
+   "options": [
+    "Аффорданс",
+    "Контраст",
+    "Фокус",
+    "Магнетизм"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Аффорданс подсказывает, какое действие возможно.",
+   "source": "Дон Норман, «Дизайн привычных вещей»",
+   "status": "approved"
+  },
+  {
+   "id": "m-225",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Модель «два ромба»: исследовать проблему → сузить → искать решения → выбрать:",
+   "image": null,
+   "options": [
+    "Double Diamond",
+    "Agile",
+    "Waterfall",
+    "Два туза"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Модель Британского совета по дизайну.",
+   "source": "Design Council, «The Double Diamond»",
+   "status": "approved"
+  },
+  {
+   "id": "m-226",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Сколько умственных усилий нужно, чтобы разобраться в интерфейсе, — это…",
+   "image": null,
+   "options": [
+    "Когнитивная нагрузка",
+    "Нагрузочный тест",
+    "Порог входа",
+    "Мозговой штурм"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Лишние элементы и решения повышают нагрузку.",
+   "source": "Laws of UX, Cognitive Load",
+   "status": "approved"
+  },
+  {
+   "id": "m-227",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Номер 89161234567 удобнее читать как 8 916 123-45-67. Приём…",
+   "image": null,
+   "options": [
+    "Чанкинг",
+    "Хешинг",
+    "Кернинг",
+    "Шинковка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Разбивка информации на смысловые куски.",
+   "source": "Laws of UX, Chunking",
+   "status": "approved"
+  },
+  {
+   "id": "m-228",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "«Профиль заполнен на 60%» не даёт покоя, пока не дозаполнишь. Эффект…",
+   "image": null,
+   "options": [
+    "Зейгарник",
+    "Якоря",
+    "Плацебо",
+    "Холодильника"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Незавершённое помнится лучше завершённого.",
+   "source": "Laws of UX, Zeigarnik Effect",
+   "status": "approved"
+  },
+  {
+   "id": "m-229",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Выпадающий список с поиском прямо внутри — это…",
+   "image": null,
+   "options": [
+    "Комбобокс",
+    "Дропдаун",
+    "Чекбокс",
+    "Комбайн"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удобен, когда вариантов десятки.",
+   "source": "W3C, ARIA Authoring Practices: Combobox",
+   "status": "approved"
+  },
+  {
+   "id": "m-230",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Участник проходит тест сам по инструкции, без ведущего. Тест…",
+   "image": null,
+   "options": [
+    "Немодерируемый",
+    "Модерируемый",
+    "Лабораторный",
+    "Одинокий"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Дешевле и быстрее, но нельзя уточнить «почему».",
+   "source": "NN/g, «Remote Usability Tests»",
+   "status": "approved"
+  },
+  {
+   "id": "m-231",
+   "level": "middle",
+   "pool": "practice",
+   "area": "ux",
+   "tier": "super",
+   "question": "«Вам ведь понравилась новая кнопка?» Что не так с этим вопросом?",
+   "image": null,
+   "options": [
+    "Наводящий",
+    "Открытый",
+    "Длинный",
+    "Слишком вежливый"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Подсказывает «правильный» ответ и искажает данные.",
+   "source": "NN/g, «Leading Questions»",
+   "status": "approved"
+  },
+  {
+   "id": "m-232",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Команда оценивает задачи картами с числами Фибоначчи. Это…",
+   "image": null,
+   "options": [
+    "Planning poker",
+    "Блэкджек",
+    "Канбан",
+    "Покер-фейс"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Все раскрывают карты одновременно, чтобы не влиять друг на друга.",
+   "source": "Mike Cohn, «Agile Estimating and Planning»",
+   "status": "approved"
+  },
+  {
+   "id": "m-233",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Встреча в начале спринта, где команда решает, что будет делать, — это…",
+   "image": null,
+   "options": [
+    "Планирование",
+    "Ретро",
+    "Демо",
+    "Гадание"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В Scrum — Sprint Planning.",
+   "source": "Scrum Guide 2020",
+   "status": "approved"
+  },
+  {
+   "id": "m-234",
+   "level": "middle",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Создать новый рынок, где ещё нет конкурентов, — стратегия…",
+   "image": null,
+   "options": [
+    "Голубого океана",
+    "Красного океана",
+    "Длинного хвоста",
+    "Аквариума"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В «красном океане» бьются за существующий спрос.",
+   "source": "W. Chan Kim & Renée Mauborgne, «Blue Ocean Strategy»",
+   "status": "approved"
+  },
+  {
+   "id": "m-235",
+   "level": "middle",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "super",
+   "question": "Окошко, которое открывается по клику рядом с элементом и содержит кнопки или форму:",
+   "image": null,
+   "options": [
+    "Поповер",
+    "Тултип",
+    "Тост",
+    "Попкорн"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Тултип — только текст при наведении, поповер — интерактивный.",
+   "source": "Material Design 3, Menus",
+   "status": "approved"
+  }
+ ]
+}

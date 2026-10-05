@@ -1,0 +1,1499 @@
+{
+  "meta": {
+    "language": "en",
+    "source": "middle.json",
+    "created": "2026-10-04",
+    "notes": [
+      "English version of middle.json: same ids, same option order (correct/funny indexes come from the RU file).",
+      "Adapted, not literal: Yandex Metrica → Google Analytics, Webvisor → session recording, Russian acronyms in joke options → English ones.",
+      "Status: draft until reviewed."
+    ]
+  },
+  "questions": [
+    {
+      "id": "m-001",
+      "question": "We watch people do tasks in the product and look for where they stumble. This is…",
+      "options": [
+        "Usability test",
+        "Survey",
+        "Focus group",
+        "Fortune-telling"
+      ],
+      "explanation": "The core usability method: we watch behavior instead of asking for opinions."
+    },
+    {
+      "id": "m-002",
+      "question": "A one-on-one conversation with a user about their experience and tasks is…",
+      "options": [
+        "In-depth interview",
+        "Survey",
+        "A/B test",
+        "Interrogation"
+      ],
+      "explanation": "An interview answers “why”, a survey answers “how many”."
+    },
+    {
+      "id": "m-003",
+      "question": "“If we simplify the form, sign-ups will grow” — this is a…",
+      "options": [
+        "Hypothesis",
+        "Insight",
+        "Fact",
+        "Prophecy"
+      ],
+      "explanation": "A hypothesis is phrased so that it can be tested."
+    },
+    {
+      "id": "m-004",
+      "question": "A non-obvious finding about people's behavior from research is an…",
+      "options": [
+        "Insight",
+        "Hypothesis",
+        "Metric",
+        "Epiphany"
+      ],
+      "explanation": "An insight explains why people act the way they do."
+    },
+    {
+      "id": "m-005",
+      "question": "A composite portrait of a typical user with goals and pains is a…",
+      "options": [
+        "Persona",
+        "Avatar",
+        "Stakeholder",
+        "Police sketch"
+      ],
+      "explanation": "A persona helps the team remember who the product is for."
+    },
+    {
+      "id": "m-006",
+      "question": "A diagram of all site pages and how they nest inside each other is a…",
+      "options": [
+        "Sitemap",
+        "User flow",
+        "Moodboard",
+        "Subway map"
+      ],
+      "explanation": "A sitemap shows structure; a user flow shows the path to a goal."
+    },
+    {
+      "id": "m-007",
+      "question": "A collection of images to capture the mood and style of a future design is a…",
+      "options": [
+        "Moodboard",
+        "Wireframe",
+        "Guideline",
+        "Photo album"
+      ],
+      "explanation": "Agree on the moodboard before mockups so you don't argue about taste later."
+    },
+    {
+      "id": "m-008",
+      "question": "A screen layout of blocks and labels, with no colors or images, is a…",
+      "options": [
+        "Wireframe",
+        "Mockup",
+        "Moodboard",
+        "Sewing pattern"
+      ],
+      "explanation": "A wireframe locks in structure and content priorities."
+    },
+    {
+      "id": "m-009",
+      "question": "A static design that looks like the finished product but isn't clickable is a…",
+      "options": [
+        "Mockup",
+        "Wireframe",
+        "Prototype",
+        "Dummy"
+      ],
+      "explanation": "You can click through a prototype, not a mockup."
+    },
+    {
+      "id": "m-010",
+      "question": "A prototype that looks just like the finished product is…",
+      "options": [
+        "High-fi",
+        "Low-fi",
+        "Mid-fi",
+        "Wi-Fi"
+      ],
+      "explanation": "High fidelity means high detail: colors, copy, animations."
+    },
+    {
+      "id": "m-011",
+      "question": "Components, rules and styles used to build the whole product are a…",
+      "options": [
+        "Design system",
+        "Brand book",
+        "Moodboard",
+        "LEGO"
+      ],
+      "explanation": "A UI kit is a set of parts; a design system is parts plus rules and processes."
+    },
+    {
+      "id": "m-012",
+      "question": "A document with rules on how to use the product's elements and style is a…",
+      "options": [
+        "Guideline",
+        "Brief",
+        "Backlog",
+        "Manual"
+      ],
+      "explanation": "Material Design and Apple HIG, for example, are platform guidelines."
+    },
+    {
+      "id": "m-013",
+      "question": "A document with the client's task, filled in before work starts, is a…",
+      "options": [
+        "Brief",
+        "Guideline",
+        "Report",
+        "Note to mom"
+      ],
+      "explanation": "A brief covers goals, audience, deadlines, constraints and examples."
+    },
+    {
+      "id": "m-014",
+      "question": "An expert checks an interface against a list of principles, no users. Method:",
+      "options": [
+        "Heuristic evaluation",
+        "Usability test",
+        "Survey",
+        "Gut feeling"
+      ],
+      "explanation": "Most often it's checked against Nielsen's 10 heuristics."
+    },
+    {
+      "id": "m-015",
+      "question": "The more menu items, the longer it takes to choose. Whose law is it?",
+      "options": [
+        "Hick's law",
+        "Moore's law",
+        "Ohm's law",
+        "Jungle law"
+      ],
+      "explanation": "Decision time grows with the number of options."
+    },
+    {
+      "id": "m-016",
+      "question": "By Miller's law, how many items can a person hold in memory at once?",
+      "options": [
+        "7 ± 2",
+        "2 ± 1",
+        "20 ± 5",
+        "All passwords"
+      ],
+      "explanation": "That's why long lists and numbers are broken into chunks."
+    },
+    {
+      "id": "m-017",
+      "question": "How well a product works for people with visual, hearing or motor impairments is…",
+      "options": [
+        "Accessibility",
+        "Adaptivity",
+        "Engagement",
+        "Politeness"
+      ],
+      "explanation": "Often shortened to a11y."
+    },
+    {
+      "id": "m-018",
+      "question": "The difference in lightness between text and background that affects readability is…",
+      "options": [
+        "Contrast",
+        "Saturation",
+        "Opacity",
+        "Charisma"
+      ],
+      "explanation": "The WCAG AA minimum for normal text is 4.5:1."
+    },
+    {
+      "id": "m-019",
+      "question": "The outline around a button when you reach it with the Tab key shows…",
+      "options": [
+        "Focus",
+        "Hover",
+        "An error",
+        "Nervousness"
+      ],
+      "explanation": "Without a visible focus, the interface can't be used with a keyboard."
+    },
+    {
+      "id": "m-020",
+      "question": "Short interface texts — on buttons, in hints, in errors — are…",
+      "options": [
+        "Microcopy",
+        "Longread",
+        "Slogan",
+        "Memes"
+      ],
+      "explanation": "Microcopy is the UX writer's turf."
+    },
+    {
+      "id": "m-021",
+      "question": "The consistent character and manner in which a product “talks” is its…",
+      "options": [
+        "Brand voice",
+        "Slogan",
+        "Typeface",
+        "Accent"
+      ],
+      "explanation": "Tone of voice: friendly, strict, ironic…"
+    },
+    {
+      "id": "m-022",
+      "question": "Color shows where people click most on a page. What's this map called?",
+      "options": [
+        "Heatmap",
+        "Sitemap",
+        "Mind map",
+        "Weather map"
+      ],
+      "explanation": "A heatmap shows clicks, cursor movement or scroll depth."
+    },
+    {
+      "id": "m-023",
+      "question": "A tool like Hotjar that records a visitor's actions as a video does…",
+      "options": [
+        "Session recording",
+        "Heatmaps",
+        "Screencasts",
+        "Surveillance"
+      ],
+      "explanation": "It helps you see where people get stuck on a page."
+    },
+    {
+      "id": "m-024",
+      "question": "Text above a form field that says what to enter is a…",
+      "options": [
+        "Label",
+        "Placeholder",
+        "Tooltip",
+        "Price tag"
+      ],
+      "explanation": "Unlike a placeholder, a label doesn't disappear while typing."
+    },
+    {
+      "id": "m-025",
+      "question": "Checking whether a form field is filled in correctly is…",
+      "options": [
+        "Validation",
+        "Authorization",
+        "Moderation",
+        "Censorship"
+      ],
+      "explanation": "Better to check a field right after input, not after the whole form is submitted."
+    },
+    {
+      "id": "m-026",
+      "question": "Checking that you are you (login and password) is called…",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Registration",
+        "Meditation"
+      ],
+      "explanation": "Authorization is the next step: what you're allowed to do."
+    },
+    {
+      "id": "m-027",
+      "question": "The “prove you're not a robot” task is a…",
+      "options": [
+        "CAPTCHA",
+        "Cookie",
+        "Push",
+        "RoboCop"
+      ],
+      "explanation": "CAPTCHA stops bots but annoys people and can be inaccessible."
+    },
+    {
+      "id": "m-028",
+      "question": "A message an app sends to the phone's screen is a…",
+      "options": [
+        "Push",
+        "Toast",
+        "Banner",
+        "Pigeon"
+      ],
+      "explanation": "Push notifications bring users back but quickly get annoying."
+    },
+    {
+      "id": "m-029",
+      "question": "A user's problems and irritations along their path are…",
+      "options": [
+        "Pain points",
+        "Goals",
+        "Insights",
+        "Blisters"
+      ],
+      "explanation": "Pain points are found in interviews and marked on the CJM."
+    },
+    {
+      "id": "m-030",
+      "question": "Any place where a customer meets the product or company is a…",
+      "options": [
+        "Touchpoint",
+        "Entry point",
+        "Growth point",
+        "Boiling point"
+      ],
+      "explanation": "Touchpoints: website, email, support call, packaging."
+    },
+    {
+      "id": "m-031",
+      "question": "Passing finished designs and specs to developers is…",
+      "options": [
+        "Handoff",
+        "Release",
+        "Deploy",
+        "Handmade"
+      ],
+      "explanation": "A good handoff: mockups, states, spacing and answers to questions."
+    },
+    {
+      "id": "m-032",
+      "question": "Quick hand drawings to find an idea for a solution are…",
+      "options": [
+        "Sketches",
+        "Mockups",
+        "Renders",
+        "Doodles"
+      ],
+      "explanation": "Sketches are cheap: you don't mind throwing them away."
+    },
+    {
+      "id": "m-033",
+      "question": "A one-page site for a single goal — sell, book, collect leads — is a…",
+      "options": [
+        "Landing page",
+        "Portal",
+        "Blog",
+        "Landlord"
+      ],
+      "explanation": "A landing page is where traffic “lands”."
+    },
+    {
+      "id": "m-034",
+      "question": "A user arrived on a page and left right away. What's this called?",
+      "options": [
+        "Bounce",
+        "Conversion",
+        "Session",
+        "Resentment"
+      ],
+      "explanation": "The share of such visits is the bounce rate."
+    },
+    {
+      "id": "m-035",
+      "question": "A scenario where something goes wrong — no network, failed payment — is the…",
+      "options": [
+        "Unhappy path",
+        "Happy path",
+        "Alternative",
+        "Drama queen"
+      ],
+      "explanation": "Unhappy paths are designed on par with the main one."
+    },
+    {
+      "id": "m-036",
+      "question": "A user spends long sessions in the product and comes back regularly. This is…",
+      "options": [
+        "Engagement",
+        "Conversion",
+        "Reach",
+        "Addiction"
+      ],
+      "explanation": "Engagement is measured by frequency, duration and depth of use."
+    },
+    {
+      "id": "m-037",
+      "question": "Google's service that counts site visits, traffic sources and goals:",
+      "options": [
+        "Google Analytics",
+        "Google Ads",
+        "Google Drive",
+        "Google Doodle"
+      ],
+      "explanation": "Web analytics: visits, bounces, goal conversions."
+    },
+    {
+      "id": "m-038",
+      "question": "The “Frequently asked questions” block on a site is abbreviated as…",
+      "options": [
+        "FAQ",
+        "CTA",
+        "SEO",
+        "FOMO"
+      ],
+      "explanation": "Frequently Asked Questions."
+    },
+    {
+      "id": "m-039",
+      "question": "A team throws out as many ideas as possible in an hour, without criticism. This is…",
+      "options": [
+        "Brainstorm",
+        "Retro",
+        "Daily",
+        "Shrink session"
+      ],
+      "explanation": "Criticism waits, so ideas don't get killed early."
+    },
+    {
+      "id": "m-040",
+      "question": "What's a survey question answered in your own words called?",
+      "options": [
+        "Open-ended",
+        "Closed",
+        "Rating scale",
+        "Rhetorical"
+      ],
+      "explanation": "Closed means picking from options; a rating scale means scoring on a scale."
+    },
+    {
+      "id": "m-041",
+      "question": "The Figma feature that lines up elements in a row or column with spacing:",
+      "options": [
+        "Auto layout",
+        "Constraints",
+        "Layout grid",
+        "Autopilot"
+      ],
+      "explanation": "Auto layout is like flexbox in code."
+    },
+    {
+      "id": "m-042",
+      "question": "A copy of a main component placed in a Figma design is an…",
+      "options": [
+        "Instance",
+        "Main",
+        "Group",
+        "Clone"
+      ],
+      "explanation": "An instance updates when the main component changes."
+    },
+    {
+      "id": "m-043",
+      "question": "All states of a button inside one Figma component are…",
+      "options": [
+        "Variants",
+        "Pages",
+        "Styles",
+        "Mittens"
+      ],
+      "explanation": "Variants switch via properties: size, state, type."
+    },
+    {
+      "id": "m-044",
+      "question": "Saved colors, fonts and shadows for reuse in Figma are…",
+      "options": [
+        "Styles",
+        "Plugins",
+        "Layers",
+        "Hairstyles"
+      ],
+      "explanation": "Change a style and every element using it updates."
+    },
+    {
+      "id": "m-045",
+      "question": "An extension that adds new features to Figma is a…",
+      "options": [
+        "Plugin",
+        "Component",
+        "Frame",
+        "Patch"
+      ],
+      "explanation": "Plugins are installed from Figma Community."
+    },
+    {
+      "id": "m-046",
+      "question": "The main container for a screen in Figma is a…",
+      "options": [
+        "Frame",
+        "Group",
+        "Rectangle",
+        "Picture frame"
+      ],
+      "explanation": "A frame supports auto layout, grids and clipping; a group doesn't."
+    },
+    {
+      "id": "m-047",
+      "question": "Hiding part of an image by the shape of another layer in Figma is a…",
+      "options": [
+        "Mask",
+        "Filter",
+        "Stroke",
+        "Masquerade"
+      ],
+      "explanation": "The bottom layer sets the shape; layers above show only inside it."
+    },
+    {
+      "id": "m-048",
+      "question": "Column guides laid over a frame in Figma are a…",
+      "options": [
+        "Layout grid",
+        "Constraints",
+        "Rulers",
+        "Cage"
+      ],
+      "explanation": "The grid is set up in the frame's right panel."
+    },
+    {
+      "id": "m-049",
+      "question": "In Auto layout, how do you stretch a field to the parent's full width?",
+      "options": [
+        "Fill container",
+        "Hug contents",
+        "Fixed width",
+        "Pull by hand"
+      ],
+      "explanation": "Fill takes all the space, Hug wraps the content, Fixed keeps its own size."
+    },
+    {
+      "id": "m-050",
+      "question": "To get an icon out of Figma as SVG, you use the section…",
+      "options": [
+        "Export",
+        "Share",
+        "Publish",
+        "Photocopier"
+      ],
+      "explanation": "In Export you pick the format: PNG, JPG, SVG or PDF."
+    },
+    {
+      "id": "m-051",
+      "question": "Two fonts together, one for headings and one for body text, are a…",
+      "options": [
+        "Font pairing",
+        "Typeface",
+        "Point size",
+        "Tandem"
+      ],
+      "explanation": "A classic: sans-serif headings with serif body text, or the other way round."
+    },
+    {
+      "id": "m-052",
+      "question": "Regular, Bold and Italic of one font are different…",
+      "options": [
+        "Styles",
+        "Typefaces",
+        "Sizes",
+        "Moods"
+      ],
+      "explanation": "A typeface is the family; a style is a variant inside it."
+    },
+    {
+      "id": "m-053",
+      "question": "What do typographers call font size?",
+      "options": [
+        "Point size",
+        "Typeface",
+        "Style",
+        "Pint size"
+      ],
+      "explanation": "On the web, it's set with font-size."
+    },
+    {
+      "id": "m-054",
+      "question": "Small strokes at the ends of letters are…",
+      "options": [
+        "Serifs",
+        "Tails",
+        "Flourishes",
+        "Whiskers"
+      ],
+      "explanation": "Fonts with them are serif; without them, sans-serif."
+    },
+    {
+      "id": "m-055",
+      "question": "Text aligned to both the left and right edges is…",
+      "options": [
+        "Justified",
+        "Centered",
+        "Right-aligned",
+        "Herringbone"
+      ],
+      "explanation": "Justified text is rare on the web: it creates “rivers” of spaces."
+    },
+    {
+      "id": "m-056",
+      "question": "A limited set of colors an interface is built from is a…",
+      "options": [
+        "Palette",
+        "Gradient",
+        "Pantone",
+        "Rainbow"
+      ],
+      "explanation": "Usually: primary, accent, neutrals and status colors."
+    },
+    {
+      "id": "m-057",
+      "question": "A smooth transition from one color to another is a…",
+      "options": [
+        "Gradient",
+        "Palette",
+        "Contrast",
+        "Sunset"
+      ],
+      "explanation": "It can be linear, radial or angular."
+    },
+    {
+      "id": "m-058",
+      "question": "A bright color for the main button and the most important elements is…",
+      "options": [
+        "Accent",
+        "Background",
+        "Neutral",
+        "Neon acid"
+      ],
+      "explanation": "Accents work when there are few of them."
+    },
+    {
+      "id": "m-059",
+      "question": "Which Figma property sets a layer's transparency?",
+      "options": [
+        "Opacity",
+        "Blur",
+        "Fill",
+        "Ghostliness"
+      ],
+      "explanation": "Transparency can be set for the layer and separately for the fill."
+    },
+    {
+      "id": "m-060",
+      "question": "The Drop shadow effect in Figma is…",
+      "options": [
+        "Outer shadow",
+        "Inner shadow",
+        "Blur",
+        "Suntan"
+      ],
+      "explanation": "Inner shadow is a shadow inside the shape."
+    },
+    {
+      "id": "m-061",
+      "question": "How do you blur what's under a translucent panel in Figma?",
+      "options": [
+        "Background blur",
+        "Drop shadow",
+        "Inner shadow",
+        "Fog"
+      ],
+      "explanation": "Layer blur blurs the layer itself; background blur blurs what's below."
+    },
+    {
+      "id": "m-062",
+      "question": "Icons drawn with a single stroke and no fill are called…",
+      "options": [
+        "Outline",
+        "Filled",
+        "Raster",
+        "Skinny"
+      ],
+      "explanation": "Outline and filled are the two main icon styles."
+    },
+    {
+      "id": "m-063",
+      "question": "The build matches the design down to the pixel. This is…",
+      "options": [
+        "Pixel perfect",
+        "Responsive",
+        "Fluid",
+        "Perfectionism"
+      ],
+      "explanation": "A requirement for how precisely a design is turned into code."
+    },
+    {
+      "id": "m-064",
+      "question": "The screen width at which the layout changes is a…",
+      "options": [
+        "Breakpoint",
+        "Viewport",
+        "Gutter",
+        "No return"
+      ],
+      "explanation": "Breakpoints are set in CSS media queries."
+    },
+    {
+      "id": "m-065",
+      "question": "The gap between grid columns is called the…",
+      "options": [
+        "Gutter",
+        "Margin",
+        "Padding",
+        "Moat"
+      ],
+      "explanation": "Margins are the space from the edge; gutters are the gaps between columns."
+    },
+    {
+      "id": "m-066",
+      "question": "An element's outer spacing from its neighbors is…",
+      "options": [
+        "Margin",
+        "Padding",
+        "Border",
+        "Profit margin"
+      ],
+      "explanation": "Padding is inner spacing, margin is outer."
+    },
+    {
+      "id": "m-067",
+      "question": "What's the outline of a shape called in Figma?",
+      "options": [
+        "Stroke",
+        "Fill",
+        "Effect",
+        "Trim"
+      ],
+      "explanation": "A stroke has a weight and a position: inside, outside or center."
+    },
+    {
+      "id": "m-068",
+      "question": "Which color is #00FF00?",
+      "options": [
+        "Green",
+        "Blue",
+        "Yellow",
+        "Envy"
+      ],
+      "explanation": "Two characters per channel: red 00, green FF, blue 00."
+    },
+    {
+      "id": "m-069",
+      "question": "Light text on a dark background across the whole interface is a…",
+      "options": [
+        "Dark theme",
+        "Light theme",
+        "Inversion",
+        "Rough patch"
+      ],
+      "explanation": "A dark theme is designed separately, not by simply inverting colors."
+    },
+    {
+      "id": "m-070",
+      "question": "The button was tapped and the request is still running. Which state to show?",
+      "options": [
+        "Loading",
+        "Hover",
+        "Disabled",
+        "Meditation"
+      ],
+      "explanation": "A spinner on the button protects against a second tap."
+    },
+    {
+      "id": "m-071",
+      "question": "What is the state of a button at the moment it's pressed called?",
+      "options": [
+        "Pressed",
+        "Hover",
+        "Focus",
+        "Stress"
+      ],
+      "explanation": "Main states: default, hover, pressed, focus, disabled."
+    },
+    {
+      "id": "m-072",
+      "question": "You need to pick several options from a list. Which control fits?",
+      "options": [
+        "Checkboxes",
+        "Radio buttons",
+        "Slider",
+        "Lottery"
+      ],
+      "explanation": "Radio buttons are for one option out of several."
+    },
+    {
+      "id": "m-073",
+      "question": "A handle used to pick a value from a range is a…",
+      "options": [
+        "Slider",
+        "Stepper",
+        "Toggle",
+        "Scooter"
+      ],
+      "explanation": "A slider is good when the exact value isn't critical."
+    },
+    {
+      "id": "m-074",
+      "question": "A “1 — 2 — 3” bar above a checkout form showing the steps is a…",
+      "options": [
+        "Stepper",
+        "Slider",
+        "Pagination",
+        "Traffic light"
+      ],
+      "explanation": "It shows how many steps are left."
+    },
+    {
+      "id": "m-075",
+      "question": "A little circle with the unread count on an icon is a…",
+      "options": [
+        "Badge",
+        "Tooltip",
+        "Chip",
+        "Pimple"
+      ],
+      "explanation": "A badge draws attention to what's new."
+    },
+    {
+      "id": "m-076",
+      "question": "An icon of three vertical dots that opens a menu is a…",
+      "options": [
+        "Kebab",
+        "Hamburger",
+        "Meatball",
+        "Burrito"
+      ],
+      "explanation": "Three horizontal lines are a hamburger; three dots in a column are a kebab."
+    },
+    {
+      "id": "m-077",
+      "question": "Blocks that expand and collapse when you click their heading are an…",
+      "options": [
+        "Accordion",
+        "Tabs",
+        "Carousel",
+        "Bagpipes"
+      ],
+      "explanation": "Good for FAQs and long settings."
+    },
+    {
+      "id": "m-078",
+      "question": "Switches between sections within one area of the screen are…",
+      "options": [
+        "Tabs",
+        "Accordion",
+        "Breadcrumbs",
+        "Bar tab"
+      ],
+      "explanation": "Tabs show one section at a time."
+    },
+    {
+      "id": "m-079",
+      "question": "A block where slides change with arrows or a swipe is a…",
+      "options": [
+        "Carousel",
+        "Accordion",
+        "Gallery",
+        "Swing set"
+      ],
+      "explanation": "Few people ever reach the last slides of a carousel."
+    },
+    {
+      "id": "m-080",
+      "question": "A long list split into numbered pages at the bottom is…",
+      "options": [
+        "Pagination",
+        "Sorting",
+        "Filtering",
+        "Numerology"
+      ],
+      "explanation": "Alternatives: “Show more” and infinite scroll."
+    },
+    {
+      "id": "m-081",
+      "question": "A minimal version of a product to quickly test an idea with people is an…",
+      "options": [
+        "MVP",
+        "PMF",
+        "MBA",
+        "VIP"
+      ],
+      "explanation": "Minimum Viable Product — a concept from Lean Startup."
+    },
+    {
+      "id": "m-082",
+      "question": "The path from visit to purchase where some people drop off at each step is a…",
+      "options": [
+        "Funnel",
+        "Ladder",
+        "Carousel",
+        "Meat grinder"
+      ],
+      "explanation": "Funnel analysis shows at which step we lose people."
+    },
+    {
+      "id": "m-083",
+      "question": "The share of users who come back to the product a few days later is…",
+      "options": [
+        "Retention",
+        "Churn",
+        "Reach",
+        "Nostalgia"
+      ],
+      "explanation": "Retention is the main sign that the product is needed."
+    },
+    {
+      "id": "m-084",
+      "question": "The number of unique users per month is the metric…",
+      "options": [
+        "MAU",
+        "DAU",
+        "CTR",
+        "Meow"
+      ],
+      "explanation": "DAU — per day, WAU — per week, MAU — per month."
+    },
+    {
+      "id": "m-085",
+      "question": "The share of clicks out of a banner's or link's impressions is the metric…",
+      "options": [
+        "CTR",
+        "MAU",
+        "ROI",
+        "LOL"
+      ],
+      "explanation": "Click-Through Rate = clicks / impressions."
+    },
+    {
+      "id": "m-086",
+      "question": "“How likely are you to recommend us to a friend?” — the metric…",
+      "options": [
+        "NPS",
+        "CTR",
+        "MAU",
+        "BRB"
+      ],
+      "explanation": "Net Promoter Score — an index of willingness to recommend."
+    },
+    {
+      "id": "m-087",
+      "question": "A plan for the product's development by stages and dates is a…",
+      "options": [
+        "Roadmap",
+        "Backlog",
+        "Budget",
+        "Treasure map"
+      ],
+      "explanation": "A backlog is a list of tasks; a roadmap is their plan over time."
+    },
+    {
+      "id": "m-088",
+      "question": "Shipping a new version of the product to users is a…",
+      "options": [
+        "Release",
+        "Sprint",
+        "Demo",
+        "Graduation"
+      ],
+      "explanation": "Before a release — testing; after — collecting feedback."
+    },
+    {
+      "id": "m-089",
+      "question": "A single product function in team slang is a…",
+      "options": [
+        "Feature",
+        "Bug",
+        "Ticket",
+        "Feature film"
+      ],
+      "explanation": "“It's not a bug, it's a feature” — a classic."
+    },
+    {
+      "id": "m-090",
+      "question": "A defect in how a program works is a…",
+      "options": [
+        "Bug",
+        "Feature",
+        "Ticket",
+        "Cockroach"
+      ],
+      "explanation": "Bugs were already called that back in the era of vacuum-tube computers."
+    },
+    {
+      "id": "m-091",
+      "question": "Who in Scrum makes sure the team follows the process?",
+      "options": [
+        "Scrum Master",
+        "Product Owner",
+        "Team lead",
+        "Janitor"
+      ],
+      "explanation": "The Product Owner owns the backlog; the Scrum Master owns the process."
+    },
+    {
+      "id": "m-092",
+      "question": "An end-of-sprint meeting where the team shows what it built is a…",
+      "options": [
+        "Demo",
+        "Daily",
+        "Planning",
+        "Kids' party"
+      ],
+      "explanation": "In the Scrum Guide it's the Sprint Review."
+    },
+    {
+      "id": "m-093",
+      "question": "A key performance indicator is abbreviated as…",
+      "options": [
+        "KPI",
+        "OKR",
+        "MVP",
+        "SAT"
+      ],
+      "explanation": "Key Performance Indicator."
+    },
+    {
+      "id": "m-094",
+      "question": "What sets a product apart from all its competitors is its…",
+      "options": [
+        "USP",
+        "ROI",
+        "KPI",
+        "BFF"
+      ],
+      "explanation": "Unique Selling Proposition."
+    },
+    {
+      "id": "m-095",
+      "question": "Reviewing rival products — what they do, cost and look like — is…",
+      "options": [
+        "Competitor analysis",
+        "Usability test",
+        "Code review",
+        "Espionage"
+      ],
+      "explanation": "It helps you find how to stand out."
+    },
+    {
+      "id": "m-096",
+      "question": "Strengths, weaknesses, opportunities and threats — this is a… analysis",
+      "options": [
+        "SWOT",
+        "RICE",
+        "MVP",
+        "SNL"
+      ],
+      "explanation": "Strengths, Weaknesses, Opportunities, Threats."
+    },
+    {
+      "id": "m-097",
+      "question": "The way a product makes money is…",
+      "options": [
+        "Monetization",
+        "Scaling",
+        "Marketing",
+        "Piggy bank"
+      ],
+      "explanation": "Subscription, ads, one-time purchases, commission…"
+    },
+    {
+      "id": "m-098",
+      "question": "The basic version is free, the advanced one is paid. This model is…",
+      "options": [
+        "Freemium",
+        "Subscription",
+        "Rental",
+        "Freebie"
+      ],
+      "explanation": "Freemium = free + premium."
+    },
+    {
+      "id": "m-099",
+      "question": "The role of the person responsible for developing the product as a whole is…",
+      "options": [
+        "Product manager",
+        "Art director",
+        "QA tester",
+        "Caretaker"
+      ],
+      "explanation": "The product manager decides what to build and why; the team decides how."
+    },
+    {
+      "id": "m-100",
+      "question": "A set of paid plans “Basic / Pro / Business” on one page is…",
+      "options": [
+        "Pricing plans",
+        "Backlog",
+        "Roadmap",
+        "Café menu"
+      ],
+      "explanation": "Plans are compared in a table, with the recommended one highlighted."
+    },
+    {
+      "id": "m-201",
+      "question": "Nielsen: on the web, people don't read text, they…",
+      "options": [
+        "Scan",
+        "Listen",
+        "Study",
+        "Chew"
+      ],
+      "explanation": "That's why headings, lists and highlights matter."
+    },
+    {
+      "id": "m-202",
+      "question": "What do designers call dummy text in a mockup?",
+      "options": [
+        "Lorem ipsum",
+        "Copy deck",
+        "Microcopy",
+        "Alphabet soup"
+      ],
+      "explanation": "Dummy text is later replaced with real copy — and the layout often falls apart."
+    },
+    {
+      "id": "m-203",
+      "question": "Which shortcut creates a component in Figma (Windows)?",
+      "options": [
+        "Ctrl+Alt+K",
+        "Ctrl+G",
+        "Ctrl+D",
+        "Ctrl+Alt+Del"
+      ],
+      "explanation": "On Mac it's Option+Cmd+K."
+    },
+    {
+      "id": "m-204",
+      "question": "A Figma component property to swap an icon right in an instance:",
+      "options": [
+        "Instance swap",
+        "Boolean",
+        "Variant",
+        "Switcheroo"
+      ],
+      "explanation": "No need to detach the instance."
+    },
+    {
+      "id": "m-205",
+      "question": "Light and dark themes in one Variables collection are different…",
+      "options": [
+        "Modes",
+        "Pages",
+        "Branches",
+        "Moods"
+      ],
+      "explanation": "A frame switches between modes in one click."
+    },
+    {
+      "id": "m-206",
+      "question": "What's the container with all variants of a component called in Figma?",
+      "options": [
+        "Component set",
+        "Section",
+        "Frame",
+        "Gift set"
+      ],
+      "explanation": "It's outlined with a purple dashed border."
+    },
+    {
+      "id": "m-207",
+      "question": "Unlinking an instance from its main component in Figma is…",
+      "options": [
+        "Detach",
+        "Reset",
+        "Swap",
+        "Divorce"
+      ],
+      "explanation": "After detaching, the instance becomes a regular frame."
+    },
+    {
+      "id": "m-208",
+      "question": "Changes in an instance that don't touch the main component are…",
+      "options": [
+        "Overrides",
+        "Variants",
+        "Styles",
+        "Freestyle"
+      ],
+      "explanation": "For example, different text on a button."
+    },
+    {
+      "id": "m-209",
+      "question": "A Figma prototype transition that smoothly moves matching layers by itself:",
+      "options": [
+        "Smart animate",
+        "Dissolve",
+        "Instant",
+        "Magic"
+      ],
+      "explanation": "Layers must have the same names on both screens."
+    },
+    {
+      "id": "m-210",
+      "question": "All links are blue and underlined, so we see them as a group. Principle of…",
+      "options": [
+        "Similarity",
+        "Proximity",
+        "Closure",
+        "Kinship"
+      ],
+      "explanation": "Elements that look alike seem related."
+    },
+    {
+      "id": "m-211",
+      "question": "A card's border groups everything inside it. Principle of…",
+      "options": [
+        "Common region",
+        "Similarity",
+        "Continuity",
+        "Shared flat"
+      ],
+      "explanation": "Elements within a shared boundary are perceived as a group."
+    },
+    {
+      "id": "m-212",
+      "question": "Card sorting where participants name the groups themselves is called…",
+      "options": [
+        "Open",
+        "Closed",
+        "Hybrid",
+        "Secret"
+      ],
+      "explanation": "In closed sorting, the groups are set in advance."
+    },
+    {
+      "id": "m-213",
+      "question": "A good error message says what happened and…",
+      "options": [
+        "How to fix",
+        "Error code",
+        "Crash time",
+        "Who's to blame"
+      ],
+      "explanation": "Without a hint on what to do, an error is a dead end."
+    },
+    {
+      "id": "m-214",
+      "question": "An animation speeds up smoothly and slows down smoothly. This curve is…",
+      "options": [
+        "Ease-in-out",
+        "Linear",
+        "Ease-in",
+        "Roller coaster"
+      ],
+      "explanation": "Ease-in is a slow start, ease-out a slow finish."
+    },
+    {
+      "id": "m-215",
+      "question": "Which Figma property changes the spacing between all letters?",
+      "options": [
+        "Letter spacing",
+        "Line height",
+        "Paragraph spacing",
+        "Stretching"
+      ],
+      "explanation": "Line height is between lines; paragraph spacing is between paragraphs."
+    },
+    {
+      "id": "m-216",
+      "question": "The Figma tool to pick a color from anywhere on the screen:",
+      "options": [
+        "Eyedropper",
+        "Brush",
+        "Zoom",
+        "Mosquito"
+      ],
+      "explanation": "The shortcut is I."
+    },
+    {
+      "id": "m-217",
+      "question": "What WCAG AA contrast is enough for large text?",
+      "options": [
+        "3:1",
+        "4.5:1",
+        "7:1",
+        "1:1"
+      ],
+      "explanation": "Large means 18 pt and up, or 14 pt bold."
+    },
+    {
+      "id": "m-218",
+      "question": "Default, hover, pressed, focus and… Which button state is missing?",
+      "options": [
+        "Disabled",
+        "Deleted",
+        "Sleeping",
+        "Offended"
+      ],
+      "explanation": "Disabled — the action isn't available right now."
+    },
+    {
+      "id": "m-219",
+      "question": "Minimum tap target per Material Design:",
+      "options": [
+        "48×48 dp",
+        "44×44 dp",
+        "24×24 dp",
+        "A palm"
+      ],
+      "explanation": "The icon can be smaller, the touch area can't."
+    },
+    {
+      "id": "m-220",
+      "question": "Atomic Design: atoms → molecules → … → templates → pages. What's missing?",
+      "options": [
+        "Organisms",
+        "Cells",
+        "Blocks",
+        "Dinosaurs"
+      ],
+      "explanation": "An organism is a complex block of molecules, like a site header."
+    },
+    {
+      "id": "m-221",
+      "question": "Named color and spacing values shared by the design and code are…",
+      "options": [
+        "Design tokens",
+        "Layer styles",
+        "Components",
+        "Arcade tokens"
+      ],
+      "explanation": "For example, color-primary or space-16."
+    },
+    {
+      "id": "m-222",
+      "question": "A user's idea of how a system works is their…",
+      "options": [
+        "Mental model",
+        "Empathy map",
+        "Persona",
+        "Quirks"
+      ],
+      "explanation": "It's convenient when the interface matches that idea."
+    },
+    {
+      "id": "m-223",
+      "question": "Rare settings are hidden under “Advanced”. This technique is called…",
+      "options": [
+        "Progressive disclosure",
+        "Lazy loading",
+        "Infinite list",
+        "Nesting dolls"
+      ],
+      "explanation": "The essentials first, the complex stuff on demand."
+    },
+    {
+      "id": "m-224",
+      "question": "A button looks like it can be pressed. This property is called…",
+      "options": [
+        "Affordance",
+        "Contrast",
+        "Focus",
+        "Magnetism"
+      ],
+      "explanation": "Affordance hints at what action is possible."
+    },
+    {
+      "id": "m-225",
+      "question": "The “two diamonds” model: explore → narrow → find solutions → choose:",
+      "options": [
+        "Double Diamond",
+        "Agile",
+        "Waterfall",
+        "Two aces"
+      ],
+      "explanation": "A model by the UK Design Council."
+    },
+    {
+      "id": "m-226",
+      "question": "How much mental effort it takes to figure out an interface is…",
+      "options": [
+        "Cognitive load",
+        "Load test",
+        "Entry barrier",
+        "Brainstorm"
+      ],
+      "explanation": "Extra elements and decisions raise the load."
+    },
+    {
+      "id": "m-227",
+      "question": "5551234567 is easier to read as (555) 123-4567. This technique is…",
+      "options": [
+        "Chunking",
+        "Hashing",
+        "Kerning",
+        "Julienning"
+      ],
+      "explanation": "Breaking information into meaningful pieces."
+    },
+    {
+      "id": "m-228",
+      "question": "“Profile 60% complete” bugs you until you finish it. This is the… effect",
+      "options": [
+        "Zeigarnik",
+        "Anchoring",
+        "Placebo",
+        "Fridge door"
+      ],
+      "explanation": "Unfinished things are remembered better than finished ones."
+    },
+    {
+      "id": "m-229",
+      "question": "A dropdown list with a search field right inside is a…",
+      "options": [
+        "Combobox",
+        "Dropdown",
+        "Checkbox",
+        "Combine harvester"
+      ],
+      "explanation": "Handy when there are dozens of options."
+    },
+    {
+      "id": "m-230",
+      "question": "A participant takes the test alone, following instructions, no moderator. Test:",
+      "options": [
+        "Unmoderated",
+        "Moderated",
+        "Lab",
+        "Lonely"
+      ],
+      "explanation": "Cheaper and faster, but you can't ask “why”."
+    },
+    {
+      "id": "m-231",
+      "question": "“You liked the new button, didn't you?” What's wrong with this question?",
+      "options": [
+        "It's leading",
+        "It's open",
+        "It's too long",
+        "Too polite"
+      ],
+      "explanation": "It suggests the “right” answer and skews the data."
+    },
+    {
+      "id": "m-232",
+      "question": "The team estimates tasks with Fibonacci number cards. This is…",
+      "options": [
+        "Planning poker",
+        "Blackjack",
+        "Kanban",
+        "Poker face"
+      ],
+      "explanation": "Everyone reveals their cards at once so they don't sway each other."
+    },
+    {
+      "id": "m-233",
+      "question": "A start-of-sprint meeting where the team decides what it will do is…",
+      "options": [
+        "Planning",
+        "Retro",
+        "Demo",
+        "Fortune-telling"
+      ],
+      "explanation": "In Scrum it's Sprint Planning."
+    },
+    {
+      "id": "m-234",
+      "question": "Creating a new market with no competitors yet is the… strategy",
+      "options": [
+        "Blue ocean",
+        "Red ocean",
+        "Long tail",
+        "Fish tank"
+      ],
+      "explanation": "In a “red ocean”, companies fight over existing demand."
+    },
+    {
+      "id": "m-235",
+      "question": "A small window that opens on click next to an element, with buttons or a form:",
+      "options": [
+        "Popover",
+        "Tooltip",
+        "Toast",
+        "Popcorn"
+      ],
+      "explanation": "A tooltip is just text on hover; a popover is interactive."
+    }
+  ]
+}

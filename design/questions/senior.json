@@ -1,0 +1,3052 @@
+{
+ "meta": {
+  "batch": "senior",
+  "created": "2026-10-03",
+  "language": "ru",
+  "schema": {
+   "id": "уникальный ID: j-/m-/s- + номер; 2xx — пул супервикторины (tier=super), остальные номера смысла не несут",
+   "level": "junior | middle | senior",
+   "pool": "practice — ситуации и процесс; theory — термины, законы, факты",
+   "question": "текст вопроса",
+   "image": "null или путь к картинке для вопроса-картинки",
+   "options": "ровно 4 варианта, каждый — не больше 2 слов и ≤ 24 символов; порядок перемешивается в игре",
+   "correct": "индекс верного варианта в options",
+   "funny": "индексы шуточных вариантов (всегда неверные)",
+   "explanation": "пояснение после ответа",
+   "source": "источник или null",
+   "status": "draft — не вычитан; approved — вычитан",
+   "area": "ux | ui | product — тема для квот уровня",
+   "tier": "regular — обычные 100 на уровень; super — отдельный пул супервикторины (35 на уровень)"
+  },
+  "notes": [
+   "2026-10-04: банк вычитан Степаном — все вопросы approved.",
+   "Ответ — не больше 2 слов (плитка 2×2, до 2 строк). Вопрос ≤ 90 символов (3 строки). См. design/game-brief.md.",
+   "Правило повторов: вопрос не показывается чаще раза в 25 показанных пользователю.",
+   "2026-10-03: банк уровня собран заново (v2) — рабочий словарь дизайнера: термины, методы, инструменты, известные законы; без эрудиции (авторы, годы, номера стандартов)."
+  ],
+  "targets": {
+   "regular": 100,
+   "super": 35,
+   "area_regular": {
+    "junior": {
+     "ux": 45,
+     "ui": 45,
+     "product": 10
+    },
+    "middle": {
+     "ux": 40,
+     "ui": 40,
+     "product": 20
+    },
+    "senior": {
+     "ux": 35,
+     "ui": 30,
+     "product": 35
+    }
+   }
+  },
+  "level": "senior",
+  "reviewed_not_duplicates": [
+   [
+    "j-036",
+    "s-027"
+   ],
+   [
+    "j-123",
+    "s-001"
+   ],
+   [
+    "j-233",
+    "s-072"
+   ],
+   [
+    "j-162",
+    "s-016"
+   ],
+   [
+    "m-011",
+    "s-043"
+   ],
+   [
+    "m-208",
+    "s-043"
+   ],
+   [
+    "s-031",
+    "s-032"
+   ]
+  ]
+ },
+ "questions": [
+  {
+   "id": "s-001",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Исследование, которое отвечает на «почему», на небольшой выборке, — это…",
+   "image": null,
+   "options": [
+    "Качественное",
+    "Количественное",
+    "Кабинетное",
+    "Гадательное"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Количественное отвечает на «сколько» и требует большой выборки.",
+   "source": "NN/g, «Quantitative vs. Qualitative Usability Testing»",
+   "status": "approved"
+  },
+  {
+   "id": "s-002",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Анализ готовых отчётов, статей и данных без общения с людьми — это исследование…",
+   "image": null,
+   "options": [
+    "Кабинетное",
+    "Полевое",
+    "Лабораторное",
+    "Диванное"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Desk research — дешёвый старт перед интервью.",
+   "source": "NN/g, «Secondary Research»",
+   "status": "approved"
+  },
+  {
+   "id": "s-003",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Короткая анкета, чтобы отобрать подходящих участников исследования, — это…",
+   "image": null,
+   "options": [
+    "Скринер",
+    "Бриф",
+    "Гайд",
+    "Дуршлаг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Скринер отсекает тех, кто не подходит под профиль.",
+   "source": "NN/g, «Screener Questions»",
+   "status": "approved"
+  },
+  {
+   "id": "s-004",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Список тем и вопросов, по которому ведут интервью, — это…",
+   "image": null,
+   "options": [
+    "Гайд",
+    "Бриф",
+    "Скринер",
+    "Либретто"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Гайд — опора, а не жёсткий скрипт.",
+   "source": "NN/g, «Interview Guide»",
+   "status": "approved"
+  },
+  {
+   "id": "s-005",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Карта, где под путём клиента показаны процессы компании за кулисами, — это…",
+   "image": null,
+   "options": [
+    "Сервис-блупринт",
+    "CJM",
+    "Сайтмап",
+    "Чертёж дачи"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Service blueprint связывает опыт клиента с работой сотрудников и систем.",
+   "source": "NN/g, «Service Blueprints: Definition»",
+   "status": "approved"
+  },
+  {
+   "id": "s-006",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Экран показывают на 5 секунд и спрашивают, что запомнилось. Это…",
+   "image": null,
+   "options": [
+    "5-секундный тест",
+    "Первый клик",
+    "A/B-тест",
+    "Глазомер"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Проверяет, считывается ли главное с первого взгляда.",
+   "source": "NN/g, «5-Second Usability Test»",
+   "status": "approved"
+  },
+  {
+   "id": "s-007",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Технология, которая фиксирует, куда смотрит пользователь, — это…",
+   "image": null,
+   "options": [
+    "Айтрекинг",
+    "Хитмап",
+    "Вебвизор",
+    "Ясновидение"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "По данным айтрекинга строят тепловые карты взгляда.",
+   "source": "NN/g, «Eyetracking»",
+   "status": "approved"
+  },
+  {
+   "id": "s-008",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Стандартная анкета из 10 утверждений для оценки удобства продукта — это…",
+   "image": null,
+   "options": [
+    "SUS",
+    "NPS",
+    "CSAT",
+    "SOS"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "System Usability Scale, итог — от 0 до 100.",
+   "source": "John Brooke, «SUS: A quick and dirty usability scale»",
+   "status": "approved"
+  },
+  {
+   "id": "s-009",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Регулярный замер UX-метрик, чтобы сравнивать версии продукта, — это…",
+   "image": null,
+   "options": [
+    "Бенчмаркинг",
+    "Брейншторм",
+    "Бэклог",
+    "Бодибилдинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Benchmark показывает, стало ли лучше после редизайна.",
+   "source": "NN/g, «Benchmarking UX»",
+   "status": "approved"
+  },
+  {
+   "id": "s-010",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Какой уровень WCAG обычно ставят целью для продукта?",
+   "image": null,
+   "options": [
+    "AA",
+    "A",
+    "AAA",
+    "AAAA"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "AA требуют большинство законов о доступности.",
+   "source": "W3C, WCAG Overview",
+   "status": "approved"
+  },
+  {
+   "id": "s-011",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Сотрудники ведут заказы в Excel, потому что в системе неудобно. Это…",
+   "image": null,
+   "options": [
+    "Обходной путь",
+    "Баг",
+    "Фича",
+    "Народная смекалка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Обходные пути — главный сигнал проблемы, который ищут в исследованиях.",
+   "source": "NN/g, «Workarounds»",
+   "status": "approved"
+  },
+  {
+   "id": "s-012",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Участникам показывают два варианта дизайна и спрашивают, какой лучше. Это…",
+   "image": null,
+   "options": [
+    "Тест предпочтений",
+    "A/B-тест",
+    "Первый клик",
+    "Конкурс красоты"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В отличие от A/B-теста, меряет мнение, а не поведение.",
+   "source": "NN/g, «Preference Testing»",
+   "status": "approved"
+  },
+  {
+   "id": "s-013",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Подход «эмпатия → фокусировка → идеи → прототип → тест» — это…",
+   "image": null,
+   "options": [
+    "Дизайн-мышление",
+    "Agile",
+    "Waterfall",
+    "Дизайн-шаманство"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Design thinking популяризировали IDEO и Stanford d.school.",
+   "source": "Stanford d.school, Design Thinking Bootleg",
+   "status": "approved"
+  },
+  {
+   "id": "s-014",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Привести одинаковые элементы к одному виду во всём продукте — это…",
+   "image": null,
+   "options": [
+    "Унификация",
+    "Редизайн",
+    "Ребрендинг",
+    "Уравниловка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Основа дизайн-системы.",
+   "source": "NN/g, «Consistency and Standards»",
+   "status": "approved"
+  },
+  {
+   "id": "s-015",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Пятидневный формат: от проблемы до прототипа, проверенного на людях, — это…",
+   "image": null,
+   "options": [
+    "Дизайн-спринт",
+    "Хакатон",
+    "Ретро",
+    "Дизайн-марафон"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Формат Google Ventures.",
+   "source": "Jake Knapp, «Sprint»",
+   "status": "approved"
+  },
+  {
+   "id": "s-016",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Свод правил, как писать тексты интерфейса: тон, термины, формат дат, — это…",
+   "image": null,
+   "options": [
+    "Редполитика",
+    "Гайдлайн",
+    "Бриф",
+    "Устав"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Редакционная политика держит тексты продукта в одном стиле.",
+   "source": "Максим Ильяхов, «Пиши, сокращай»",
+   "status": "approved"
+  },
+  {
+   "id": "s-017",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Список терминов продукта с единым написанием и значением — это…",
+   "image": null,
+   "options": [
+    "Глоссарий",
+    "Бэклог",
+    "Словарик",
+    "Разговорник"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Чтобы в одном месте не было «корзины», а в другом — «тележки».",
+   "source": "NN/g, «Consistency and Standards»",
+   "status": "approved"
+  },
+  {
+   "id": "s-018",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "История пользователя в картинках, как комикс, — это…",
+   "image": null,
+   "options": [
+    "Сториборд",
+    "Мудборд",
+    "CJM",
+    "Раскраска"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Помогает показать контекст использования продукта.",
+   "source": "NN/g, «Storyboards Help Visualize UX Ideas»",
+   "status": "approved"
+  },
+  {
+   "id": "s-019",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Схема всех, кто влияет на проект и заинтересован в нём, — это…",
+   "image": null,
+   "options": [
+    "Карта стейкхолдеров",
+    "Карта сайта",
+    "Оргструктура",
+    "Генеалогия"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Показывает влияние и интерес каждого участника.",
+   "source": "NN/g, «Stakeholder Mapping»",
+   "status": "approved"
+  },
+  {
+   "id": "s-020",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Проверка уже работающего продукта на проблемы удобства — это…",
+   "image": null,
+   "options": [
+    "UX-аудит",
+    "Редизайн",
+    "Код-ревью",
+    "Ревизия"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "По итогам аудита составляют список проблем с приоритетами.",
+   "source": "NN/g, «UX Audits»",
+   "status": "approved"
+  },
+  {
+   "id": "s-021",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Переработка внешнего вида и логики существующего продукта — это…",
+   "image": null,
+   "options": [
+    "Редизайн",
+    "Рефакторинг",
+    "Ребрендинг",
+    "Ремонт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ребрендинг меняет бренд, рефакторинг — код без изменения поведения.",
+   "source": "NN/g, «Redesign»",
+   "status": "approved"
+  },
+  {
+   "id": "s-022",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Документ для разработки: как экран ведёт себя, его состояния и ошибки, — это…",
+   "image": null,
+   "options": [
+    "Спецификация",
+    "Мудборд",
+    "Бриф",
+    "Инструкция"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Без спецификации разработчики додумывают поведение сами.",
+   "source": "Figma Help, Dev Mode",
+   "status": "approved"
+  },
+  {
+   "id": "s-023",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Проектирование с учётом людей с разными возможностями с самого начала — это…",
+   "image": null,
+   "options": [
+    "Инклюзивный дизайн",
+    "Адаптивный дизайн",
+    "Минималистичный стиль",
+    "Добрый дизайн"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Решение для одних часто помогает всем.",
+   "source": "Microsoft, Inclusive Design Toolkit",
+   "status": "approved"
+  },
+  {
+   "id": "s-024",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Маленький отклик интерфейса на действие — например, анимация лайка, — это…",
+   "image": null,
+   "options": [
+    "Микровзаимодействие",
+    "Переход",
+    "Онбординг",
+    "Фейерверк"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Микровзаимодействия дают обратную связь и характер продукту.",
+   "source": "Dan Saffer, «Microinteractions»",
+   "status": "approved"
+  },
+  {
+   "id": "s-025",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Накопившиеся несостыковки в интерфейсе, которые всё дороже исправлять, — это…",
+   "image": null,
+   "options": [
+    "Дизайн-долг",
+    "Техдолг",
+    "Бэклог",
+    "Ипотека"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Как техдолг, только в макетах и UI.",
+   "source": "NN/g, «Design Debt»",
+   "status": "approved"
+  },
+  {
+   "id": "s-026",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Можно ли пройти весь сценарий без мыши, только клавишами? Это проверка…",
+   "image": null,
+   "options": [
+    "Клавиатурной навигации",
+    "Скорости",
+    "Адаптива",
+    "Терпения"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Tab, Enter, пробел и стрелки должны работать везде.",
+   "source": "WCAG 2.2, 2.1.1 Keyboard",
+   "status": "approved"
+  },
+  {
+   "id": "s-027",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Как называется ведущий юзабилити-теста?",
+   "image": null,
+   "options": [
+    "Модератор",
+    "Респондент",
+    "Наблюдатель",
+    "Конферансье"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Модератор даёт задания и не подсказывает.",
+   "source": "NN/g, «Usability Testing 101»",
+   "status": "approved"
+  },
+  {
+   "id": "s-028",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Пробный прогон теста на одном человеке перед основным — это тест…",
+   "image": null,
+   "options": [
+    "Пилотный",
+    "Финальный",
+    "Слепой",
+    "Тренировочный забег"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Пилот ловит ошибки в сценарии до траты бюджета.",
+   "source": "NN/g, «Pilot Testing»",
+   "status": "approved"
+  },
+  {
+   "id": "s-029",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Групповое обсуждение продукта с 6–8 участниками и модератором — это…",
+   "image": null,
+   "options": [
+    "Фокус-группа",
+    "Интервью",
+    "Юзабилити-тест",
+    "Посиделки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хороша для мнений и идей, плоха для проверки удобства.",
+   "source": "NN/g, «Focus Groups Are Not Usability Tests»",
+   "status": "approved"
+  },
+  {
+   "id": "s-030",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Интервью, цель которого — понять, есть ли у людей проблема, — это интервью…",
+   "image": null,
+   "options": [
+    "Проблемное",
+    "Решенческое",
+    "Продающее",
+    "Задушевное"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Решенческое проверяет уже готовую идею решения.",
+   "source": "Rob Fitzpatrick, «Спроси маму»",
+   "status": "approved"
+  },
+  {
+   "id": "s-031",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Чужие решения, на которые опираются при проектировании, — это…",
+   "image": null,
+   "options": [
+    "Референсы",
+    "Ассеты",
+    "Исходники",
+    "Шпаргалки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Референсы собирают по задаче, а не «всё красивое».",
+   "source": "NN/g, «Competitive Reviews»",
+   "status": "approved"
+  },
+  {
+   "id": "s-032",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Короткие правила, на которые команда опирается в спорных решениях, — это…",
+   "image": null,
+   "options": [
+    "Дизайн-принципы",
+    "Гайдлайны",
+    "Брендбук",
+    "Заповеди"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например: «ясность важнее краткости».",
+   "source": "NN/g, «Design Principles»",
+   "status": "approved"
+  },
+  {
+   "id": "s-033",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Документ, где записано, почему команда приняла то или иное дизайн-решение:",
+   "image": null,
+   "options": [
+    "Журнал решений",
+    "Бэклог",
+    "Протокол",
+    "Дневник наблюдений"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Через полгода он спасает от споров «а почему так».",
+   "source": "NN/g, «Design Decisions»",
+   "status": "approved"
+  },
+  {
+   "id": "s-034",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Кто на юзабилити-тесте молча смотрит и записывает, не вмешиваясь?",
+   "image": null,
+   "options": [
+    "Наблюдатель",
+    "Модератор",
+    "Респондент",
+    "Шпион"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Наблюдатели обычно сидят в соседней комнате или в звонке без камеры.",
+   "source": "NN/g, «Usability Testing 101»",
+   "status": "approved"
+  },
+  {
+   "id": "s-035",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "regular",
+   "question": "Описание, какие действия в системе доступны каждой роли пользователей, — это…",
+   "image": null,
+   "options": [
+    "Ролевая модель",
+    "Персона",
+    "Оргструктура",
+    "Табель"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Основа проектирования B2B-систем и админок.",
+   "source": "NIST, Role-Based Access Control",
+   "status": "approved"
+  },
+  {
+   "id": "s-036",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Токен color.danger ссылается на red.500. Какого он типа?",
+   "image": null,
+   "options": [
+    "Семантический",
+    "Примитивный",
+    "Компонентный",
+    "Сердитый-пресердитый"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Примитив хранит значение, семантика — смысл, компонентный — место применения.",
+   "source": "W3C Design Tokens Community Group",
+   "status": "approved"
+  },
+  {
+   "id": "s-037",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Переключение светлой и тёмной темы через переменные — это…",
+   "image": null,
+   "options": [
+    "Темизация",
+    "Брендирование",
+    "Локализация",
+    "Покраска"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Компоненты те же, меняются значения токенов.",
+   "source": "Material Design 3, Theming",
+   "status": "approved"
+  },
+  {
+   "id": "s-038",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Сущность Figma для хранения цветов, чисел и строк с режимами — это…",
+   "image": null,
+   "options": [
+    "Variables",
+    "Styles",
+    "Plugins",
+    "Переменчивость"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В отличие от стилей, переменные имеют режимы.",
+   "source": "Figma Help, Variables",
+   "status": "approved"
+  },
+  {
+   "id": "s-039",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Свойство компонента Figma, которое показывает или прячет слой:",
+   "image": null,
+   "options": [
+    "Boolean",
+    "Text",
+    "Variant",
+    "Да-нет"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, иконка в кнопке: есть или нет.",
+   "source": "Figma Help, Component properties",
+   "status": "approved"
+  },
+  {
+   "id": "s-040",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Опубликованный набор компонентов, доступный всем файлам команды, — это…",
+   "image": null,
+   "options": [
+    "Библиотека",
+    "Проект",
+    "Ветка",
+    "Книгохранилище"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Изменения в библиотеке приходят в файлы как обновления.",
+   "source": "Figma Help, Libraries",
+   "status": "approved"
+  },
+  {
+   "id": "s-041",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Отдельная копия файла Figma для правок с последующим слиянием — это…",
+   "image": null,
+   "options": [
+    "Branch",
+    "Page",
+    "Version",
+    "Отросток"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ветки позволяют менять ДС, не ломая основной файл.",
+   "source": "Figma Help, Branching",
+   "status": "approved"
+  },
+  {
+   "id": "s-042",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Версия дизайн-системы 2.3.1. Что меняется в первой цифре?",
+   "image": null,
+   "options": [
+    "Мажорная",
+    "Минорная",
+    "Патч",
+    "Возраст"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Мажорная версия — изменения, которые ломают совместимость.",
+   "source": "Semantic Versioning 2.0.0",
+   "status": "approved"
+  },
+  {
+   "id": "s-043",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Ряд оттенков одного цвета от 50 до 900 в дизайн-системе — это…",
+   "image": null,
+   "options": [
+    "Цветовая шкала",
+    "Палитра бренда",
+    "Градиент",
+    "Радуга"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Из шкал собирают семантические цвета: фон, текст, границы.",
+   "source": "Material Design 3, Color system",
+   "status": "approved"
+  },
+  {
+   "id": "s-044",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Набор иконок в одном стиле, с одной толщиной линий и сеткой, — это…",
+   "image": null,
+   "options": [
+    "Иконсет",
+    "Мудборд",
+    "Спрайт",
+    "Значкопад"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Иконки из разных наборов рядом выглядят неряшливо.",
+   "source": "Material Symbols",
+   "status": "approved"
+  },
+  {
+   "id": "s-045",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Инструмент разработчиков для каталога UI-компонентов в коде — это…",
+   "image": null,
+   "options": [
+    "Storybook",
+    "Figma",
+    "Jira",
+    "Сказочник"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Каждый компонент показан во всех состояниях.",
+   "source": "storybook.js.org",
+   "status": "approved"
+  },
+  {
+   "id": "s-046",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Фиксированный набор отступов: 4, 8, 12, 16, 24… — это…",
+   "image": null,
+   "options": [
+    "Шкала отступов",
+    "Типошкала",
+    "Сетка колонок",
+    "Школьная линейка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Шкала избавляет от случайных значений вроде 13 или 17.",
+   "source": "Material Design 3, Spacing",
+   "status": "approved"
+  },
+  {
+   "id": "s-047",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Макет плавно тянется под любую ширину экрана. Такую вёрстку называют…",
+   "image": null,
+   "options": [
+    "Резиновой",
+    "Фиксированной",
+    "Статичной",
+    "Жевательной"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Резиновая (fluid) вёрстка меняется непрерывно, а не скачками.",
+   "source": "MDN, Responsive design",
+   "status": "approved"
+  },
+  {
+   "id": "s-048",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Иконку «Play» сдвигают от центра, чтобы она выглядела по центру. Это…",
+   "image": null,
+   "options": [
+    "Оптическое выравнивание",
+    "Математическое",
+    "Кернинг",
+    "Косоглазие"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Глаз видит центр масс фигуры, а не центр её рамки.",
+   "source": "Apple HIG, Icons",
+   "status": "approved"
+  },
+  {
+   "id": "s-049",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Основные кавычки в русском наборе:",
+   "image": null,
+   "options": [
+    "Ёлочки",
+    "Лапки",
+    "Палочки",
+    "Галочки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "«Лапки» „…“ — для кавычек внутри кавычек.",
+   "source": "А. Мильчин, Л. Чельцова, «Справочник издателя и автора»",
+   "status": "approved"
+  },
+  {
+   "id": "s-050",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Чем связывают короткий предлог со словом, чтобы он не остался в конце строки?",
+   "image": null,
+   "options": [
+    "Неразрывный пробел",
+    "Дефис",
+    "Тире",
+    "Двусторонний скотч"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В HTML — &nbsp;.",
+   "source": "А. Мильчин, Л. Чельцова, «Справочник издателя и автора»",
+   "status": "approved"
+  },
+  {
+   "id": "s-051",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Цифры одинаковой ширины, чтобы колонки чисел в таблице не прыгали, — это…",
+   "image": null,
+   "options": [
+    "Табличные цифры",
+    "Римские цифры",
+    "Капитель",
+    "Ровные"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Включаются OpenType-функцией tnum.",
+   "source": "MDN, font-variant-numeric",
+   "status": "approved"
+  },
+  {
+   "id": "s-052",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Один файл шрифта с плавной настройкой насыщенности от Thin до Black — это…",
+   "image": null,
+   "options": [
+    "Вариативный шрифт",
+    "Гарнитура",
+    "Шрифтопара",
+    "Резиновый"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Variable fonts экономят вес и дают промежуточные начертания.",
+   "source": "MDN, Variable fonts guide",
+   "status": "approved"
+  },
+  {
+   "id": "s-053",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Формат векторной анимации из After Effects для приложений и сайтов:",
+   "image": null,
+   "options": [
+    "Lottie",
+    "GIF",
+    "MP4",
+    "Лото"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Lottie легче видео и масштабируется без потерь.",
+   "source": "airbnb.io/lottie",
+   "status": "approved"
+  },
+  {
+   "id": "s-054",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Бегущий блик по скелетону во время загрузки — это…",
+   "image": null,
+   "options": [
+    "Шиммер",
+    "Спиннер",
+    "Прогресс-бар",
+    "Зайчик"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Шиммер показывает, что загрузка идёт.",
+   "source": "NN/g, «Skeleton Screens 101»",
+   "status": "approved"
+  },
+  {
+   "id": "s-055",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как называется график, где доли целого показаны секторами круга?",
+   "image": null,
+   "options": [
+    "Круговая",
+    "Столбчатая",
+    "Линейная",
+    "Пицца"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Для сравнения многих долей лучше столбцы: углы глаз оценивает хуже.",
+   "source": "Edward Tufte, «The Visual Display of Quantitative Information»",
+   "status": "approved"
+  },
+  {
+   "id": "s-056",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Сетка, где колонки и строки образуют ячейки-модули, — это…",
+   "image": null,
+   "options": [
+    "Модульная",
+    "Колоночная",
+    "Базовая",
+    "Клетчатая"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Модульная сетка — основа швейцарского стиля.",
+   "source": "Josef Müller-Brockmann, «Grid Systems»",
+   "status": "approved"
+  },
+  {
+   "id": "s-057",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Экран с ключевыми метриками в виде карточек и графиков — это…",
+   "image": null,
+   "options": [
+    "Дашборд",
+    "Лендинг",
+    "Мудборд",
+    "Приборка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Главное на дашборде — ответить на вопрос за несколько секунд.",
+   "source": "NN/g, «Dashboards»",
+   "status": "approved"
+  },
+  {
+   "id": "s-058",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Гротеск, построенный на круге и квадрате, как Futura, — это…",
+   "image": null,
+   "options": [
+    "Геометрический",
+    "Гуманистический",
+    "Антиква",
+    "Квадратный"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Гуманистические гротески ближе к рукописным формам.",
+   "source": "Роберт Брингхерст, «Основы стиля в типографике»",
+   "status": "approved"
+  },
+  {
+   "id": "s-059",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Дизайн-язык Apple 2025 года с полупрозрачными «стеклянными» элементами:",
+   "image": null,
+   "options": [
+    "Liquid Glass",
+    "Material You",
+    "Aqua",
+    "Стеклопакет"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Элементы преломляют контент под собой.",
+   "source": "Apple Newsroom, June 2025",
+   "status": "approved"
+  },
+  {
+   "id": "s-060",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Версия Material Design, где цвета интерфейса берутся из обоев телефона:",
+   "image": null,
+   "options": [
+    "Material You",
+    "Material 2",
+    "Fluent",
+    "Material Girl"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Она же Material 3.",
+   "source": "Material Design 3, Dynamic color",
+   "status": "approved"
+  },
+  {
+   "id": "s-061",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Режим Figma, где ведущий показывает, а все остальные следят за его экраном:",
+   "image": null,
+   "options": [
+    "Spotlight",
+    "Dev Mode",
+    "Prototype",
+    "Прожектор"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удобно на созвонах и ревью.",
+   "source": "Figma Help, Spotlight",
+   "status": "approved"
+  },
+  {
+   "id": "s-062",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Описание частей компонента: контейнер, иконка, лейбл — это его…",
+   "image": null,
+   "options": [
+    "Анатомия",
+    "Биография",
+    "Спецификация",
+    "Скелет"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Анатомия — первый раздел документации компонента.",
+   "source": "Material Design 3, Components",
+   "status": "approved"
+  },
+  {
+   "id": "s-063",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Привязка векторов к целым пикселям, чтобы иконки были чёткими, — это…",
+   "image": null,
+   "options": [
+    "Пиксельная сетка",
+    "Модульная сетка",
+    "Layout grid",
+    "Пиксель-арт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В Figma — Snap to pixel grid.",
+   "source": "Figma Help, Pixel grid",
+   "status": "approved"
+  },
+  {
+   "id": "s-064",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Анимация, с которой один экран сменяет другой, — это…",
+   "image": null,
+   "options": [
+    "Переход",
+    "Микровзаимодействие",
+    "Лоадер",
+    "Телепорт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Переход помогает понять, откуда пришёл и куда попал.",
+   "source": "Material Design 3, Motion: Transitions",
+   "status": "approved"
+  },
+  {
+   "id": "s-065",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ui",
+   "tier": "regular",
+   "question": "Как в Auto layout Figma перенести элементы на новую строку, когда не помещаются?",
+   "image": null,
+   "options": [
+    "Wrap",
+    "Hug",
+    "Clip",
+    "Enter"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удобно для тегов и чипов.",
+   "source": "Figma Help, Auto layout: Wrap",
+   "status": "approved"
+  },
+  {
+   "id": "s-066",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "«Людям нужна не дрель, а дыра в стене». О какой теории эта фраза?",
+   "image": null,
+   "options": [
+    "JTBD",
+    "Agile",
+    "Kanban",
+    "Ремонт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Jobs to Be Done: продукт «нанимают» для работы.",
+   "source": "Clayton Christensen, «Competing Against Luck»",
+   "status": "approved"
+  },
+  {
+   "id": "s-067",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Перечень функций, которые точно войдут в первую версию, — это…",
+   "image": null,
+   "options": [
+    "Скоуп",
+    "Бэклог",
+    "Роадмап",
+    "Скутер"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Всё, что вне скоупа, — в следующие версии.",
+   "source": "PMI, PMBOK Guide",
+   "status": "approved"
+  },
+  {
+   "id": "s-068",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Модель, где функции делятся на обязательные, линейные и восхищающие:",
+   "image": null,
+   "options": [
+    "Модель Кано",
+    "RICE",
+    "MoSCoW",
+    "Модель Барби"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Восхищающие со временем становятся обязательными.",
+   "source": "Noriaki Kano, Kano Model",
+   "status": "approved"
+  },
+  {
+   "id": "s-069",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Must, Should, Could, Won’t — метод приоритизации…",
+   "image": null,
+   "options": [
+    "MoSCoW",
+    "RICE",
+    "Kano",
+    "Кремль"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Буквы «o» добавлены для читаемости.",
+   "source": "DSDM, MoSCoW Prioritisation",
+   "status": "approved"
+  },
+  {
+   "id": "s-070",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Reach, Impact, Confidence, Effort — формула приоритизации…",
+   "image": null,
+   "options": [
+    "RICE",
+    "ICE",
+    "SMART",
+    "Плов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "(охват × влияние × уверенность) / усилия.",
+   "source": "Intercom, «RICE: Simple prioritization»",
+   "status": "approved"
+  },
+  {
+   "id": "s-071",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Impact, Confidence, Ease — быстрая оценка гипотез…",
+   "image": null,
+   "options": [
+    "ICE",
+    "RICE",
+    "MoSCoW",
+    "Лёд"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "RICE добавляет к ней охват.",
+   "source": "Sean Ellis, «Hacking Growth»",
+   "status": "approved"
+  },
+  {
+   "id": "s-072",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Сколько денег приносит клиент за всё время с продуктом — метрика…",
+   "image": null,
+   "options": [
+    "LTV",
+    "CAC",
+    "ARPU",
+    "Чаевые"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "LTV сравнивают со стоимостью привлечения CAC.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "s-073",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Средний доход на одного пользователя — метрика…",
+   "image": null,
+   "options": [
+    "ARPU",
+    "LTV",
+    "MAU",
+    "ЗП"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "ARPPU — то же, но только по платящим.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "s-074",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Расчёт прибыли с одного клиента или одной продажи — это…",
+   "image": null,
+   "options": [
+    "Юнит-экономика",
+    "Бухгалтерия",
+    "Аналитика",
+    "Арифметика"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Показывает, зарабатывает ли продукт на каждом клиенте.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "s-075",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Пользователей делят на группы по месяцу регистрации и сравнивают. Это…",
+   "image": null,
+   "options": [
+    "Когортный анализ",
+    "A/B-тест",
+    "SWOT",
+    "Астрологический прогноз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Когорта — группа с общим событием во времени.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "s-076",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Одна главная метрика, отражающая ценность продукта для клиента, — это…",
+   "image": null,
+   "options": [
+    "Полярная звезда",
+    "Метрика тщеславия",
+    "KPI отдела",
+    "Звезда TikTok"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "North Star Metric; у Airbnb — забронированные ночи.",
+   "source": "Amplitude, «The North Star Playbook»",
+   "status": "approved"
+  },
+  {
+   "id": "s-077",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Оценка сложности задачи в условных единицах в Scrum — это…",
+   "image": null,
+   "options": [
+    "Стори-поинты",
+    "Часы",
+    "Дедлайны",
+    "Баллы ЕГЭ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Оценивают сложность относительно других задач, а не время.",
+   "source": "Mike Cohn, «Agile Estimating and Planning»",
+   "status": "approved"
+  },
+  {
+   "id": "s-078",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Продукт нашёл рынок, который его по-настоящему хочет. Это…",
+   "image": null,
+   "options": [
+    "Product-market fit",
+    "Growth hacking",
+    "Blue ocean",
+    "Фитнес"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Главная цель стартапа до масштабирования.",
+   "source": "Marc Andreessen, «The only thing that matters»",
+   "status": "approved"
+  },
+  {
+   "id": "s-079",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Acquisition, Activation, Retention, Referral, Revenue — это воронка…",
+   "image": null,
+   "options": [
+    "AARRR",
+    "HEART",
+    "RICE",
+    "Йо-хо-хо"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "«Пиратские метрики»: читается как «Аррр!».",
+   "source": "Dave McClure, «Startup Metrics for Pirates»",
+   "status": "approved"
+  },
+  {
+   "id": "s-080",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "К телефону в корзине предлагают купить чехол. Это…",
+   "image": null,
+   "options": [
+    "Кросс-сейл",
+    "Апсейл",
+    "Даунсейл",
+    "Навязчивость"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Апсейл — дороже то же самое, кросс-сейл — сопутствующий товар.",
+   "source": "HubSpot, Cross-selling",
+   "status": "approved"
+  },
+  {
+   "id": "s-081",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Цели и измеримые ключевые результаты на квартал — это…",
+   "image": null,
+   "options": [
+    "OKR",
+    "KPI",
+    "SMART",
+    "Окрошка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Objectives and Key Results.",
+   "source": "Джон Дорр, «Измеряйте самое важное»",
+   "status": "approved"
+  },
+  {
+   "id": "s-082",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Цель конкретная, измеримая, достижимая, значимая и с дедлайном. Это…",
+   "image": null,
+   "options": [
+    "SMART",
+    "OKR",
+    "KPI",
+    "Хотелка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Specific, Measurable, Achievable, Relevant, Time-bound.",
+   "source": "George Doran, 1981",
+   "status": "approved"
+  },
+  {
+   "id": "s-083",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Выручка, делённая на число заказов, — это…",
+   "image": null,
+   "options": [
+    "Средний чек",
+    "LTV",
+    "Маржа",
+    "Чаевые"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Растёт за счёт допродаж и наборов.",
+   "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
+   "status": "approved"
+  },
+  {
+   "id": "s-084",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Момент, когда новичок впервые получил ценность продукта, — это…",
+   "image": null,
+   "options": [
+    "Активация",
+    "Регистрация",
+    "Удержание",
+    "Посвящение"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Его ещё называют aha-моментом.",
+   "source": "Dave McClure, «Startup Metrics for Pirates»",
+   "status": "approved"
+  },
+  {
+   "id": "s-085",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Этап поиска и проверки, что именно стоит делать, до разработки — это…",
+   "image": null,
+   "options": [
+    "Discovery",
+    "Delivery",
+    "Release",
+    "Дискотека"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Delivery — этап, когда делают и выпускают.",
+   "source": "Marty Cagan, «Inspired»",
+   "status": "approved"
+  },
+  {
+   "id": "s-086",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Интервью с клиентами, чтобы проверить спрос до разработки, — это…",
+   "image": null,
+   "options": [
+    "Касдев",
+    "Хэндофф",
+    "Ретро",
+    "Кастинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Customer development — метод Стива Бланка.",
+   "source": "Steve Blank, «The Four Steps to the Epiphany»",
+   "status": "approved"
+  },
+  {
+   "id": "s-087",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Экран, который просит оплатить доступ к функции, — это…",
+   "image": null,
+   "options": [
+    "Пейволл",
+    "Онбординг",
+    "Лендинг",
+    "Шлагбаум"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Пейволл показывают в момент, когда ценность уже понятна.",
+   "source": "RevenueCat, Paywall guide",
+   "status": "approved"
+  },
+  {
+   "id": "s-088",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Бесплатный пробный период подписки — это…",
+   "image": null,
+   "options": [
+    "Триал",
+    "Демо",
+    "Фримиум",
+    "Халява"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Триал ограничен по времени, фримиум — по функциям.",
+   "source": "RevenueCat, Free trials",
+   "status": "approved"
+  },
+  {
+   "id": "s-089",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Предложить клиенту более дорогой тариф или версию — это…",
+   "image": null,
+   "options": [
+    "Апсейл",
+    "Кросс-сейл",
+    "Даунсейл",
+    "Развод"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Кросс-сейл — продажа сопутствующего товара.",
+   "source": "HubSpot, Upselling",
+   "status": "approved"
+  },
+  {
+   "id": "s-090",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Включить новую функцию только части пользователей без нового релиза — это…",
+   "image": null,
+   "options": [
+    "Фича-флаг",
+    "Хотфикс",
+    "Бэкпорт",
+    "Флагшток"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Feature flag позволяет откатить функцию за секунды.",
+   "source": "Martin Fowler, «Feature Toggles»",
+   "status": "approved"
+  },
+  {
+   "id": "s-091",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Уверенность, что разница в A/B-тесте не случайна, — это…",
+   "image": null,
+   "options": [
+    "Значимость",
+    "Конверсия",
+    "Охват",
+    "Удача"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Обычно её проверяют на уровне 0,05.",
+   "source": "Kohavi et al., «Trustworthy Online Controlled Experiments»",
+   "status": "approved"
+  },
+  {
+   "id": "s-092",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Группа A/B-теста, которая видит старую версию, — это группа…",
+   "image": null,
+   "options": [
+    "Контрольная",
+    "Тестовая",
+    "Фокус-группа",
+    "Подопытная"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "С ней сравнивают результат новой версии.",
+   "source": "Kohavi et al., «Trustworthy Online Controlled Experiments»",
+   "status": "approved"
+  },
+  {
+   "id": "s-093",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Деление аудитории на группы по общим признакам — это…",
+   "image": null,
+   "options": [
+    "Сегментация",
+    "Таргетинг",
+    "Конверсия",
+    "Нарезка колбасы"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Таргетинг — следующий шаг: выбор сегмента для работы.",
+   "source": "Philip Kotler, «Marketing Management»",
+   "status": "approved"
+  },
+  {
+   "id": "s-094",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "После неудачного релиза вернули предыдущую версию. Это…",
+   "image": null,
+   "options": [
+    "Откат",
+    "Хотфикс",
+    "Раскатка",
+    "Отступление"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Откат — первая помощь, пока ищут причину сбоя.",
+   "source": "Atlassian, Rollback",
+   "status": "approved"
+  },
+  {
+   "id": "s-095",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Накопившиеся «костыли» в коде, которые придётся переделывать, — это…",
+   "image": null,
+   "options": [
+    "Техдолг",
+    "Бэклог",
+    "Баг",
+    "Ипотека"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Технический долг растёт, если его не «гасить».",
+   "source": "Martin Fowler, «Technical Debt»",
+   "status": "approved"
+  },
+  {
+   "id": "s-096",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Резкая смена стратегии продукта после проверки гипотез — это…",
+   "image": null,
+   "options": [
+    "Пивот",
+    "Релиз",
+    "Ребрендинг",
+    "Пируэт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Термин из Lean Startup.",
+   "source": "Эрик Рис, «Бизнес с нуля»",
+   "status": "approved"
+  },
+  {
+   "id": "s-097",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Оценка удовлетворённости сразу после покупки или обращения — метрика…",
+   "image": null,
+   "options": [
+    "CSAT",
+    "NPS",
+    "MAU",
+    "ЕГЭ"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Customer Satisfaction Score — «Насколько вы довольны?».",
+   "source": "Qualtrics, CSAT",
+   "status": "approved"
+  },
+  {
+   "id": "s-098",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Регулярная чистка и уточнение задач в бэклоге — это…",
+   "image": null,
+   "options": [
+    "Груминг",
+    "Ретро",
+    "Демо",
+    "Маникюр"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В Scrum Guide — Product Backlog Refinement.",
+   "source": "Scrum Guide 2020",
+   "status": "approved"
+  },
+  {
+   "id": "s-099",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Отношение прибыли к вложениям — метрика…",
+   "image": null,
+   "options": [
+    "ROI",
+    "CTR",
+    "NPS",
+    "УЖК"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Return on Investment.",
+   "source": "Investopedia, ROI",
+   "status": "approved"
+  },
+  {
+   "id": "s-100",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "regular",
+   "question": "Срочное исправление ошибки вне плана, прямо в рабочей версии, — это…",
+   "image": null,
+   "options": [
+    "Хотфикс",
+    "Релиз",
+    "Рефакторинг",
+    "Скорая помощь"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Hotfix выкатывают, не дожидаясь следующего релиза.",
+   "source": "Atlassian, Hotfix",
+   "status": "approved"
+  },
+  {
+   "id": "s-201",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "На сайте кнопка функции, которой ещё нет, — чтобы проверить спрос. Это…",
+   "image": null,
+   "options": [
+    "Fake door",
+    "Прототип",
+    "A/B-тест",
+    "Обманка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Кликнувшим честно говорят, что функция в разработке.",
+   "source": "Jeff Gothelf, «Lean UX»",
+   "status": "approved"
+  },
+  {
+   "id": "s-202",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Задачи почти всегда занимают больше времени, чем мы планировали. Это ошибка…",
+   "image": null,
+   "options": [
+    "Планирования",
+    "Выжившего",
+    "Новизны",
+    "Пятницы"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому к оценкам закладывают запас.",
+   "source": "Даниэль Канеман, «Думай медленно… решай быстро»",
+   "status": "approved"
+  },
+  {
+   "id": "s-203",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Опыт запоминается по самому яркому моменту и финалу. Это правило…",
+   "image": null,
+   "options": [
+    "Пик-конец",
+    "Первая встреча",
+    "Последнее слово",
+    "Хеппи-энд"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому важно хорошо завершать сценарии.",
+   "source": "Laws of UX, Peak-End Rule",
+   "status": "approved"
+  },
+  {
+   "id": "s-204",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Из длинного списка лучше запоминаются первые и последние пункты. Эффект…",
+   "image": null,
+   "options": [
+    "Края",
+    "Ореола",
+    "Якоря",
+    "Золотой рыбки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Эффект края, или серийной позиции.",
+   "source": "Laws of UX, Serial Position Effect",
+   "status": "approved"
+  },
+  {
+   "id": "s-205",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Сначала показали тариф за 9990 ₽ — и 2990 ₽ кажется дешёвым. Эффект…",
+   "image": null,
+   "options": [
+    "Якоря",
+    "Ореола",
+    "Приманки",
+    "Скидочного угара"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Первое число становится точкой отсчёта.",
+   "source": "Даниэль Канеман, «Думай медленно… решай быстро»",
+   "status": "approved"
+  },
+  {
+   "id": "s-206",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Средний тариф добавили, чтобы дорогой на его фоне казался выгодным. Эффект…",
+   "image": null,
+   "options": [
+    "Приманки",
+    "Якоря",
+    "Дефицита",
+    "Троянского коня"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Decoy effect.",
+   "source": "Дэн Ариели, «Предсказуемая иррациональность»",
+   "status": "approved"
+  },
+  {
+   "id": "s-207",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "«5000 человек уже купили» — на какой психологический приём это давит?",
+   "image": null,
+   "options": [
+    "Соцдоказательство",
+    "Дефицит",
+    "Взаимность",
+    "Гипноз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Мы ориентируемся на выбор других.",
+   "source": "Роберт Чалдини, «Психология влияния»",
+   "status": "approved"
+  },
+  {
+   "id": "s-208",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "«Осталось 2 номера по этой цене» — какой это приём?",
+   "image": null,
+   "options": [
+    "Дефицит",
+    "Взаимность",
+    "Авторитет",
+    "Паника"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Редкое кажется ценнее.",
+   "source": "Роберт Чалдини, «Психология влияния»",
+   "status": "approved"
+  },
+  {
+   "id": "s-209",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Потерять 1000 ₽ больнее, чем радостно найти 1000 ₽. Это…",
+   "image": null,
+   "options": [
+    "Неприятие потерь",
+    "Эффект якоря",
+    "Эффект ИКЕА",
+    "Жадность"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ядро теории перспектив Канемана и Тверски.",
+   "source": "Даниэль Канеман, «Думай медленно… решай быстро»",
+   "status": "approved"
+  },
+  {
+   "id": "s-210",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Большинство оставляет галочку, которая уже стоит. Эффект…",
+   "image": null,
+   "options": [
+    "По умолчанию",
+    "Якоря",
+    "Приманки",
+    "Диванной лени"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Выбор по умолчанию воспринимается как рекомендованный.",
+   "source": "Thaler & Sunstein, «Nudge»",
+   "status": "approved"
+  },
+  {
+   "id": "s-211",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Из 24 видов джема покупают реже, чем из 6. Как называют этот эффект?",
+   "image": null,
+   "options": [
+    "Перегрузка выбором",
+    "Эффект приманки",
+    "Эффект якоря",
+    "Варенье"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Слишком много вариантов парализует.",
+   "source": "Iyengar & Lepper, «When Choice is Demotivating»",
+   "status": "approved"
+  },
+  {
+   "id": "s-212",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Шкаф, собранный своими руками, ценишь выше готового. Эффект…",
+   "image": null,
+   "options": [
+    "ИКЕА",
+    "Хоторнский",
+    "Плацебо",
+    "Шестигранника"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Вложенный труд повышает ценность результата.",
+   "source": "Norton, Mochon & Ariely, «The IKEA Effect»",
+   "status": "approved"
+  },
+  {
+   "id": "s-213",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Изучили только успешные стартапы и сделали выводы. Ошибка…",
+   "image": null,
+   "options": [
+    "Выжившего",
+    "Якоря",
+    "Новизны",
+    "Оптимиста"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Неудачников в выборке нет — выводы искажены.",
+   "source": "Abraham Wald, Statistical Research Group",
+   "status": "approved"
+  },
+  {
+   "id": "s-214",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Эксперту трудно представить, что пользователь чего-то не знает. Это…",
+   "image": null,
+   "options": [
+    "Проклятие знания",
+    "Эффект якоря",
+    "Синдром самозванца",
+    "Склероз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому интерфейс проверяют на людях, а не на себе.",
+   "source": "NN/g, «The Curse of Knowledge»",
+   "status": "approved"
+  },
+  {
+   "id": "s-215",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Элемент выглядит как кнопка, но не нажимается. Это…",
+   "image": null,
+   "options": [
+    "Ложный аффорданс",
+    "Пасхалка",
+    "Заглушка",
+    "Розыгрыш"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ложные подсказки раздражают и сбивают.",
+   "source": "NN/g, «Affordances»",
+   "status": "approved"
+  },
+  {
+   "id": "s-216",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Красивый интерфейс кажется удобнее, даже когда это не так. Эффект…",
+   "image": null,
+   "options": [
+    "Эстетики-юзабилити",
+    "Якоря",
+    "Плацебо",
+    "Конфетной обёртки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Привлекательность повышает терпимость к проблемам.",
+   "source": "Laws of UX, Aesthetic-Usability Effect",
+   "status": "approved"
+  },
+  {
+   "id": "s-217",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Карту лояльности заполняют быстрее, если 2 штампа из 10 уже стоят. Эффект…",
+   "image": null,
+   "options": [
+    "Градиента цели",
+    "Якоря",
+    "Хоторнский",
+    "Кофеиновый"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Чем ближе цель, тем сильнее мотивация.",
+   "source": "Laws of UX, Goal-Gradient Effect",
+   "status": "approved"
+  },
+  {
+   "id": "s-218",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "20% функций дают 80% пользы. Как называется этот принцип?",
+   "image": null,
+   "options": [
+    "Принцип Парето",
+    "Закон Мура",
+    "Закон Хика",
+    "Принцип халявы"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Распределение 80/20.",
+   "source": "Laws of UX, Pareto Principle",
+   "status": "approved"
+  },
+  {
+   "id": "s-219",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Задача растягивается на всё время, которое на неё отвели. Чей закон?",
+   "image": null,
+   "options": [
+    "Паркинсона",
+    "Брукса",
+    "Теслера",
+    "Студента"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому задачам ставят таймбоксы.",
+   "source": "Laws of UX, Parkinson’s Law",
+   "status": "approved"
+  },
+  {
+   "id": "s-220",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Из двух решений выбирай то, в котором меньше допущений. Это…",
+   "image": null,
+   "options": [
+    "Бритва Оккама",
+    "Закон Постела",
+    "Принцип Парето",
+    "Бритва бабушки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Не усложняй без необходимости.",
+   "source": "Laws of UX, Occam’s Razor",
+   "status": "approved"
+  },
+  {
+   "id": "s-221",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Из трёх тарифов люди чаще выбирают средний. Эффект…",
+   "image": null,
+   "options": [
+    "Компромисса",
+    "Якоря",
+    "Владения",
+    "Золотой середины"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Крайние варианты кажутся рискованными.",
+   "source": "Itamar Simonson, 1989",
+   "status": "approved"
+  },
+  {
+   "id": "s-222",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "«Бесплатно» привлекает сильнее, чем даже очень низкая цена. Эффект…",
+   "image": null,
+   "options": [
+    "Нулевой цены",
+    "Дефицита",
+    "Якоря",
+    "Бесплатного сыра"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Дэн Ариели показал это на конфетах за 0 и за 1 цент.",
+   "source": "Дэн Ариели, «Предсказуемая иррациональность»",
+   "status": "approved"
+  },
+  {
+   "id": "s-223",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Цена 999 ₽ кажется заметно меньше 1000 ₽. Как называют такую цену?",
+   "image": null,
+   "options": [
+    "Психологическая",
+    "Рыночная",
+    "Оптовая",
+    "Хитрая"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Восприятие цепляется за первую цифру.",
+   "source": "Thomas & Morwitz, «Penny Wise and Pound Foolish»",
+   "status": "approved"
+  },
+  {
+   "id": "s-224",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "Новая фича дала всплеск кликов, а через неделю всё вернулось. Эффект…",
+   "image": null,
+   "options": [
+    "Новизны",
+    "Якоря",
+    "Хоторнский",
+    "Медового месяца"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому A/B-тесты держат хотя бы неделю.",
+   "source": "Kohavi et al., «Trustworthy Online Controlled Experiments»",
+   "status": "approved"
+  },
+  {
+   "id": "s-225",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Человек не уходит из продукта, потому что уже много в него вложил. Это эффект…",
+   "image": null,
+   "options": [
+    "Невозвратных затрат",
+    "Владения",
+    "ИКЕА",
+    "Чемоданного синдрома"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Sunk cost: жалко потраченного времени и денег.",
+   "source": "Arkes & Blumer, «The Psychology of Sunk Cost»",
+   "status": "approved"
+  },
+  {
+   "id": "s-226",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Главное — в первом абзаце, детали — ниже. Принцип…",
+   "image": null,
+   "options": [
+    "Перевёрнутой пирамиды",
+    "Золотого сечения",
+    "Хлебных крошек",
+    "Пирамиды Хеопса"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Читатель может бросить текст в любой момент.",
+   "source": "NN/g, «Inverted Pyramid»",
+   "status": "approved"
+  },
+  {
+   "id": "s-227",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Полное погружение в задачу, когда теряешь счёт времени, — состояние…",
+   "image": null,
+   "options": [
+    "Потока",
+    "Дзена",
+    "Транса",
+    "Залипания"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Возникает, когда сложность соответствует навыку.",
+   "source": "Laws of UX, Flow",
+   "status": "approved"
+  },
+  {
+   "id": "s-228",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Участники теста ведут себя иначе, потому что за ними наблюдают. Эффект…",
+   "image": null,
+   "options": [
+    "Хоторнский",
+    "Плацебо",
+    "Зейгарник",
+    "Шпионский"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому ведущий старается быть незаметным.",
+   "source": "NN/g, «The Hawthorne Effect»",
+   "status": "approved"
+  },
+  {
+   "id": "s-229",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Одна приятная черта, например красота, улучшает оценку всего остального. Эффект…",
+   "image": null,
+   "options": [
+    "Ореола",
+    "Якоря",
+    "Приманки",
+    "Нимба"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Halo effect.",
+   "source": "Edward Thorndike, 1920",
+   "status": "approved"
+  },
+  {
+   "id": "s-230",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "«90% выживают» и «10% умирают» воспринимаются по-разному. Эффект…",
+   "image": null,
+   "options": [
+    "Фрейминга",
+    "Якоря",
+    "Ореола",
+    "Полупустого стакана"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Смысл один, подача разная.",
+   "source": "Tversky & Kahneman, «The Framing of Decisions», 1981",
+   "status": "approved"
+  },
+  {
+   "id": "s-231",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Своя вещь кажется ценнее точно такой же чужой. Эффект…",
+   "image": null,
+   "options": [
+    "Владения",
+    "ИКЕА",
+    "Якоря",
+    "Хомяка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Endowment effect: поэтому работают пробные периоды.",
+   "source": "Kahneman, Knetsch & Thaler, 1990",
+   "status": "approved"
+  },
+  {
+   "id": "s-232",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Быстрое интуитивное мышление по Канеману — это…",
+   "image": null,
+   "options": [
+    "Система 1",
+    "Система 2",
+    "Система 0",
+    "Автопилот"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Система 2 — медленная и аналитическая.",
+   "source": "Даниэль Канеман, «Думай медленно… решай быстро»",
+   "status": "approved"
+  },
+  {
+   "id": "s-233",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Мягкий толчок к нужному выбору без запретов и принуждения — это…",
+   "image": null,
+   "options": [
+    "Нудж",
+    "Пейволл",
+    "Дарк-паттерн",
+    "Пинок"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, полезная еда на уровне глаз.",
+   "source": "Thaler & Sunstein, «Nudge»",
+   "status": "approved"
+  },
+  {
+   "id": "s-234",
+   "level": "senior",
+   "pool": "theory",
+   "area": "product",
+   "tier": "super",
+   "question": "В модели Кано функции, отсутствие которых не замечают, а наличие радует, — это…",
+   "image": null,
+   "options": [
+    "Восхищающие",
+    "Обязательные",
+    "Линейные",
+    "Пасхалки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Со временем они становятся обязательными.",
+   "source": "Noriaki Kano, Kano Model",
+   "status": "approved"
+  },
+  {
+   "id": "s-235",
+   "level": "senior",
+   "pool": "theory",
+   "area": "ux",
+   "tier": "super",
+   "question": "Сборы и доставка появляются только на последнем шаге оплаты. Тёмный паттерн…",
+   "image": null,
+   "options": [
+    "Скрытые платежи",
+    "Ловушка подписки",
+    "Вечная корзина",
+    "Сюрприз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Цену показывают целиком сразу — иначе доверие падает.",
+   "source": "deceptive.design",
+   "status": "approved"
+  }
+ ]
+}

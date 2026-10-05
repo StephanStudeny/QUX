@@ -1,0 +1,2829 @@
+{
+ "meta": {
+  "batch": "batch-01",
+  "created": "2026-09-28",
+  "language": "ru",
+  "schema": {
+   "id": "уникальный ID: j-/m-/s- + номер; 0xx — practice, 1xx — theory",
+   "level": "junior | middle | senior",
+   "pool": "practice — ситуации и процесс; theory — термины, законы, факты",
+   "question": "текст вопроса",
+   "image": "null или путь к картинке для вопроса-картинки",
+   "options": "ровно 4 варианта, каждый — не больше 2 слов и ≤ 24 символов; порядок перемешивается в игре",
+   "correct": "индекс верного варианта в options",
+   "funny": "индексы шуточных вариантов (всегда неверные)",
+   "explanation": "пояснение после ответа",
+   "source": "источник или null",
+   "status": "draft — не вычитан; approved — вычитан"
+  },
+  "notes": [
+   "Все вопросы — draft: факты и ссылки нужно вычитать до публикации.",
+   "Ответ — не больше 2 слов (плитка 2×2, до 2 строк). Вопрос ≤ 90 символов (3 строки). См. design/game-brief.md.",
+   "Правило повторов: вопрос не показывается чаще раза в 25 показанных пользователю."
+  ]
+ },
+ "questions": [
+  {
+   "id": "j-001",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Кофейня: скорость заказа — это UX. А цвет и шрифт меню — это…",
+   "image": null,
+   "options": [
+    "UI",
+    "SEO",
+    "QA",
+    "Звук «Уи!»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "UX — весь опыт, UI — то, что видишь и нажимаешь. Красивый UI не спасёт, если заказ оформляется 10 минут.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-002",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Зачем рисовать вайрфрейм до красивого макета?",
+   "image": null,
+   "options": [
+    "Согласовать структуру",
+    "Утвердить цвета",
+    "Требование Figma",
+    "Для галочки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Вайрфрейм дёшево переделывать, готовый визуал — дорого.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-003",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Прототип из серых прямоугольников с подписями «тут фото» — это…",
+   "image": null,
+   "options": [
+    "Low-fi",
+    "High-fi",
+    "MVP",
+    "Lo-fi beats"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Low-fi проверяет идею и структуру, high-fi — детали, визуал и анимации.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-004",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Где искать официальные правила дизайна iOS-приложений?",
+   "image": null,
+   "options": [
+    "HIG",
+    "Material Design",
+    "Bootstrap",
+    "Сторис эппл-фаната"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "HIG — от Apple, Material Design — от Google (Android).",
+   "source": "Apple Human Interface Guidelines",
+   "status": "draft"
+  },
+  {
+   "id": "j-005",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Кто создал Material Design?",
+   "image": null,
+   "options": [
+    "Google",
+    "Apple",
+    "Microsoft",
+    "Ткацкая фабрика"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Material Design представлен в 2014 году; актуальная версия — Material 3.",
+   "source": "m3.material.io",
+   "status": "draft"
+  },
+  {
+   "id": "j-006",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Макет перестраивается под ширину экрана: 3 колонки на десктопе, 1 на телефоне. Это…",
+   "image": null,
+   "options": [
+    "Адаптивный дизайн",
+    "Мобильная версия",
+    "Фиксированная вёрстка",
+    "Дизайн-хамелеон"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Резиновая вёрстка просто растягивается, не перестраиваясь. Мобильная версия — отдельный сайт.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-007",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Зачем в макете сетка из колонок?",
+   "image": null,
+   "options": [
+    "Единый ритм",
+    "Красота клеточек",
+    "Экономия слоёв",
+    "Морской бой"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Сетка ускоряет работу и дизайнера, и разработчика: меньше пикселей «на глаз».",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-008",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Как назвать слой с кнопкой отправки?",
+   "image": null,
+   "options": [
+    "Button/Отправить",
+    "Rectangle 347",
+    "Frame copy",
+    "финал_финал_точно"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Понятные имена экономят время вам и разработчику, который откроет файл.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-009",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Что делает Auto Layout в Figma?",
+   "image": null,
+   "options": [
+    "Раскладывает элементы",
+    "Рисует макет",
+    "Центрирует всё",
+    "Отвечает заказчику"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Это аналог flexbox в CSS — разработчику легко перенести в код.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-010",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Как сделать, чтобы кнопка росла вместе с текстом?",
+   "image": null,
+   "options": [
+    "Hug contents",
+    "Группа Ctrl+G",
+    "Растягивать вручную",
+    "Уволить копирайтера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Hug — по содержимому, Fill — на всё доступное место, Fixed — фиксированный размер.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-011",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Вы изменили главный компонент. Что будет с экземплярами?",
+   "image": null,
+   "options": [
+    "Обновятся везде",
+    "Ничего",
+    "Удалятся",
+    "Устроят митинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Кроме свойств, которые вы переопределили в конкретном экземпляре.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-012",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Набор размеров шрифта с постоянным соотношением (×1,25) — это…",
+   "image": null,
+   "options": [
+    "Типографическая шкала",
+    "Кегельная линейка",
+    "Шрифтовая пара",
+    "Весы жирного"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Шкала даёт понятную иерархию: заголовок, подзаголовок, текст, подпись.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-013",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Как проверить, читается ли серый текст на белом?",
+   "image": null,
+   "options": [
+    "Чекер контраста",
+    "На глаз",
+    "Спросить заказчика",
+    "Прищуриться"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Для обычного текста нужно не меньше 4,5:1. Проверяется плагином в Figma или онлайн-чекером.",
+   "source": "WCAG 2.x, 1.4.3",
+   "status": "draft"
+  },
+  {
+   "id": "j-014",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Ошибку показали только красной рамкой. Кому будет трудно?",
+   "image": null,
+   "options": [
+    "Дальтоникам",
+    "Владельцам iPhone",
+    "Никому",
+    "Быкам"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Добавьте текст ошибки или иконку. Кстати, быки красный почти не различают — их злит движение ткани.",
+   "source": "WCAG 2.x, 1.4.1",
+   "status": "draft"
+  },
+  {
+   "id": "j-015",
+   "level": "junior",
+   "pool": "practice",
+   "question": "С чего разумнее начать работу над новым экраном?",
+   "image": null,
+   "options": [
+    "С задачи",
+    "С палитры",
+    "С Dribbble",
+    "С кофе"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Если непонятно, какую проблему решает экран, красиво нарисуете не то.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-016",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Что главное искать в анализе конкурентов?",
+   "image": null,
+   "options": [
+    "Решения задач",
+    "Их шрифты",
+    "Число сотрудников",
+    "Их вакансии"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Цель — найти удачные паттерны и незакрытые боли, а не скопировать интерфейс.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-017",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Зачем дизайнеру персона?",
+   "image": null,
+   "options": [
+    "Цели пользователей",
+    "Для аватарки",
+    "Вместо исследований",
+    "Винить Марину"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хорошая персона строится на исследованиях, а не на фантазии. И «Марина, 34 года» не виновата.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-018",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Самый простой способ проверить макет на пользователях?",
+   "image": null,
+   "options": [
+    "Дать задачу",
+    "Спросить «нравится?»",
+    "Показать коллегам",
+    "Отправить маме"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Смотрите, что люди делают, а не что говорят. «Нравится» — не про удобство.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-019",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Тимлид раскритиковал макет. Лучшая реакция?",
+   "image": null,
+   "options": [
+    "Уточнить проблему",
+    "Молча переделать",
+    "Спорить яростно",
+    "Реакция 🤡"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Критикуют решение, а не вас. Задача — понять суть замечания.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-020",
+   "level": "junior",
+   "pool": "practice",
+   "question": "Что в кейсе для портфолио важнее всего?",
+   "image": null,
+   "options": [
+    "Ход мысли",
+    "Финальные экраны",
+    "Число экранов",
+    "Пальмовый мокап"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Нанимающий смотрит, как вы думаете, а не только на картинки.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-021",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Что такое UI-кит?",
+   "image": null,
+   "options": [
+    "Набор компонентов",
+    "Набор мебели",
+    "Инструкция Figma",
+    "Океанский кит"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "UI-кит ускоряет работу и держит интерфейс единообразным. Дизайн-система — это UI-кит плюс правила и процессы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-022",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Какой формат лучше для иконок, которые должны быть чёткими на любом экране?",
+   "image": null,
+   "options": [
+    "SVG",
+    "JPG",
+    "GIF",
+    "Скриншот скриншота"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "SVG — вектор: масштабируется без потери качества и весит мало.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-023",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Чем PNG лучше JPG для интерфейсной графики?",
+   "image": null,
+   "options": [
+    "Прозрачностью",
+    "Меньшим весом",
+    "Яркостью",
+    "Бицепсами"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "JPG хорош для фото, PNG — для графики с прозрачностью и чёткими краями.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-024",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Связанные экраны, по которым можно «походить», как в приложении, — это…",
+   "image": null,
+   "options": [
+    "Кликабельный прототип",
+    "Готовое приложение",
+    "Мудборд",
+    "Самокликер"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Кликабельный прототип проверяют на пользователях до разработки.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-025",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Окно поверх страницы, блокирующее её до закрытия, — это…",
+   "image": null,
+   "options": [
+    "Модальное окно",
+    "Вкладка браузера",
+    "Тултип",
+    "Модное окно"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Модалки прерывают пользователя — используйте их для действительно важного.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-026",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Экран, когда данных ещё нет, с подсказкой, что сделать, — это…",
+   "image": null,
+   "options": [
+    "Empty state",
+    "Ошибка 404",
+    "Сплэш-скрин",
+    "Утро понедельника"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хорошее пустое состояние объясняет, что здесь будет, и ведёт к первому действию.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-027",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Ошибка 404 означает…",
+   "image": null,
+   "options": [
+    "Нет страницы",
+    "Сервер упал",
+    "Нет доступа",
+    "Отпуск дизайнера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ошибка сервера — 500, нет доступа — 403. Хорошая 404 помогает найти нужное.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-028",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Что такое онбординг?",
+   "image": null,
+   "options": [
+    "Знакомство новичка",
+    "Разлогин",
+    "Удаление данных",
+    "Посадка пассажиров"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Цель онбординга — быстро довести пользователя до первой ценности, а не показать все функции.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-029",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Какой цвет в интерфейсах чаще всего обозначает ошибку?",
+   "image": null,
+   "options": [
+    "Красный",
+    "Зелёный",
+    "Синий",
+    "Цвет дедлайна"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Но только цветом ошибку не показывают — нужен ещё текст или иконка.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-030",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Зачем кнопке состояние disabled?",
+   "image": null,
+   "options": [
+    "Действие недоступно",
+    "Скрыть кнопку",
+    "Ускорить работу",
+    "Выходной кнопки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Хорошо, если рядом понятно, почему кнопка недоступна и что сделать.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-031",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Hover — это состояние, когда…",
+   "image": null,
+   "options": [
+    "Курсор наведён",
+    "Элемент нажат",
+    "Фокус клавиатуры",
+    "Ховерборд"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Нажатие — pressed/active, фокус с клавиатуры — focus.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-032",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Есть ли hover на сенсорном экране?",
+   "image": null,
+   "options": [
+    "Обычно нет",
+    "Да, всегда",
+    "Только ночью",
+    "Если верить"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Не прячьте важное за hover — на телефоне этого не увидят.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-033",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Коллеги разбирают макет и дают обратную связь до разработки. Это…",
+   "image": null,
+   "options": [
+    "Дизайн-ревью",
+    "Код-ревью",
+    "Планёрка",
+    "Групповая терапия"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Чем раньше ревью, тем дешевле исправления.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "j-034",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Приём, который обманом толкает к невыгодному действию, — это…",
+   "image": null,
+   "options": [
+    "Тёмный паттерн",
+    "Тёмная тема",
+    "Ночной режим",
+    "Принт худи"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, скрытая подписка или «Нет, я не люблю скидки». Бьёт по доверию и репутации.",
+   "source": "deceptive.design",
+   "status": "draft"
+  },
+  {
+   "id": "j-035",
+   "level": "junior",
+   "pool": "theory",
+   "question": "Маленькая иконка сайта во вкладке браузера — это…",
+   "image": null,
+   "options": [
+    "Фавикон",
+    "Логотип",
+    "Эмодзи",
+    "Фаворит дизайнера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "От favorites icon — раньше показывалась в «Избранном».",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-001",
+   "level": "middle",
+   "pool": "practice",
+   "question": "ТЗ нет, продакт в отпуске. С чего начать?",
+   "image": null,
+   "options": [
+    "Собрать контекст",
+    "Рисовать варианты",
+    "Ждать продакта",
+    "Выписать премию"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Без понятной проблемы и критериев успеха любой макет — угадайка.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-002",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Нужно понять, ПОЧЕМУ бросают корзину. Какой метод?",
+   "image": null,
+   "options": [
+    "Интервью",
+    "Аналитика воронки",
+    "A/B-тест",
+    "Гадание"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Количественные данные показывают, где уходят; качественные — почему.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-003",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Где можно опереться на best practices без исследования?",
+   "image": null,
+   "options": [
+    "Форма входа",
+    "Ключевая фича",
+    "Падение метрик",
+    "Пятница вечер"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Не изобретайте форму логина. Но ключевую ценность продукта — проверяйте.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-004",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Быстрый неформальный тест на людях поблизости, не из проекта, — это…",
+   "image": null,
+   "options": [
+    "Коридорный тест",
+    "Юзабилити-лаборатория",
+    "A/B-тест",
+    "Коридорный спринт"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Дёшево и быстро, но это не ваша ЦА. Годится, чтобы поймать грубые проблемы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-005",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Сколько участников обычно берут в одну итерацию качественного юзабилити-теста?",
+   "image": null,
+   "options": [
+    "5–8",
+    "1",
+    "100+",
+    "Всех пойманных"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Лучше несколько коротких итераций, чем один большой тест.",
+   "source": "NN/g",
+   "status": "draft"
+  },
+  {
+   "id": "m-006",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Стейкхолдер: «Мне просто не нравится этот цвет». Лучший первый шаг?",
+   "image": null,
+   "options": [
+    "Спросить почему",
+    "Молча перекрасить",
+    "Защищать вкус",
+    "Оттенки серого"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "За вкусовой правкой часто стоит реальная проблема. Если её нет — помогают данные и принципы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-007",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Какой вопрос в интервью с пользователем — наводящий?",
+   "image": null,
+   "options": [
+    "«Удобно, правда?»",
+    "«Как покупали?»",
+    "«Что мешало?»",
+    "«Ваш гороскоп?»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Наводящий вопрос подсказывает ответ. Спрашивайте о прошлом поведении, а не о мнениях.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-008",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Опечатка на кнопке и нечитаемый контраст. Нужен A/B-тест?",
+   "image": null,
+   "options": [
+    "Нет, чинить",
+    "Да, обязательно",
+    "Да, половине",
+    "Нужна фокус-группа"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "A/B нужен, когда есть неопределённость и риск, а не для очевидных исправлений.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-009",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Почему A/B-тест плохо подходит продукту с 300 пользователями в месяц?",
+   "image": null,
+   "options": [
+    "Мало выборки",
+    "Только мобильные",
+    "Заметят подмену",
+    "Все — друзья"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "На малом трафике лучше работают качественные методы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-010",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Как понять, как пользователи сами группируют разделы?",
+   "image": null,
+   "options": [
+    "Карточная сортировка",
+    "A/B-тест",
+    "Айтрекинг",
+    "Гороскоп навигации"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Потом получившуюся структуру проверяют tree-тестом.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-011",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Меню построено по оргструктуре: «Отдел продаж», «Логистика». Чья это логика?",
+   "image": null,
+   "options": [
+    "Логика компании",
+    "Логика пользователя",
+    "Логика алфавита",
+    "Логика логистов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Навигация должна совпадать с ментальной моделью пользователя, а не с оргструктурой.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-012",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Вы упростили оформление заказа. Какая метрика лучше всего покажет успех?",
+   "image": null,
+   "options": [
+    "Конверсия заказа",
+    "Экраны Figma",
+    "Трафик блога",
+    "Восторг CEO"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Метрика должна прямо отражать задачу, которую решал редизайн.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-013",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Доля пользователей, вернувшихся на 7-й день, — это…",
+   "image": null,
+   "options": [
+    "Retention D7",
+    "DAU",
+    "Конверсия",
+    "Выдержка дизайнера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удержание — главный признак того, что продукт даёт ценность.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-014",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Зачем нужны дизайн-токены?",
+   "image": null,
+   "options": [
+    "Единый источник",
+    "Для анимаций",
+    "Имена слоёв",
+    "Оплата обедов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Токены связывают Figma и код и убирают расхождения.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-015",
+   "level": "middle",
+   "pool": "practice",
+   "question": "У кнопки 3 размера, 4 типа, 5 состояний. Как оформить в Figma?",
+   "image": null,
+   "options": [
+    "Варианты компонента",
+    "60 компонентов",
+    "Копии вручную",
+    "Кнопка «Красиво»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Свойства вариантов совпадают с пропсами компонента в коде.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-016",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Что сильнее всего помогает фронтендеру в файле Figma?",
+   "image": null,
+   "options": [
+    "Auto Layout",
+    "Группы",
+    "Подписи «понятно»",
+    "Много вариантов"
+   ],
+   "correct": 0,
+   "funny": [
+    2
+   ],
+   "explanation": "Хорошо собранный файл отвечает на половину вопросов разработчика заранее.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-017",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Разработчик убрал обводку фокуса: «некрасиво». Кто пострадает?",
+   "image": null,
+   "options": [
+    "Пользователи клавиатуры",
+    "Мобильные пользователи",
+    "Никто",
+    "Обводка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Видимый фокус — требование WCAG. Его можно перерисовать красиво, но не убрать.",
+   "source": "WCAG 2.x, 2.4.7",
+   "status": "draft"
+  },
+  {
+   "id": "m-018",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Разработчик: «Это верстать две недели». Лучший первый шаг?",
+   "image": null,
+   "options": [
+    "Выяснить сложность",
+    "Настоять",
+    "Отказаться",
+    "Показать Tilda"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Часто 80% пользы достижимо за 20% сложности.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-019",
+   "level": "middle",
+   "pool": "practice",
+   "question": "После вашего редизайна конверсия упала. Что делать первым?",
+   "image": null,
+   "options": [
+    "Изучить данные",
+    "Молча откатить",
+    "Отрицать метрики",
+    "Затаиться"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Сначала диагноз, потом решение. Причиной может быть баг, а не дизайн.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-020",
+   "level": "middle",
+   "pool": "practice",
+   "question": "Релиз провалился. Как поступить с командой?",
+   "image": null,
+   "options": [
+    "Открытый разбор",
+    "Спрятать кейс",
+    "Найти виноватого",
+    "Переименовать фичу"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Разбор без поиска виноватых — норма сильных команд.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-101",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Закон о том, что время на решение растёт с числом вариантов, — это…",
+   "image": null,
+   "options": [
+    "Закон Хика",
+    "Закон Фиттса",
+    "Закон Якоба",
+    "Закон Хикки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Hick's Law: время решения растёт с числом и сложностью вариантов.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-102",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему кнопку «Купить» делают крупной и ставят ближе к большому пальцу?",
+   "image": null,
+   "options": [
+    "Закон Фиттса",
+    "Закон Хика",
+    "Закон Паркинсона",
+    "Закон зарплаты"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Время до попадания в цель зависит от расстояния до неё и её размера.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-103",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Минимальная зона касания по Apple Human Interface Guidelines:",
+   "image": null,
+   "options": [
+    "44×44 pt",
+    "24×24 pt",
+    "64×64 pt",
+    "С палец"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Apple — от 44×44 pt, Material Design — 48×48 dp.",
+   "source": "Apple HIG",
+   "status": "draft"
+  },
+  {
+   "id": "m-104",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Минимальный контраст обычного текста по WCAG, уровень AA:",
+   "image": null,
+   "options": [
+    "4,5:1",
+    "3:1",
+    "7:1",
+    "1:1"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "3:1 — для крупного текста, 7:1 — уровень AAA. 1:1 — зато минималистично.",
+   "source": "WCAG 2.x, 1.4.3",
+   "status": "draft"
+  },
+  {
+   "id": "m-105",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Сколько эвристик юзабилити у Якоба Нильсена?",
+   "image": null,
+   "options": [
+    "10",
+    "7",
+    "12",
+    "Одна"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "10 эвристик Нильсена (1994) до сих пор в ходу. «Одна» — это «Сделайте красиво».",
+   "source": "NN/g",
+   "status": "draft"
+  },
+  {
+   "id": "m-106",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Схема структуры экрана без финального визуала — это…",
+   "image": null,
+   "options": [
+    "Вайрфрейм",
+    "Мудборд",
+    "Мокап",
+    "Убежище дизайнера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Вайрфрейм показывает, что и где, а не как это выглядит.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-107",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему логотип в левом верхнем углу обычно ведёт на главную?",
+   "image": null,
+   "options": [
+    "Закон Якоба",
+    "Эффект Зейгарник",
+    "Закон Хика",
+    "Закон Мёрфи"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Пользователи большую часть времени проводят на других сайтах и ждут, что ваш работает так же.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-108",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему рекомендуемый тариф выделяют цветом?",
+   "image": null,
+   "options": [
+    "Фон Ресторфф",
+    "Даннинг — Крюгер",
+    "Зейгарник",
+    "Эффект тоски"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Эффект изоляции: отличающийся элемент запоминается лучше.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-109",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему полоска «Профиль заполнен на 70%» мотивирует дозаполнить?",
+   "image": null,
+   "options": [
+    "Эффект Зейгарник",
+    "Эффект Барнума",
+    "Эффект якоря",
+    "Синдром «ещё»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Незавершённые задачи помнятся лучше — их хочется закрыть.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-110",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Как называют шрифты без засечек?",
+   "image": null,
+   "options": [
+    "Гротески",
+    "Антиква",
+    "Моноширинные",
+    "Без заморочек"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Антиква — шрифты с засечками (serif).",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-111",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Интервал между конкретной парой букв — это…",
+   "image": null,
+   "options": [
+    "Кернинг",
+    "Трекинг",
+    "Интерлиньяж",
+    "Кёрлинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Равномерная разрядка всех букв — трекинг.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-112",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Интерлиньяж — это расстояние…",
+   "image": null,
+   "options": [
+    "Между строками",
+    "Между буквами",
+    "Между абзацами",
+    "Французский соус"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "В CSS это line-height.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-113",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему плейсхолдер не заменяет подпись поля?",
+   "image": null,
+   "options": [
+    "Исчезает",
+    "Не поддерживается",
+    "Запрещён WCAG",
+    "Стесняется"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "При вводе плейсхолдер исчезает — непонятно, что это было за поле. Плюс он обычно низкоконтрастный.",
+   "source": "NN/g, «Placeholders in Form Fields Are Harmful»",
+   "status": "draft"
+  },
+  {
+   "id": "m-114",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Обобщённый образ пользователя на основе исследований — это…",
+   "image": null,
+   "options": [
+    "Персона",
+    "Аватар",
+    "Сегмент",
+    "Нон грата"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Персона обобщает цели и поведение сегмента, а не описывает одного человека.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-115",
+   "level": "middle",
+   "pool": "theory",
+   "question": "По Нильсену, скольких участников качественного теста хватает, чтобы найти ~85% проблем?",
+   "image": null,
+   "options": [
+    "5",
+    "50",
+    "1000",
+    "Мама"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Лучше несколько раундов по 5, чем один на 15.",
+   "source": "NN/g, «Why You Only Need to Test with 5 Users»",
+   "status": "draft"
+  },
+  {
+   "id": "m-116",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Навигация «Главная › Курсы › UX» — это…",
+   "image": null,
+   "options": [
+    "Хлебные крошки",
+    "Табы",
+    "Пагинация",
+    "Остатки обеда"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например: Главная › Курсы › UX.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-117",
+   "level": "middle",
+   "pool": "theory",
+   "question": "CTA расшифровывается как Call to…",
+   "image": null,
+   "options": [
+    "Action",
+    "Attention",
+    "Account",
+    "Котику"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Call to Action — призыв к действию: «Купить», «Начать». Котик тоже призывает, но к другому.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-118",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Кнопка выглядит нажимаемой. Как называется это свойство?",
+   "image": null,
+   "options": [
+    "Аффорданс",
+    "Консистентность",
+    "Доступность",
+    "Аффирмация"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Термин Гибсона, в дизайн его принёс Дон Норман; для видимых подсказок Норман позже предложил «сигнификатор».",
+   "source": "Дон Норман, «Дизайн привычных вещей»",
+   "status": "draft"
+  },
+  {
+   "id": "m-119",
+   "level": "middle",
+   "pool": "theory",
+   "question": "В популярной «8pt grid» размеры и отступы кратны…",
+   "image": null,
+   "options": [
+    "8",
+    "7",
+    "10",
+    "Часам сна"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "8 хорошо делится и корректно масштабируется на плотностях ×1,5, ×2, ×3.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-120",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Зачем картинке атрибут alt?",
+   "image": null,
+   "options": [
+    "Для скринридеров",
+    "Указать автора",
+    "Только SEO",
+    "Альтер эго"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Декоративным картинкам ставят пустой alt — скринридер их пропустит.",
+   "source": "WCAG 2.x, 1.1.1",
+   "status": "draft"
+  },
+  {
+   "id": "m-121",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Discover → Define → Develop → Deliver — это…",
+   "image": null,
+   "options": [
+    "Double Diamond",
+    "Design Thinking",
+    "Scrum",
+    "Дедлайн-дедлайн"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Модель Design Council (2005). Второй вариант — дизайн-мышление по d.school.",
+   "source": "Design Council",
+   "status": "draft"
+  },
+  {
+   "id": "m-122",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Модель Кано: без фичи злятся, а её наличие не радует. Какая это фича?",
+   "image": null,
+   "options": [
+    "Базовая",
+    "Восхищающая",
+    "Одномерная",
+    "Фича-бумер"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Как работающий замок в номере отеля: не хвалят, но заметят, если сломан.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-123",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Охват × влияние × уверенность / трудозатраты — это…",
+   "image": null,
+   "options": [
+    "RICE",
+    "ICE",
+    "MoSCoW",
+    "PRICE"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Reach × Impact × Confidence / Effort — метод Intercom. В ICE нет охвата.",
+   "source": "Intercom",
+   "status": "draft"
+  },
+  {
+   "id": "m-139",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Диалог «Вы уверены, что хотите удалить?» защищает от…",
+   "image": null,
+   "options": [
+    "Случайных ошибок",
+    "Хакерских атак",
+    "Медленной загрузки",
+    "Котов-вредителей"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Эвристика Нильсена «Предотвращение ошибок». Ещё лучше — дать отменить действие: подтверждения быстро начинают прокликивать не глядя.",
+   "source": "NN/g, 10 Usability Heuristics",
+   "status": "draft"
+  },
+  {
+   "id": "m-125",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Буква A во фреймворке HEART от Google — это…",
+   "image": null,
+   "options": [
+    "Adoption",
+    "Accessibility",
+    "Activation",
+    "Awwwards"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Happiness, Engagement, Adoption, Retention, Task success. Activation — из AARRR.",
+   "source": "Kerry Rodden et al., Google",
+   "status": "draft"
+  },
+  {
+   "id": "m-126",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему AARRR называют «пиратскими метриками»?",
+   "image": null,
+   "options": [
+    "Звучит «Arrr!»",
+    "Для торрентов",
+    "Их воруют",
+    "Одноглазый подсчёт"
+   ],
+   "correct": 0,
+   "funny": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "Acquisition, Activation, Retention, Referral, Revenue — Дэйв Макклюр, 2007.",
+   "source": "Dave McClure",
+   "status": "draft"
+  },
+  {
+   "id": "m-127",
+   "level": "middle",
+   "pool": "theory",
+   "question": "При открытой карточной сортировке участники группируют карточки…",
+   "image": null,
+   "options": [
+    "Сами",
+    "По категориям",
+    "По алфавиту",
+    "В дурака"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Раскладка по заданным категориям — закрытая сортировка.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-128",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Проверка, найдут ли люди раздел в иерархии без визуала, — это…",
+   "image": null,
+   "options": [
+    "Tree testing",
+    "A/B-тест",
+    "Айтрекинг",
+    "Посадка дерева"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Участникам показывают только текстовое дерево меню и дают задания.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-129",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Кнопка «Нет, я не люблю экономить» — это тёмный паттерн…",
+   "image": null,
+   "options": [
+    "Confirmshaming",
+    "Roach motel",
+    "Bait-and-switch",
+    "Кринжмаркетинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Пристыживание за отказ. Roach motel — легко подписаться, трудно отписаться.",
+   "source": "deceptive.design",
+   "status": "draft"
+  },
+  {
+   "id": "m-130",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Базовое видно сразу, продвинутое — под «Ещё». Это…",
+   "image": null,
+   "options": [
+    "Прогрессивное раскрытие",
+    "Lazy loading",
+    "Graceful degradation",
+    "Прогрессивная лень"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Снижает нагрузку для новичков, не мешая опытным.",
+   "source": "NN/g",
+   "status": "draft"
+  },
+  {
+   "id": "m-131",
+   "level": "middle",
+   "pool": "theory",
+   "question": "«Сложность нельзя убрать — только перенести на систему или на пользователя». Это…",
+   "image": null,
+   "options": [
+    "Закон Теслера",
+    "Бритва Оккама",
+    "Закон Постела",
+    "Закон дедлайнов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Закон сохранения сложности Ларри Теслера.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-132",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Поле телефона принимает любой формат номера. Какой это принцип?",
+   "image": null,
+   "options": [
+    "Закон Постела",
+    "Закон Теслера",
+    "Закон Хика",
+    "«Клиент прав»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "«Будь консервативен в том, что отправляешь, и либерален в том, что принимаешь».",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-133",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Почему важно красиво закончить онбординг?",
+   "image": null,
+   "options": [
+    "Правило «пик-конец»",
+    "Закон Миллера",
+    "Эффект якоря",
+    "Премия дизайнеру"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Опыт оценивают по самому яркому моменту и финалу, а не в среднем (Канеман).",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-134",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Номер телефона пишут группами: 999 123-45-67. Как называется приём?",
+   "image": null,
+   "options": [
+    "Чанкинг",
+    "Кернинг",
+    "Рендеринг",
+    "Чавкинг"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Группировка облегчает работу кратковременной памяти.",
+   "source": "Laws of UX (Miller's Law)",
+   "status": "draft"
+  },
+  {
+   "id": "m-135",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Порог Доэрти: система должна отвечать быстрее, чем за…",
+   "image": null,
+   "options": [
+    "400 мс",
+    "2 секунды",
+    "10 секунд",
+    "Закипание чайника"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Дольше — пользователь начинает отвлекаться.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-136",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Красивый интерфейс кажется удобнее. Это эффект…",
+   "image": null,
+   "options": [
+    "Эстетики-юзабилити",
+    "Якоря",
+    "Зейгарник",
+    "Лайков Dribbble"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Красота делает терпимее к мелким проблемам, но не устраняет их.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "m-137",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Серые блоки на месте контента во время загрузки — это…",
+   "image": null,
+   "options": [
+    "Skeleton screen",
+    "Splash screen",
+    "Empty state",
+    "Шкафной скелет"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Скелетоны показывают структуру заранее, и ожидание кажется короче.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "m-138",
+   "level": "middle",
+   "pool": "theory",
+   "question": "Первые и последние пункты списка запоминаются лучше. Это эффект…",
+   "image": null,
+   "options": [
+    "Последовательной позиции",
+    "Хика",
+    "Фон Ресторфф",
+    "Бутерброда"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому главное ставят в начало и конец навигации.",
+   "source": "Laws of UX",
+   "status": "draft"
+  },
+  {
+   "id": "s-001",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Суммарная выручка от пользователя за всё время — это…",
+   "image": null,
+   "options": [
+    "LTV",
+    "CAC",
+    "ARPU",
+    "Отпуск сениора"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "CAC — стоимость привлечения, ARPU — средняя выручка за период. LTV — не Long Time Vacation, увы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-002",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Юнит-экономика здорова, когда…",
+   "image": null,
+   "options": [
+    "LTV > CAC",
+    "CAC > LTV",
+    "LTV = CAC",
+    "Финдир спит"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Часто называют ориентир LTV/CAC ≈ 3:1. Дизайн влияет на обе части: онбординг снижает CAC, удержание растит LTV.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-003",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Как доказать эффект редизайна цифрами?",
+   "image": null,
+   "options": [
+    "Контрольная группа",
+    "Лайки Behance",
+    "Отзывы команды",
+    "Растущий график"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Метрика, выбранная после запуска, — это подгонка.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-004",
+   "level": "senior",
+   "pool": "practice",
+   "question": "UX-гипотеза не подтвердилась после запуска. Что делать?",
+   "image": null,
+   "options": [
+    "Разобрать причины",
+    "Продлевать тест",
+    "Скрыть результат",
+    "Винить стейкхолдеров"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Неподтверждённая гипотеза — тоже результат, если из неё сделаны выводы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-005",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Почему нельзя остановить A/B-тест, как только p впервые < 0,05?",
+   "image": null,
+   "options": [
+    "Ложный успех",
+    "Запрет платформы",
+    "Ровно месяц",
+    "Обида p-value"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Частые «подглядывания» раздувают риск ложноположительного результата. Выборку и длительность фиксируют заранее.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-006",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Растите конверсию агрессивными пушами. Какую guardrail-метрику держать?",
+   "image": null,
+   "options": [
+    "Отписки",
+    "Число пушей",
+    "Число макетов",
+    "Настроение копирайтера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Guardrail не даёт выиграть в одном месте ценой потерь в другом.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-007",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Два отдела требуют взаимоисключающие фичи. На что опереться?",
+   "image": null,
+   "options": [
+    "Цели продукта",
+    "Громкость просьб",
+    "Обе сразу",
+    "Монетка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Приоритет задают цели продукта, а не громкость.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-008",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Десятки команд, дизайн-система разрастается. Что помогает сильнее всего?",
+   "image": null,
+   "options": [
+    "Модель владения",
+    "Запрет компонентов",
+    "Один герой",
+    "Сжигание детачей"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "ДС масштабируется процессами и владением, а не количеством компонентов.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-009",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Вы переименовали свойство компонента, и у потребителей всё сломается. По SemVer это…",
+   "image": null,
+   "options": [
+    "Major",
+    "Minor",
+    "Patch",
+    "Версия «Ой»"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "MAJOR — несовместимые изменения, MINOR — новые возможности, PATCH — исправления.",
+   "source": "semver.org",
+   "status": "draft"
+  },
+  {
+   "id": "s-010",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Какой сигнал показывает, что компоненты ДС не закрывают потребности?",
+   "image": null,
+   "options": [
+    "Частые detach",
+    "Высокое покрытие",
+    "Звёзды Storybook",
+    "Улыбки команды"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Detach — лучший бесплатный фидбэк для дизайн-системы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-011",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Исследований нет, сроки горят. На что опереться?",
+   "image": null,
+   "options": [
+    "Вторичные данные",
+    "Чувство прекрасного",
+    "Отложить проект",
+    "Мнение HiPPO"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Аналитика, поддержка, отзывы, конкуренты, эвристики — плюс проверка после запуска. HiPPO — мнение самого высокооплачиваемого, антипаттерн.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-012",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Что сильнее всего снижает расхождения макета и кода?",
+   "image": null,
+   "options": [
+    "Общие токены",
+    "PDF-спецификация",
+    "Архив PNG",
+    "Распечатки макетов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Расхождения лечит общий источник правды, а не документы.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-013",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Что чаще всего забывают передать в разработку?",
+   "image": null,
+   "options": [
+    "Состояния экранов",
+    "Цвет фона",
+    "Логотип",
+    "Пароль Figma"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Не нарисованные состояния придумает разработчик.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-014",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Главная цель дизайн-ревью готовой вёрстки?",
+   "image": null,
+   "options": [
+    "Найти расхождения",
+    "Проверить код",
+    "Утвердить бюджет",
+    "Наказать виновных"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ревью — часть процесса, а не охота за пикселями.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-015",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Как давать обратную связь джуну по макету?",
+   "image": null,
+   "options": [
+    "С объяснением",
+    "«Переделай»",
+    "Переделать самому",
+    "Мемами"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "«Почему» учит, «что» — только исполняет.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-016",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Джун боится показывать сырые макеты. Что поможет?",
+   "image": null,
+   "options": [
+    "Ранние ревью",
+    "Только финал",
+    "Публичный разбор",
+    "Плащ-невидимка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ранний фидбэк дешевле, если его не страшно получать.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-017",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Вы и продакт по-разному видите фичу. С чего начать?",
+   "image": null,
+   "options": [
+    "Критерии успеха",
+    "Жалоба CEO",
+    "Молча уступить",
+    "Дуэль стилусами"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Спорить о критериях продуктивнее, чем о решениях.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-018",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Принцип «Disagree and commit»: что делать после принятия решения?",
+   "image": null,
+   "options": [
+    "Поддержать",
+    "Саботировать",
+    "Молчать",
+    "Форс-пуш"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Принцип известен по Amazon и Intel: позволяет спорить и не застревать.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-019",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Топы хотят быстрое решение, вредное для пользователей. Ваш аргумент?",
+   "image": null,
+   "options": [
+    "Риски бизнеса",
+    "Отказ работать",
+    "Молча сделать",
+    "Грустный котик"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Топы решают через риски и деньги — говорите на их языке.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-020",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Чем сениор-дизайнер отличается от мидла прежде всего?",
+   "image": null,
+   "options": [
+    "Влиянием",
+    "Плагинами",
+    "Скоростью",
+    "Водолазкой"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Сениор отвечает за результат, а не за исполнение.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-021",
+   "level": "senior",
+   "pool": "practice",
+   "question": "OKR — это цели и…",
+   "image": null,
+   "options": [
+    "Ключевые результаты",
+    "KPI отдела",
+    "Задачи спринта",
+    "Капризы руководителя"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Objectives and Key Results: амбициозная цель плюс измеримые результаты.",
+   "source": "John Doerr, «Measure What Matters»",
+   "status": "draft"
+  },
+  {
+   "id": "s-022",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Какой Key Result сформулирован правильно?",
+   "image": null,
+   "options": [
+    "Retention 18→22%",
+    "Улучшить UX",
+    "Сделать редизайн",
+    "Всем понравиться"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ключевой результат измерим и отвечает на вопрос «как поймём, что цель достигнута».",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-023",
+   "level": "senior",
+   "pool": "practice",
+   "question": "NPS = % промоутеров (9–10) минус…",
+   "image": null,
+   "options": [
+    "% критиков",
+    "% нейтралов",
+    "Средний балл",
+    "Письма капсом"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Нейтралы (7–8) в формулу не входят. Шкала NPS — от −100 до +100.",
+   "source": "Bain & Company",
+   "status": "draft"
+  },
+  {
+   "id": "s-024",
+   "level": "senior",
+   "pool": "practice",
+   "question": "CES (Customer Effort Score) измеряет…",
+   "image": null,
+   "options": [
+    "Усилия пользователя",
+    "Удовлетворённость",
+    "Лояльность",
+    "Кофе поддержки"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Удовлетворённость — CSAT, готовность рекомендовать — NPS.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-025",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Сравнение групп пользователей, пришедших в одно время, — это…",
+   "image": null,
+   "options": [
+    "Когортный анализ",
+    "Бенчмаркинг",
+    "Фокус-группа",
+    "Учёт опозданий"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Когорты показывают, улучшает ли продукт удержание от релиза к релизу.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-026",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Конверсия выросла в каждом сегменте, а общая упала. Что это?",
+   "image": null,
+   "options": [
+    "Парадокс Симпсона",
+    "Ошибка данных",
+    "Сезонность",
+    "Проделки Барта"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, стало больше трафика из сегмента с низкой конверсией.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-027",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Накопленные несоответствия и временные решения в интерфейсе — это…",
+   "image": null,
+   "options": [
+    "Дизайн-долг",
+    "Долг подрядчику",
+    "Лицензии Figma",
+    "Пицца разработчику"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Как и технический долг, его планово гасят, а не копят до редизайна.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-028",
+   "level": "senior",
+   "pool": "practice",
+   "question": "По чему видно, что дизайн-система окупается?",
+   "image": null,
+   "options": [
+    "Скорость сборки",
+    "Число компонентов",
+    "Страницы документации",
+    "Число стикеров"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ценность ДС — в скорости и консистентности, а не в размере библиотеки.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-029",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Согласованный список критериев готовности задачи — это…",
+   "image": null,
+   "options": [
+    "DoD",
+    "Дедлайн",
+    "PNG-макет",
+    "Слёзы дизайнера"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Definition of Done: состояния нарисованы, a11y проверена, компоненты из ДС, ревью пройдено.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-030",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Как встроить доступность в процесс, а не чинить её в конце?",
+   "image": null,
+   "options": [
+    "Компоненты ДС",
+    "Финальный аудит",
+    "Отдельная версия",
+    "Виджет-галочка"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Доступность, заложенная в компоненты, достаётся всем экранам бесплатно.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-031",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Цикл Build → Measure → Learn — это из…",
+   "image": null,
+   "options": [
+    "Lean Startup",
+    "Design Thinking",
+    "Scrum",
+    "Breaking Bad"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Главное в цикле — скорость получения подтверждённого знания.",
+   "source": "Eric Ries, «The Lean Startup»",
+   "status": "draft"
+  },
+  {
+   "id": "s-032",
+   "level": "senior",
+   "pool": "practice",
+   "question": "MVP по Эрику Рису — это способ…",
+   "image": null,
+   "options": [
+    "Проверить гипотезу",
+    "Сэкономить бюджет",
+    "Урезать дизайн",
+    "Наградить сениора"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "MVP — инструмент обучения, а не «похуже и побыстрее». И не Most Valuable Player.",
+   "source": "Eric Ries, «The Lean Startup»",
+   "status": "draft"
+  },
+  {
+   "id": "s-033",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Лучший способ оценить дизайнера на собеседовании?",
+   "image": null,
+   "options": [
+    "Разбор кейса",
+    "Лайки Dribbble",
+    "Хоткеи Figma",
+    "Фото мониторов"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Важно, как человек думает и принимает решения, а не только что рисует.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-034",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Продакт, дизайнер и техлид, которые вместе исследуют и решают, — это…",
+   "image": null,
+   "options": [
+    "Product trio",
+    "Scrum-команда",
+    "Комитет",
+    "Три кофе"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Термин Терезы Торрес: решения лучше, когда в discovery участвуют все три роли.",
+   "source": "Teresa Torres, «Continuous Discovery Habits»",
+   "status": "draft"
+  },
+  {
+   "id": "s-035",
+   "level": "senior",
+   "pool": "practice",
+   "question": "Дерево «цель → возможности → решения → эксперименты» придумала…",
+   "image": null,
+   "options": [
+    "Тереза Торрес",
+    "Дон Норман",
+    "Эрик Рис",
+    "Дед Мороз"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Opportunity Solution Tree Терезы Торрес не даёт прыгнуть к решению, минуя проблему.",
+   "source": "Teresa Torres, «Continuous Discovery Habits»",
+   "status": "draft"
+  },
+  {
+   "id": "s-101",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Минимальный размер цели касания по WCAG 2.2 (2.5.8, уровень AA):",
+   "image": null,
+   "options": [
+    "24×24 px",
+    "44×44 px",
+    "48×48 dp",
+    "Ноготь мизинца"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "44×44 — критерий 2.5.5 уровня AAA; 48 dp — рекомендация Material.",
+   "source": "WCAG 2.2, 2.5.8",
+   "status": "draft"
+  },
+  {
+   "id": "s-102",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Средний балл по шкале SUS:",
+   "image": null,
+   "options": [
+    "68",
+    "50",
+    "85",
+    "42"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "SUS — 10 утверждений, шкала 0–100; 68 — середина. 42 — ответ на другой главный вопрос.",
+   "source": "MeasuringU (Jeff Sauro)",
+   "status": "draft"
+  },
+  {
+   "id": "s-103",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Метрика, которая красиво растёт, но не помогает решать, — это…",
+   "image": null,
+   "options": [
+    "Vanity metric",
+    "North Star",
+    "Retention",
+    "Ванная метрика"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Например, общее число регистраций за всё время — растёт всегда и ничего не говорит о ценности.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-104",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Какой токен семантический?",
+   "image": null,
+   "options": [
+    "color-text-danger",
+    "blue-500",
+    "button-bg-hover",
+    "color-borshch"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Семантический токен называет роль, а не цвет. blue-500 — примитив, button-… — компонентный.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-105",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Эксперты идут по сценарию и спрашивают: «Поймёт ли пользователь?» Это…",
+   "image": null,
+   "options": [
+    "Когнитивный разбор",
+    "Эвристическая оценка",
+    "Юзабилити-тест",
+    "Когнитивный диссонанс"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Эвристическая оценка — проверка по списку принципов, а не по шагам сценария.",
+   "source": "NN/g",
+   "status": "draft"
+  },
+  {
+   "id": "s-106",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Формула поведения Б. Дж. Фогга:",
+   "image": null,
+   "options": [
+    "B = MAP",
+    "B = MVP",
+    "B = CTA",
+    "B = MMM"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Behavior = Motivation × Ability × Prompt. MMM — «мемы, мемы, мемы» — пока не доказано.",
+   "source": "BJ Fogg, «Tiny Habits»",
+   "status": "draft"
+  },
+  {
+   "id": "s-107",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Модель Hooked: Trigger → Action → … → Investment. Чего не хватает?",
+   "image": null,
+   "options": [
+    "Variable Reward",
+    "Retention",
+    "Onboarding",
+    "Тревога"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Ключевое — переменная награда: непредсказуемость удерживает.",
+   "source": "Nir Eyal, «Hooked»",
+   "status": "draft"
+  },
+  {
+   "id": "s-108",
+   "level": "senior",
+   "pool": "theory",
+   "question": "A/B-тест, p = 0,03: без реальной разницы такой результат выпадал бы в…",
+   "image": null,
+   "options": [
+    "3% случаев",
+    "97% случаев",
+    "30% случаев",
+    "3% дизайнеров"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Самая частая ошибка — читать p = 0,03 как «B лучше с вероятностью 97%».",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-109",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Новый дизайн в A/B сначала выигрывал, а через две недели — нет. Вероятная причина?",
+   "image": null,
+   "options": [
+    "Эффект новизны",
+    "Эффект Зейгарник",
+    "Закон Фиттса",
+    "Zoom-усталость"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Поэтому тесты держат дольше и смотрят отдельно на новых и старых пользователей.",
+   "source": null,
+   "status": "draft"
+  },
+  {
+   "id": "s-110",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Линия в сервис-блюпринте, отделяющая видимое клиенту от невидимого:",
+   "image": null,
+   "options": [
+    "Линия видимости",
+    "Линия взаимодействия",
+    "Линия горизонта",
+    "Линия фронта"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Линия взаимодействия — между действиями клиента и фронтстейджем.",
+   "source": "NN/g, Service Blueprints",
+   "status": "draft"
+  },
+  {
+   "id": "s-111",
+   "level": "senior",
+   "pool": "theory",
+   "question": "Какой CSS-медиазапрос учитывает системную настройку «Уменьшить движение»?",
+   "image": null,
+   "options": [
+    "prefers-reduced-motion",
+    "prefers-color-scheme",
+    "reduced-animation",
+    "prefers-no-drama"
+   ],
+   "correct": 0,
+   "funny": [
+    3
+   ],
+   "explanation": "Анимация может быть физически тяжёлой для людей с вестибулярными нарушениями. reduced-animation не существует.",
+   "source": "MDN",
+   "status": "draft"
+  },
+  {
+   "id": "s-112",
+   "level": "senior",
+   "pool": "theory",
+   "question": "На каких четырёх принципах построены WCAG?",
+   "image": null,
+   "options": [
+    "POUR",
+    "CRAP",
+    "SOLID",
+    "KISS"
+   ],
+   "correct": 0,
+   "funny": [
+    1
+   ],
+   "explanation": "Perceivable, Operable, Understandable, Robust. CRAP — реальные принципы вёрстки Робин Уильямс (Contrast, Repetition, Alignment, Proximity), но к WCAG не относятся.",
+   "source": "W3C WCAG",
+   "status": "draft"
+  }
+ ]
+}

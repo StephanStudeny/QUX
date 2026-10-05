@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-single/
+*.log
+
+# Секреты и локальная база бэкенда
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json

@@ -1,0 +1,1499 @@
+{
+  "meta": {
+    "language": "en",
+    "source": "senior.json",
+    "created": "2026-10-04",
+    "notes": [
+      "English version of senior.json: same ids, same option order (correct/funny indexes come from the RU file).",
+      "Adapted, not literal: rubles → dollars, Russian quotes → English curly quotes, Webvisor → session replay, Russian acronyms in jokes → English ones.",
+      "Status: draft until reviewed."
+    ]
+  },
+  "questions": [
+    {
+      "id": "s-001",
+      "question": "Research that answers “why” on a small sample is…",
+      "options": [
+        "Qualitative",
+        "Quantitative",
+        "Desk research",
+        "Guesswork"
+      ],
+      "explanation": "Quantitative research answers “how many” and needs a large sample."
+    },
+    {
+      "id": "s-002",
+      "question": "Analyzing existing reports, articles and data without talking to people is…",
+      "options": [
+        "Desk research",
+        "Field research",
+        "Lab research",
+        "Couch research"
+      ],
+      "explanation": "Desk research is a cheap start before interviews."
+    },
+    {
+      "id": "s-003",
+      "question": "A short questionnaire to select suitable research participants is a…",
+      "options": [
+        "Screener",
+        "Brief",
+        "Guide",
+        "Colander"
+      ],
+      "explanation": "A screener filters out people who don't fit the profile."
+    },
+    {
+      "id": "s-004",
+      "question": "A list of topics and questions used to run an interview is a…",
+      "options": [
+        "Discussion guide",
+        "Brief",
+        "Screener",
+        "Libretto"
+      ],
+      "explanation": "A guide is support, not a rigid script."
+    },
+    {
+      "id": "s-005",
+      "question": "A map showing the company's backstage processes under the customer journey:",
+      "options": [
+        "Service blueprint",
+        "CJM",
+        "Sitemap",
+        "Shed blueprint"
+      ],
+      "explanation": "A service blueprint links customer experience with the work of staff and systems."
+    },
+    {
+      "id": "s-006",
+      "question": "A screen is shown for 5 seconds, then people say what they remember. This is…",
+      "options": [
+        "5-second test",
+        "First click",
+        "A/B test",
+        "Eyeballing"
+      ],
+      "explanation": "It checks whether the main point reads at first glance."
+    },
+    {
+      "id": "s-007",
+      "question": "Technology that tracks where the user is looking is…",
+      "options": [
+        "Eye tracking",
+        "Heatmap",
+        "Session replay",
+        "Clairvoyance"
+      ],
+      "explanation": "Eye-tracking data is used to build gaze heatmaps."
+    },
+    {
+      "id": "s-008",
+      "question": "A standard 10-statement questionnaire to rate a product's usability is…",
+      "options": [
+        "SUS",
+        "NPS",
+        "CSAT",
+        "SOS"
+      ],
+      "explanation": "System Usability Scale; the score runs from 0 to 100."
+    },
+    {
+      "id": "s-009",
+      "question": "Regularly measuring UX metrics to compare product versions is…",
+      "options": [
+        "Benchmarking",
+        "Brainstorming",
+        "Backlog",
+        "Bodybuilding"
+      ],
+      "explanation": "A benchmark shows whether things got better after a redesign."
+    },
+    {
+      "id": "s-010",
+      "question": "Which WCAG level is usually the target for a product?",
+      "options": [
+        "AA",
+        "A",
+        "AAA",
+        "AAAA"
+      ],
+      "explanation": "Most accessibility laws require AA."
+    },
+    {
+      "id": "s-011",
+      "question": "Staff track orders in Excel because the system is clunky. This is a…",
+      "options": [
+        "Workaround",
+        "Bug",
+        "Feature",
+        "Life hack"
+      ],
+      "explanation": "Workarounds are the main problem signal researchers look for."
+    },
+    {
+      "id": "s-012",
+      "question": "Participants see two design options and are asked which is better. This is…",
+      "options": [
+        "Preference test",
+        "A/B test",
+        "First click",
+        "Beauty contest"
+      ],
+      "explanation": "Unlike an A/B test, it measures opinion, not behavior."
+    },
+    {
+      "id": "s-013",
+      "question": "The approach “empathize → define → ideate → prototype → test” is…",
+      "options": [
+        "Design thinking",
+        "Agile",
+        "Waterfall",
+        "Design voodoo"
+      ],
+      "explanation": "Design thinking was popularized by IDEO and the Stanford d.school."
+    },
+    {
+      "id": "s-014",
+      "question": "Making identical elements look the same across the whole product is…",
+      "options": [
+        "Unification",
+        "Redesign",
+        "Rebranding",
+        "Leveling down"
+      ],
+      "explanation": "The foundation of a design system."
+    },
+    {
+      "id": "s-015",
+      "question": "A five-day format: from problem to a prototype tested on people, is a…",
+      "options": [
+        "Design sprint",
+        "Hackathon",
+        "Retro",
+        "Design marathon"
+      ],
+      "explanation": "A format from Google Ventures."
+    },
+    {
+      "id": "s-016",
+      "question": "A set of rules for writing UI text: tone, terms, date formats, is a…",
+      "options": [
+        "Style guide",
+        "Guideline",
+        "Brief",
+        "Charter"
+      ],
+      "explanation": "A content style guide keeps all product copy consistent."
+    },
+    {
+      "id": "s-017",
+      "question": "A list of product terms with one spelling and meaning each is a…",
+      "options": [
+        "Glossary",
+        "Backlog",
+        "Vocabulary list",
+        "Phrasebook"
+      ],
+      "explanation": "So it isn't “cart” in one place and “basket” in another."
+    },
+    {
+      "id": "s-018",
+      "question": "A user's story told in pictures, like a comic, is a…",
+      "options": [
+        "Storyboard",
+        "Moodboard",
+        "CJM",
+        "Coloring book"
+      ],
+      "explanation": "It helps show the context in which the product is used."
+    },
+    {
+      "id": "s-019",
+      "question": "A diagram of everyone who influences and cares about a project is a…",
+      "options": [
+        "Stakeholder map",
+        "Sitemap",
+        "Org chart",
+        "Family tree"
+      ],
+      "explanation": "It shows each party's influence and interest."
+    },
+    {
+      "id": "s-020",
+      "question": "Checking a live product for usability problems is a…",
+      "options": [
+        "UX audit",
+        "Redesign",
+        "Code review",
+        "Stocktake"
+      ],
+      "explanation": "An audit ends with a prioritized list of problems."
+    },
+    {
+      "id": "s-021",
+      "question": "Reworking the look and logic of an existing product is a…",
+      "options": [
+        "Redesign",
+        "Refactoring",
+        "Rebranding",
+        "Renovation"
+      ],
+      "explanation": "Rebranding changes the brand; refactoring changes code without changing behavior."
+    },
+    {
+      "id": "s-022",
+      "question": "A dev document on how a screen behaves, its states and errors, is a…",
+      "options": [
+        "Specification",
+        "Moodboard",
+        "Brief",
+        "User manual"
+      ],
+      "explanation": "Without a spec, developers make up the behavior themselves."
+    },
+    {
+      "id": "s-023",
+      "question": "Designing for people with different abilities from the very start is…",
+      "options": [
+        "Inclusive design",
+        "Responsive design",
+        "Minimalism",
+        "Kind design"
+      ],
+      "explanation": "A solution for some often helps everyone."
+    },
+    {
+      "id": "s-024",
+      "question": "A small UI response to an action — like a “like” animation — is a…",
+      "options": [
+        "Microinteraction",
+        "Transition",
+        "Onboarding",
+        "Fireworks"
+      ],
+      "explanation": "Microinteractions give feedback and character to a product."
+    },
+    {
+      "id": "s-025",
+      "question": "Accumulated UI inconsistencies that cost more and more to fix are…",
+      "options": [
+        "Design debt",
+        "Tech debt",
+        "Backlog",
+        "Mortgage"
+      ],
+      "explanation": "Like tech debt, but in mockups and UI."
+    },
+    {
+      "id": "s-026",
+      "question": "Can the whole flow be done with keys only, no mouse? This checks…",
+      "options": [
+        "Keyboard navigation",
+        "Speed",
+        "Responsiveness",
+        "Patience"
+      ],
+      "explanation": "Tab, Enter, Space and arrows must work everywhere."
+    },
+    {
+      "id": "s-027",
+      "question": "What is the person running a usability test called?",
+      "options": [
+        "Moderator",
+        "Respondent",
+        "Observer",
+        "Emcee"
+      ],
+      "explanation": "The moderator gives tasks and doesn't give hints."
+    },
+    {
+      "id": "s-028",
+      "question": "A trial run of a test on one person before the main one is a… test",
+      "options": [
+        "Pilot",
+        "Final",
+        "Blind",
+        "Warm-up lap"
+      ],
+      "explanation": "A pilot catches script mistakes before the budget is spent."
+    },
+    {
+      "id": "s-029",
+      "question": "A group discussion of a product with 6–8 participants and a moderator is a…",
+      "options": [
+        "Focus group",
+        "Interview",
+        "Usability test",
+        "Get-together"
+      ],
+      "explanation": "Good for opinions and ideas, bad for testing usability."
+    },
+    {
+      "id": "s-030",
+      "question": "An interview aimed at learning whether people even have a problem is a…",
+      "options": [
+        "Problem interview",
+        "Solution interview",
+        "Sales pitch",
+        "Heart-to-heart"
+      ],
+      "explanation": "A solution interview tests an idea that's already formed."
+    },
+    {
+      "id": "s-031",
+      "question": "Other people's solutions you lean on while designing are…",
+      "options": [
+        "References",
+        "Assets",
+        "Source files",
+        "Cheat sheets"
+      ],
+      "explanation": "References are gathered for the task, not “everything pretty”."
+    },
+    {
+      "id": "s-032",
+      "question": "Short rules a team relies on for disputed decisions are…",
+      "options": [
+        "Design principles",
+        "Guidelines",
+        "Brand book",
+        "Commandments"
+      ],
+      "explanation": "For example: “clarity over brevity”."
+    },
+    {
+      "id": "s-033",
+      "question": "A document recording why the team made each design decision:",
+      "options": [
+        "Decision log",
+        "Backlog",
+        "Minutes",
+        "Field diary"
+      ],
+      "explanation": "Six months later it saves you from “why is it like this?” debates."
+    },
+    {
+      "id": "s-034",
+      "question": "Who silently watches and takes notes during a usability test?",
+      "options": [
+        "Observer",
+        "Moderator",
+        "Respondent",
+        "Spy"
+      ],
+      "explanation": "Observers usually sit in the next room or on a call with the camera off."
+    },
+    {
+      "id": "s-035",
+      "question": "A description of which actions each user role can take in a system is a…",
+      "options": [
+        "Role model",
+        "Persona",
+        "Org chart",
+        "Timesheet"
+      ],
+      "explanation": "The basis for designing B2B systems and admin panels."
+    },
+    {
+      "id": "s-036",
+      "question": "Token color.danger refers to red.500. What type of token is it?",
+      "options": [
+        "Semantic",
+        "Primitive",
+        "Component",
+        "Very angry"
+      ],
+      "explanation": "A primitive stores a value, a semantic token stores meaning, a component token stores where it's used."
+    },
+    {
+      "id": "s-037",
+      "question": "Switching light and dark themes via variables is…",
+      "options": [
+        "Theming",
+        "Branding",
+        "Localization",
+        "Repainting"
+      ],
+      "explanation": "The components stay the same; token values change."
+    },
+    {
+      "id": "s-038",
+      "question": "The Figma entity for storing colors, numbers and strings with modes is…",
+      "options": [
+        "Variables",
+        "Styles",
+        "Plugins",
+        "Variability"
+      ],
+      "explanation": "Unlike styles, variables have modes."
+    },
+    {
+      "id": "s-039",
+      "question": "A Figma component property that shows or hides a layer:",
+      "options": [
+        "Boolean",
+        "Text",
+        "Variant",
+        "Yes-no"
+      ],
+      "explanation": "For example, an icon in a button: on or off."
+    },
+    {
+      "id": "s-040",
+      "question": "A published set of components available to all team files is a…",
+      "options": [
+        "Library",
+        "Project",
+        "Branch",
+        "Book depository"
+      ],
+      "explanation": "Library changes arrive in files as updates."
+    },
+    {
+      "id": "s-041",
+      "question": "A separate copy of a Figma file for edits that are merged later is a…",
+      "options": [
+        "Branch",
+        "Page",
+        "Version",
+        "Offshoot"
+      ],
+      "explanation": "Branches let you change the design system without breaking the main file."
+    },
+    {
+      "id": "s-042",
+      "question": "Design system version 2.3.1. What does the first number change mean?",
+      "options": [
+        "Major",
+        "Minor",
+        "Patch",
+        "Age"
+      ],
+      "explanation": "A major version means breaking changes."
+    },
+    {
+      "id": "s-043",
+      "question": "A range of shades of one color from 50 to 900 in a design system is a…",
+      "options": [
+        "Color scale",
+        "Brand palette",
+        "Gradient",
+        "Rainbow"
+      ],
+      "explanation": "Semantic colors — background, text, borders — are built from scales."
+    },
+    {
+      "id": "s-044",
+      "question": "A set of icons in one style, with one stroke width and grid, is an…",
+      "options": [
+        "Icon set",
+        "Moodboard",
+        "Sprite",
+        "Badge collection"
+      ],
+      "explanation": "Icons from different sets look sloppy side by side."
+    },
+    {
+      "id": "s-045",
+      "question": "A developer tool for cataloging UI components in code is…",
+      "options": [
+        "Storybook",
+        "Figma",
+        "Jira",
+        "Storyteller"
+      ],
+      "explanation": "Every component is shown in all its states."
+    },
+    {
+      "id": "s-046",
+      "question": "A fixed set of spacing values: 4, 8, 12, 16, 24… is a…",
+      "options": [
+        "Spacing scale",
+        "Type scale",
+        "Column grid",
+        "School ruler"
+      ],
+      "explanation": "A scale gets rid of random values like 13 or 17."
+    },
+    {
+      "id": "s-047",
+      "question": "A layout stretches smoothly to any screen width. This layout is called…",
+      "options": [
+        "Fluid",
+        "Fixed",
+        "Static",
+        "Chewy"
+      ],
+      "explanation": "A fluid layout changes continuously, not in jumps."
+    },
+    {
+      "id": "s-048",
+      "question": "A “Play” icon is shifted off-center so it looks centered. This is…",
+      "options": [
+        "Optical alignment",
+        "Math alignment",
+        "Kerning",
+        "Cross-eyed"
+      ],
+      "explanation": "The eye sees a shape's center of mass, not the center of its box."
+    },
+    {
+      "id": "s-049",
+      "question": "Standard quotation marks in US English typesetting:",
+      "options": [
+        "Curly quotes",
+        "Straight quotes",
+        "Guillemets",
+        "Air quotes"
+      ],
+      "explanation": "“Curly” quotes are the typographic ones; \"straight\" quotes are a typewriter leftover."
+    },
+    {
+      "id": "s-050",
+      "question": "What keeps “10 km” together so the number isn't left at the end of a line?",
+      "options": [
+        "Non-breaking space",
+        "Hyphen",
+        "Dash",
+        "Duct tape"
+      ],
+      "explanation": "In HTML it's &nbsp;."
+    },
+    {
+      "id": "s-051",
+      "question": "Digits of equal width so number columns in a table don't jump are…",
+      "options": [
+        "Tabular figures",
+        "Roman numerals",
+        "Small caps",
+        "Even digits"
+      ],
+      "explanation": "Enabled with the OpenType feature tnum."
+    },
+    {
+      "id": "s-052",
+      "question": "One font file with smooth weight control from Thin to Black is a…",
+      "options": [
+        "Variable font",
+        "Typeface",
+        "Font pairing",
+        "Rubber font"
+      ],
+      "explanation": "Variable fonts save weight and offer in-between styles."
+    },
+    {
+      "id": "s-053",
+      "question": "The vector animation format from After Effects for apps and sites:",
+      "options": [
+        "Lottie",
+        "GIF",
+        "MP4",
+        "Lotto"
+      ],
+      "explanation": "Lottie is lighter than video and scales without loss."
+    },
+    {
+      "id": "s-054",
+      "question": "A light sweep running over a skeleton while loading is a…",
+      "options": [
+        "Shimmer",
+        "Spinner",
+        "Progress bar",
+        "Glitter"
+      ],
+      "explanation": "A shimmer shows that loading is in progress."
+    },
+    {
+      "id": "s-055",
+      "question": "What's a chart showing parts of a whole as circle slices called?",
+      "options": [
+        "Pie chart",
+        "Bar chart",
+        "Line chart",
+        "Pizza"
+      ],
+      "explanation": "To compare many shares, bars are better: the eye judges angles poorly."
+    },
+    {
+      "id": "s-056",
+      "question": "A grid where columns and rows form module cells is a…",
+      "options": [
+        "Modular grid",
+        "Column grid",
+        "Baseline grid",
+        "Plaid"
+      ],
+      "explanation": "The modular grid is the backbone of the Swiss style."
+    },
+    {
+      "id": "s-057",
+      "question": "A screen with key metrics as cards and charts is a…",
+      "options": [
+        "Dashboard",
+        "Landing page",
+        "Moodboard",
+        "Car dashboard"
+      ],
+      "explanation": "A dashboard should answer the question in a few seconds."
+    },
+    {
+      "id": "s-058",
+      "question": "A sans-serif built on the circle and square, like Futura, is…",
+      "options": [
+        "Geometric",
+        "Humanist",
+        "Serif",
+        "Square"
+      ],
+      "explanation": "Humanist sans-serifs are closer to handwritten forms."
+    },
+    {
+      "id": "s-059",
+      "question": "Apple's 2025 design language with translucent “glass” elements:",
+      "options": [
+        "Liquid Glass",
+        "Material You",
+        "Aqua",
+        "Double glazing"
+      ],
+      "explanation": "Elements refract the content beneath them."
+    },
+    {
+      "id": "s-060",
+      "question": "The Material Design version that takes UI colors from the phone wallpaper:",
+      "options": [
+        "Material You",
+        "Material 2",
+        "Fluent",
+        "Material Girl"
+      ],
+      "explanation": "Also known as Material 3."
+    },
+    {
+      "id": "s-061",
+      "question": "The Figma mode where one person presents and everyone follows their screen:",
+      "options": [
+        "Spotlight",
+        "Dev Mode",
+        "Prototype",
+        "Floodlight"
+      ],
+      "explanation": "Handy for calls and reviews."
+    },
+    {
+      "id": "s-062",
+      "question": "A breakdown of a component's parts — container, icon, label — is its…",
+      "options": [
+        "Anatomy",
+        "Biography",
+        "Specification",
+        "Skeleton"
+      ],
+      "explanation": "Anatomy is the first section of component documentation."
+    },
+    {
+      "id": "s-063",
+      "question": "Snapping vectors to whole pixels so icons look crisp is the…",
+      "options": [
+        "Pixel grid",
+        "Modular grid",
+        "Layout grid",
+        "Pixel art"
+      ],
+      "explanation": "In Figma it's Snap to pixel grid."
+    },
+    {
+      "id": "s-064",
+      "question": "The animation with which one screen replaces another is a…",
+      "options": [
+        "Transition",
+        "Microinteraction",
+        "Loader",
+        "Teleport"
+      ],
+      "explanation": "A transition helps you understand where you came from and where you landed."
+    },
+    {
+      "id": "s-065",
+      "question": "How do you move items to a new line in Figma Auto layout when they don't fit?",
+      "options": [
+        "Wrap",
+        "Hug",
+        "Clip",
+        "Enter"
+      ],
+      "explanation": "Handy for tags and chips."
+    },
+    {
+      "id": "s-066",
+      "question": "“People don't want a drill, they want a hole in the wall.” Which theory is this?",
+      "options": [
+        "JTBD",
+        "Agile",
+        "Kanban",
+        "DIY"
+      ],
+      "explanation": "Jobs to Be Done: a product is “hired” to do a job."
+    },
+    {
+      "id": "s-067",
+      "question": "The list of features that will definitely make the first version is the…",
+      "options": [
+        "Scope",
+        "Backlog",
+        "Roadmap",
+        "Scooter"
+      ],
+      "explanation": "Everything out of scope goes to later versions."
+    },
+    {
+      "id": "s-068",
+      "question": "A model splitting features into must-be, performance and delighters:",
+      "options": [
+        "Kano model",
+        "RICE",
+        "MoSCoW",
+        "Barbie model"
+      ],
+      "explanation": "Delighters become must-haves over time."
+    },
+    {
+      "id": "s-069",
+      "question": "Must, Should, Could, Won't — the prioritization method…",
+      "options": [
+        "MoSCoW",
+        "RICE",
+        "Kano",
+        "Moscow mule"
+      ],
+      "explanation": "The o's are added only for readability."
+    },
+    {
+      "id": "s-070",
+      "question": "Reach, Impact, Confidence, Effort — the prioritization formula…",
+      "options": [
+        "RICE",
+        "ICE",
+        "SMART",
+        "Rice pudding"
+      ],
+      "explanation": "(reach × impact × confidence) / effort."
+    },
+    {
+      "id": "s-071",
+      "question": "Impact, Confidence, Ease — a quick hypothesis score…",
+      "options": [
+        "ICE",
+        "RICE",
+        "MoSCoW",
+        "Ice cubes"
+      ],
+      "explanation": "RICE adds reach to it."
+    },
+    {
+      "id": "s-072",
+      "question": "How much money a customer brings over their whole life with the product:",
+      "options": [
+        "LTV",
+        "CAC",
+        "ARPU",
+        "Tips"
+      ],
+      "explanation": "LTV is compared with the cost of acquisition, CAC."
+    },
+    {
+      "id": "s-073",
+      "question": "Average revenue per user is the metric…",
+      "options": [
+        "ARPU",
+        "LTV",
+        "MAU",
+        "Paycheck"
+      ],
+      "explanation": "ARPPU is the same, but only for paying users."
+    },
+    {
+      "id": "s-074",
+      "question": "Calculating profit per customer or per sale is…",
+      "options": [
+        "Unit economics",
+        "Accounting",
+        "Analytics",
+        "Arithmetic"
+      ],
+      "explanation": "It shows whether the product makes money on each customer."
+    },
+    {
+      "id": "s-075",
+      "question": "Users are grouped by sign-up month and compared. This is…",
+      "options": [
+        "Cohort analysis",
+        "A/B test",
+        "SWOT",
+        "Horoscope"
+      ],
+      "explanation": "A cohort is a group that shares an event in time."
+    },
+    {
+      "id": "s-076",
+      "question": "One main metric reflecting the product's value for the customer is the…",
+      "options": [
+        "North Star",
+        "Vanity metric",
+        "Team KPI",
+        "TikTok star"
+      ],
+      "explanation": "North Star Metric; for Airbnb, it's nights booked."
+    },
+    {
+      "id": "s-077",
+      "question": "Estimating task complexity in relative units in Scrum is…",
+      "options": [
+        "Story points",
+        "Hours",
+        "Deadlines",
+        "SAT scores"
+      ],
+      "explanation": "Complexity is estimated relative to other tasks, not in time."
+    },
+    {
+      "id": "s-078",
+      "question": "The product found a market that truly wants it. This is…",
+      "options": [
+        "Product-market fit",
+        "Growth hacking",
+        "Blue ocean",
+        "Fitness"
+      ],
+      "explanation": "A startup's main goal before scaling."
+    },
+    {
+      "id": "s-079",
+      "question": "Acquisition, Activation, Retention, Referral, Revenue — this is the… funnel",
+      "options": [
+        "AARRR",
+        "HEART",
+        "RICE",
+        "Yo-ho-ho"
+      ],
+      "explanation": "“Pirate metrics” — it reads like “Arrr!”."
+    },
+    {
+      "id": "s-080",
+      "question": "A phone in the cart comes with an offer to buy a case. This is…",
+      "options": [
+        "Cross-sell",
+        "Upsell",
+        "Downsell",
+        "Pushiness"
+      ],
+      "explanation": "Upsell is a pricier version of the same; cross-sell is a related item."
+    },
+    {
+      "id": "s-081",
+      "question": "Quarterly objectives with measurable key results are…",
+      "options": [
+        "OKR",
+        "KPI",
+        "SMART",
+        "Okra"
+      ],
+      "explanation": "Objectives and Key Results."
+    },
+    {
+      "id": "s-082",
+      "question": "A goal that's specific, measurable, achievable, relevant and time-bound is…",
+      "options": [
+        "SMART",
+        "OKR",
+        "KPI",
+        "Wishful"
+      ],
+      "explanation": "Specific, Measurable, Achievable, Relevant, Time-bound."
+    },
+    {
+      "id": "s-083",
+      "question": "Revenue divided by the number of orders is…",
+      "options": [
+        "AOV",
+        "LTV",
+        "Margin",
+        "Tips"
+      ],
+      "explanation": "Average order value. It grows through upsells and bundles."
+    },
+    {
+      "id": "s-084",
+      "question": "The moment a newcomer first gets value from the product is…",
+      "options": [
+        "Activation",
+        "Sign-up",
+        "Retention",
+        "Initiation"
+      ],
+      "explanation": "It's also called the aha moment."
+    },
+    {
+      "id": "s-085",
+      "question": "The stage of finding and testing what's worth building, before development, is…",
+      "options": [
+        "Discovery",
+        "Delivery",
+        "Release",
+        "Disco"
+      ],
+      "explanation": "Delivery is the stage of building and shipping."
+    },
+    {
+      "id": "s-086",
+      "question": "Interviewing customers to test demand before development is…",
+      "options": [
+        "Customer dev",
+        "Handoff",
+        "Retro",
+        "Casting"
+      ],
+      "explanation": "Customer development is Steve Blank's method."
+    },
+    {
+      "id": "s-087",
+      "question": "A screen asking you to pay for access to a feature is a…",
+      "options": [
+        "Paywall",
+        "Onboarding",
+        "Landing page",
+        "Tollgate"
+      ],
+      "explanation": "A paywall is shown when the value is already clear."
+    },
+    {
+      "id": "s-088",
+      "question": "A free trial period of a subscription is a…",
+      "options": [
+        "Trial",
+        "Demo",
+        "Freemium",
+        "Freebie"
+      ],
+      "explanation": "A trial is limited by time; freemium is limited by features."
+    },
+    {
+      "id": "s-089",
+      "question": "Offering a customer a more expensive plan or version is…",
+      "options": [
+        "Upsell",
+        "Cross-sell",
+        "Downsell",
+        "A scam"
+      ],
+      "explanation": "Cross-sell is selling a related item."
+    },
+    {
+      "id": "s-090",
+      "question": "Turning on a new feature for only some users without a new release is a…",
+      "options": [
+        "Feature flag",
+        "Hotfix",
+        "Backport",
+        "Flagpole"
+      ],
+      "explanation": "A feature flag lets you roll a feature back in seconds."
+    },
+    {
+      "id": "s-091",
+      "question": "Confidence that an A/B test difference isn't random is…",
+      "options": [
+        "Significance",
+        "Conversion",
+        "Reach",
+        "Luck"
+      ],
+      "explanation": "It's usually checked at the 0.05 level."
+    },
+    {
+      "id": "s-092",
+      "question": "The A/B test group that sees the old version is the… group",
+      "options": [
+        "Control",
+        "Test",
+        "Focus",
+        "Lab-rat"
+      ],
+      "explanation": "The new version's result is compared against it."
+    },
+    {
+      "id": "s-093",
+      "question": "Splitting an audience into groups by shared traits is…",
+      "options": [
+        "Segmentation",
+        "Targeting",
+        "Conversion",
+        "Salami slicing"
+      ],
+      "explanation": "Targeting is the next step: choosing a segment to work with."
+    },
+    {
+      "id": "s-094",
+      "question": "After a failed release, the previous version was restored. This is a…",
+      "options": [
+        "Rollback",
+        "Hotfix",
+        "Rollout",
+        "Retreat"
+      ],
+      "explanation": "A rollback is first aid while the cause is investigated."
+    },
+    {
+      "id": "s-095",
+      "question": "Accumulated quick fixes in the code that will have to be redone are…",
+      "options": [
+        "Tech debt",
+        "Backlog",
+        "Bug",
+        "Mortgage"
+      ],
+      "explanation": "Technical debt grows if it isn't “paid off”."
+    },
+    {
+      "id": "s-096",
+      "question": "A sharp change in product strategy after testing hypotheses is a…",
+      "options": [
+        "Pivot",
+        "Release",
+        "Rebranding",
+        "Pirouette"
+      ],
+      "explanation": "A term from Lean Startup."
+    },
+    {
+      "id": "s-097",
+      "question": "Satisfaction rating right after a purchase or support request is the metric…",
+      "options": [
+        "CSAT",
+        "NPS",
+        "MAU",
+        "GPA"
+      ],
+      "explanation": "Customer Satisfaction Score — “How satisfied are you?”"
+    },
+    {
+      "id": "s-098",
+      "question": "Regularly cleaning up and clarifying backlog items is…",
+      "options": [
+        "Grooming",
+        "Retro",
+        "Demo",
+        "Manicure"
+      ],
+      "explanation": "In the Scrum Guide it's Product Backlog Refinement."
+    },
+    {
+      "id": "s-099",
+      "question": "The ratio of profit to investment is the metric…",
+      "options": [
+        "ROI",
+        "CTR",
+        "NPS",
+        "ASAP"
+      ],
+      "explanation": "Return on Investment."
+    },
+    {
+      "id": "s-100",
+      "question": "An urgent unplanned fix made right in the live version is a…",
+      "options": [
+        "Hotfix",
+        "Release",
+        "Refactoring",
+        "Ambulance"
+      ],
+      "explanation": "A hotfix ships without waiting for the next release."
+    },
+    {
+      "id": "s-201",
+      "question": "A site has a button for a feature that doesn't exist yet, to test demand. This is…",
+      "options": [
+        "Fake door",
+        "Prototype",
+        "A/B test",
+        "Decoy"
+      ],
+      "explanation": "People who click are honestly told the feature is in development."
+    },
+    {
+      "id": "s-202",
+      "question": "Tasks almost always take longer than we planned. This is the… fallacy",
+      "options": [
+        "Planning",
+        "Survivorship",
+        "Novelty",
+        "Friday"
+      ],
+      "explanation": "That's why estimates get a buffer."
+    },
+    {
+      "id": "s-203",
+      "question": "An experience is remembered by its most intense moment and its end. This is…",
+      "options": [
+        "Peak-end rule",
+        "First meeting",
+        "Last word",
+        "Happy ending"
+      ],
+      "explanation": "That's why it's important to end flows well."
+    },
+    {
+      "id": "s-204",
+      "question": "In a long list, the first and last items are remembered best. The… effect",
+      "options": [
+        "Serial position",
+        "Halo",
+        "Anchoring",
+        "Goldfish"
+      ],
+      "explanation": "The serial position effect: primacy and recency."
+    },
+    {
+      "id": "s-205",
+      "question": "A $99 plan is shown first — and $29 suddenly seems cheap. This is the… effect",
+      "options": [
+        "Anchoring",
+        "Halo",
+        "Decoy",
+        "Sale frenzy"
+      ],
+      "explanation": "The first number becomes the reference point."
+    },
+    {
+      "id": "s-206",
+      "question": "A middle plan is added so the expensive one looks like a good deal. The… effect",
+      "options": [
+        "Decoy",
+        "Anchoring",
+        "Scarcity",
+        "Trojan horse"
+      ],
+      "explanation": "The decoy effect."
+    },
+    {
+      "id": "s-207",
+      "question": "“5,000 people already bought this” — which psychological lever is this?",
+      "options": [
+        "Social proof",
+        "Scarcity",
+        "Reciprocity",
+        "Hypnosis"
+      ],
+      "explanation": "We look to the choices of others."
+    },
+    {
+      "id": "s-208",
+      "question": "“Only 2 rooms left at this price” — which technique is this?",
+      "options": [
+        "Scarcity",
+        "Reciprocity",
+        "Authority",
+        "Panic"
+      ],
+      "explanation": "What's rare seems more valuable."
+    },
+    {
+      "id": "s-209",
+      "question": "Losing $100 hurts more than finding $100 feels good. This is…",
+      "options": [
+        "Loss aversion",
+        "Anchoring",
+        "IKEA effect",
+        "Greed"
+      ],
+      "explanation": "The core of Kahneman and Tversky's prospect theory."
+    },
+    {
+      "id": "s-210",
+      "question": "Most people leave a pre-checked box as it is. This is the… effect",
+      "options": [
+        "Default",
+        "Anchoring",
+        "Decoy",
+        "Couch potato"
+      ],
+      "explanation": "The default choice is perceived as the recommended one."
+    },
+    {
+      "id": "s-211",
+      "question": "With 24 jams on offer, people buy less than with 6. What's this effect called?",
+      "options": [
+        "Choice overload",
+        "Decoy effect",
+        "Anchoring",
+        "Jam session"
+      ],
+      "explanation": "Too many options paralyze."
+    },
+    {
+      "id": "s-212",
+      "question": "A cabinet you assembled yourself feels more valuable than a ready one. Effect:",
+      "options": [
+        "IKEA",
+        "Hawthorne",
+        "Placebo",
+        "Allen key"
+      ],
+      "explanation": "Effort invested raises the value of the result."
+    },
+    {
+      "id": "s-213",
+      "question": "They studied only successful startups and drew conclusions. This is… bias",
+      "options": [
+        "Survivorship",
+        "Anchoring",
+        "Novelty",
+        "Optimist"
+      ],
+      "explanation": "The failures aren't in the sample, so conclusions are skewed."
+    },
+    {
+      "id": "s-214",
+      "question": "An expert can hardly imagine a user not knowing something. This is…",
+      "options": [
+        "Curse of knowledge",
+        "Anchoring",
+        "Impostor syndrome",
+        "Amnesia"
+      ],
+      "explanation": "That's why you test the interface on people, not on yourself."
+    },
+    {
+      "id": "s-215",
+      "question": "An element looks like a button but can't be pressed. This is…",
+      "options": [
+        "False affordance",
+        "Easter egg",
+        "Placeholder",
+        "A prank"
+      ],
+      "explanation": "False cues annoy and confuse."
+    },
+    {
+      "id": "s-216",
+      "question": "A beautiful interface seems easier to use even when it isn't. This is the… effect",
+      "options": [
+        "Aesthetic-usability",
+        "Anchoring",
+        "Placebo",
+        "Candy wrapper"
+      ],
+      "explanation": "Attractiveness raises tolerance for problems."
+    },
+    {
+      "id": "s-217",
+      "question": "A loyalty card fills faster if 2 of 10 stamps are already there. The… effect",
+      "options": [
+        "Goal gradient",
+        "Anchoring",
+        "Hawthorne",
+        "Caffeine"
+      ],
+      "explanation": "The closer the goal, the stronger the motivation."
+    },
+    {
+      "id": "s-218",
+      "question": "20% of features deliver 80% of the value. What's this principle called?",
+      "options": [
+        "Pareto principle",
+        "Moore's law",
+        "Hick's law",
+        "Freebie principle"
+      ],
+      "explanation": "The 80/20 distribution."
+    },
+    {
+      "id": "s-219",
+      "question": "A task expands to fill all the time allotted to it. Whose law?",
+      "options": [
+        "Parkinson's",
+        "Brooks's",
+        "Tesler's",
+        "Student's"
+      ],
+      "explanation": "That's why tasks get timeboxes."
+    },
+    {
+      "id": "s-220",
+      "question": "Of two solutions, pick the one with fewer assumptions. This is…",
+      "options": [
+        "Occam's razor",
+        "Postel's law",
+        "Pareto principle",
+        "Grandma's razor"
+      ],
+      "explanation": "Don't complicate things without need."
+    },
+    {
+      "id": "s-221",
+      "question": "Of three plans, people most often pick the middle one. This is the… effect",
+      "options": [
+        "Compromise",
+        "Anchoring",
+        "Endowment",
+        "Goldilocks"
+      ],
+      "explanation": "The extreme options feel risky."
+    },
+    {
+      "id": "s-222",
+      "question": "“Free” attracts more strongly than even a very low price. The… effect",
+      "options": [
+        "Zero price",
+        "Scarcity",
+        "Anchoring",
+        "Free lunch"
+      ],
+      "explanation": "Dan Ariely showed this with candy for 0 and 1 cent."
+    },
+    {
+      "id": "s-223",
+      "question": "$9.99 feels noticeably less than $10. What's this kind of price called?",
+      "options": [
+        "Psychological",
+        "Market",
+        "Wholesale",
+        "Sneaky"
+      ],
+      "explanation": "Perception clings to the first digit."
+    },
+    {
+      "id": "s-224",
+      "question": "A new feature spiked clicks, and a week later all was back. The… effect",
+      "options": [
+        "Novelty",
+        "Anchoring",
+        "Hawthorne",
+        "Honeymoon"
+      ],
+      "explanation": "That's why A/B tests run for at least a week."
+    },
+    {
+      "id": "s-225",
+      "question": "A person stays with a product because they've invested so much in it. This is…",
+      "options": [
+        "Sunk cost",
+        "Endowment",
+        "IKEA effect",
+        "Hoarding"
+      ],
+      "explanation": "Sunk cost: it hurts to waste the time and money spent."
+    },
+    {
+      "id": "s-226",
+      "question": "The key point goes in the first paragraph, details below. The principle of…",
+      "options": [
+        "Inverted pyramid",
+        "Golden ratio",
+        "Breadcrumbs",
+        "Great Pyramid"
+      ],
+      "explanation": "A reader may drop the text at any moment."
+    },
+    {
+      "id": "s-227",
+      "question": "Full immersion in a task when you lose track of time is the state of…",
+      "options": [
+        "Flow",
+        "Zen",
+        "Trance",
+        "Doomscrolling"
+      ],
+      "explanation": "It happens when difficulty matches skill."
+    },
+    {
+      "id": "s-228",
+      "question": "Test participants act differently because they're being watched. The… effect",
+      "options": [
+        "Hawthorne",
+        "Placebo",
+        "Zeigarnik",
+        "Big Brother"
+      ],
+      "explanation": "That's why the moderator tries to stay unnoticed."
+    },
+    {
+      "id": "s-229",
+      "question": "One pleasant trait, like looks, improves the rating of everything else. Effect:",
+      "options": [
+        "Halo",
+        "Anchoring",
+        "Decoy",
+        "Nimbus"
+      ],
+      "explanation": "The halo effect."
+    },
+    {
+      "id": "s-230",
+      "question": "“90% survive” and “10% die” are perceived differently. The… effect",
+      "options": [
+        "Framing",
+        "Anchoring",
+        "Halo",
+        "Half-empty glass"
+      ],
+      "explanation": "Same meaning, different presentation."
+    },
+    {
+      "id": "s-231",
+      "question": "Your own thing seems more valuable than an identical one owned by others. Effect:",
+      "options": [
+        "Endowment",
+        "IKEA",
+        "Anchoring",
+        "Hamster"
+      ],
+      "explanation": "The endowment effect is why free trials work."
+    },
+    {
+      "id": "s-232",
+      "question": "Fast, intuitive thinking per Kahneman is…",
+      "options": [
+        "System 1",
+        "System 2",
+        "System 0",
+        "Autopilot"
+      ],
+      "explanation": "System 2 is slow and analytical."
+    },
+    {
+      "id": "s-233",
+      "question": "A gentle push toward a choice, without bans or coercion, is a…",
+      "options": [
+        "Nudge",
+        "Paywall",
+        "Dark pattern",
+        "Kick"
+      ],
+      "explanation": "For example, healthy food placed at eye level."
+    },
+    {
+      "id": "s-234",
+      "question": "In the Kano model, features nobody misses but whose presence delights are…",
+      "options": [
+        "Delighters",
+        "Must-be",
+        "Performance",
+        "Easter eggs"
+      ],
+      "explanation": "Over time they become must-haves."
+    },
+    {
+      "id": "s-235",
+      "question": "Fees and shipping appear only at the last checkout step. This dark pattern is…",
+      "options": [
+        "Hidden costs",
+        "Subscription trap",
+        "Eternal cart",
+        "Surprise!"
+      ],
+      "explanation": "Show the full price right away, or trust drops."
+    }
+  ]
+}

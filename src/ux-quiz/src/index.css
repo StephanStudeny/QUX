@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+
+/*
+ * Тема — Figma, коллекция переменных `shadcn/ui`, режим `violet` (Redesign v1).
+ * Приложение только тёмное, поэтому одна палитра на :root.
+ */
+:root {
+  --background: #0f0b24;
+  --foreground: #f5f3ff;
+  --card: #1b1638;
+  --card-foreground: #f5f3ff;
+  --popover: #1b1638;
+  --popover-foreground: #f5f3ff;
+  --primary: #c6f432;
+  --primary-foreground: #151028;
+  --secondary: #2a2352;
+  --secondary-foreground: #f5f3ff;
+  --muted: #231d47;
+  --muted-foreground: #a9a2d6;
+  --accent: #7456fa;
+  --accent-foreground: #ffffff;
+  /* Акцент для текста: #7456fa на фоне даёт 4,07:1 < 4,5. Этот оттенок — 5,7 / 5,1 / 4,6 на background / card / muted. Заливки остаются на --accent. */
+  --accent-text: #8a78ff;
+  --destructive: #ff4d6d;
+  --destructive-subtle: #ff646733;
+  --border: #ffffff14;
+  --input: #ffffff1f;
+  --ring: #7456fa;
+  --success: #c6f432;
+  --success-foreground: #151028;
+  --success-subtle: #00c95033;
+  --warning: #ffb547;
+  --heart: #ff4d6d;
+
+  --glow-accent: #7c5cff73;
+  --glow-success: #c6f43259;
+  --glow-destructive: #ff4d6d59;
+  --glow-accent-core: #a78bfa;
+  --glow-destructive-core: #ff8fa3;
+  --glow-warning-core: #ffd27a;
+  --gradient-card-from: #241d4d;
+  --gradient-card-to: #17122f;
+  --bg-spot: #3b2a99;
+
+  --radius: 16px;
+
+  /* Хром: высота мок-шапки Telegram (в Telegram шапка нативная → 0) и нижнего меню. */
+  --tg-header-h: 0px;
+  --tab-bar-h: 68px;
+  --safe-bottom: max(env(safe-area-inset-bottom), var(--tg-safe-area-inset-bottom, 0px));
+
+  /* Масштаб интерфейса: ниже 375 по ширине — ×0.88 (текст и отступы; зоны нажатия — нет). */
+  --s: 1;
+
+  color-scheme: dark;
+}
+
+@media (max-width: 374px) {
+  :root {
+    --s: 0.88;
+  }
+}
+
+@theme inline {
+  --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-text: var(--accent-text);
+  --color-destructive: var(--destructive);
+  --color-destructive-subtle: var(--destructive-subtle);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning: var(--warning);
+  --color-heart: var(--heart);
+  --color-glow-accent-core: var(--glow-accent-core);
+  --color-gradient-card-from: var(--gradient-card-from);
+  --color-gradient-card-to: var(--gradient-card-to);
+  --color-bg-spot: var(--bg-spot);
+
+  /* Шаг отступов Tailwind тоже масштабируется: p-4 = 16 / 14 px. */
+  --spacing: calc(0.25rem * var(--s));
+
+  /* radius/radius-* из Figma */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Шкала text styles «Quiz/*» (Inter) */
+  --text-display: calc(28px * var(--s));
+  --text-display--line-height: calc(34px * var(--s));
+  --text-h1: calc(24px * var(--s));
+  --text-h1--line-height: calc(30px * var(--s));
+  --text-h2: calc(20px * var(--s));
+  --text-h2--line-height: calc(26px * var(--s));
+  --text-title: calc(16px * var(--s));
+  --text-title--line-height: calc(22px * var(--s));
+  --text-button: calc(15px * var(--s));
+  --text-button--line-height: calc(20px * var(--s));
+  --text-answer: calc(14px * var(--s));
+  --text-answer--line-height: calc(18px * var(--s));
+  --text-body: calc(14px * var(--s));
+  --text-body--line-height: calc(20px * var(--s));
+  --text-small: calc(13px * var(--s));
+  --text-small--line-height: calc(18px * var(--s));
+  --text-caption: calc(12px * var(--s));
+  --text-caption--line-height: calc(16px * var(--s));
+
+  --shadow-glow-success: 0 8px 24px 0 var(--glow-success);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    overscroll-behavior: none;
+  }
+}
+
+/* Карточки Redesign v1: вертикальный градиент + граница --border. */
+@utility card-gradient {
+  background-image: linear-gradient(to bottom, var(--gradient-card-from), var(--gradient-card-to));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+/* Свечение активной вкладки (drop shadow 0 4 12 --glow-success). */
+@utility glow-tab {
+  filter: drop-shadow(0 4px 12px var(--glow-success));
+}
+
+/* Блик скелетона 4.1: полоса проходит слева направо. */
+@keyframes shimmer {
+  from {
+    transform: translateX(-140px) rotate(20deg);
+  }
+  to {
+    transform: translateX(480px) rotate(20deg);
+  }
+}
+
+/* Уменьшение движения: гасим переходы и анимации во всём приложении (блик скелетона, шторки, модалки). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Редакторские правила переноса: без одинокого слова в последней строке абзаца, заголовки — ровными строками.
+   Неразрывные пробелы после предлогов и у чисел ставит typograph() (src/lib/typograph.ts). */
+@layer base {
+  p, li, dd, figcaption, label, button, a { text-wrap: pretty; }
+  h1, h2, h3, h4 { text-wrap: balance; }
+}

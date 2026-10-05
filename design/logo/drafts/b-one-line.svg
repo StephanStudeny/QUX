@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle id="bg" cx="250" cy="250" r="250" fill="#0F0B24"/>
+  <g id="mark" fill="none" stroke="#C6F432" stroke-width="62" stroke-linecap="round" stroke-linejoin="round">
+    <path id="u-slash" d="M108 140 V262 Q108 352 192 352 Q244 352 272 306 L392 140"/>
+    <path id="backslash" d="M262 140 L398 340"/>
+  </g>
+</svg>

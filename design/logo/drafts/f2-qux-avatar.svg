@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs>
+  <linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4FF7A"/><stop offset=".55" stop-color="#C6F432"/><stop offset="1" stop-color="#9CC514"/></linearGradient>
+  <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="7" cy="7" r="2.6" fill="#5A3FE0"/></pattern>
+</defs>
+  <circle cx="250" cy="250" r="250" fill="#0F0B24"/>
+  <polygon points="250.0,22.0 298.1,70.3 364.0,52.5 381.5,118.5 447.5,136.0 429.7,201.9 478.0,250.0 429.7,298.1 447.5,364.0 381.5,381.5 364.0,447.5 298.1,429.7 250.0,478.0 201.9,429.7 136.0,447.5 118.5,381.5 52.5,364.0 70.3,298.1 22.0,250.0 70.3,201.9 52.5,136.0 118.5,118.5 136.0,52.5 201.9,70.3" fill="#F5F3FF"/>
+  <polygon points="250.0,44.0 293.5,87.7 353.0,71.6 368.8,131.2 428.4,147.0 412.3,206.5 456.0,250.0 412.3,293.5 428.4,353.0 368.8,368.8 353.0,428.4 293.5,412.3 250.0,456.0 206.5,412.3 147.0,428.4 131.2,368.8 71.6,353.0 87.7,293.5 44.0,250.0 87.7,206.5 71.6,147.0 131.2,131.2 147.0,71.6 206.5,87.7" fill="#7456FA"/>
+  
+  <g font-family="Lilita One" font-size="178" text-anchor="middle" transform="rotate(-7 250 262)">
+    <text x="250" y="300" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="251" y="301" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="252" y="302" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="253" y="303" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="254" y="304" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="255" y="305" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="256" y="306" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="257" y="307" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="258" y="308" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="259" y="309" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="260" y="310" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text><text x="261" y="311" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text>
+    <text x="250" y="300" fill="#0F0B24" stroke="#0F0B24" stroke-width="22" stroke-linejoin="round">QUX</text>
+    <text x="250" y="300" fill="url(#lime)">QUX</text>
+  </g>
+</svg>

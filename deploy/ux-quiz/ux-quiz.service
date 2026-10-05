@@ -1,0 +1,22 @@
+[Unit]
+Description=UX Quiz backend (Telegram Mini App)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=quiz
+Group=quiz
+WorkingDirectory=/srv/ux-quiz/ux-quiz-server
+EnvironmentFile=/srv/ux-quiz/ux-quiz-server/.env
+ExecStart=/usr/bin/node src/main.ts
+Restart=always
+RestartSec=3
+# Защита: сервер пишет только в папку с базой.
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/ux-quiz/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

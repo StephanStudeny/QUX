@@ -1,0 +1,1499 @@
+{
+  "meta": {
+    "language": "en",
+    "source": "junior.json",
+    "created": "2026-10-04",
+    "notes": [
+      "English version of junior.json: same ids, same option order (correct/funny indexes come from the RU file).",
+      "Adapted, not literal: local references and jokes are replaced with English equivalents.",
+      "Status: draft until reviewed."
+    ]
+  },
+  "questions": [
+    {
+      "id": "j-001",
+      "question": "UX is how it feels to use a product. Colors, fonts and the look of buttons are…",
+      "options": [
+        "UI",
+        "SEO",
+        "QA",
+        "Ooh-wee"
+      ],
+      "explanation": "UX is the whole experience: is it clear, is it easy, did it get the job done. UI is what you see and tap. A pretty UI won't save a clumsy flow."
+    },
+    {
+      "id": "j-003",
+      "question": "A prototype of gray boxes labeled “photo here” is…",
+      "options": [
+        "Low-fi",
+        "High-fi",
+        "MVP",
+        "Lo-fi beats"
+      ],
+      "explanation": "Low-fi tests the idea and structure; high-fi tests details, visuals and motion."
+    },
+    {
+      "id": "j-004",
+      "question": "Which Figma property rounds the corners of a button?",
+      "options": [
+        "Corner radius",
+        "Stroke",
+        "Opacity",
+        "Good vibes"
+      ],
+      "explanation": "Corner radius sets the rounding; each corner can have its own value."
+    },
+    {
+      "id": "j-005",
+      "question": "Who created Material Design?",
+      "options": [
+        "Google",
+        "Apple",
+        "Microsoft",
+        "A textile mill"
+      ],
+      "explanation": "Material Design was introduced in 2014; the current version is Material 3."
+    },
+    {
+      "id": "j-006",
+      "question": "A layout rearranges by screen width: 3 columns on tablet, 1 on phone. This is…",
+      "options": [
+        "Responsive design",
+        "Mobile version",
+        "Fixed layout",
+        "Chameleon design"
+      ],
+      "explanation": "A fluid layout just stretches without rearranging. A mobile version is a separate site."
+    },
+    {
+      "id": "j-009",
+      "question": "Where in Figma do you set up a screen transition on click?",
+      "options": [
+        "Prototype",
+        "Design",
+        "Dev Mode",
+        "Magic"
+      ],
+      "explanation": "In the Prototype tab you connect screens and set the transition animation."
+    },
+    {
+      "id": "j-010",
+      "question": "How do you make a button grow with its text?",
+      "options": [
+        "Hug contents",
+        "Ctrl+G group",
+        "Manual resize",
+        "Fire the copywriter"
+      ],
+      "explanation": "Hug fits the content, Fill takes all available space, Fixed keeps a set size."
+    },
+    {
+      "id": "j-011",
+      "question": "You changed the main component. What happens to its instances?",
+      "options": [
+        "Update everywhere",
+        "Nothing",
+        "Get deleted",
+        "Go on strike"
+      ],
+      "explanation": "Except for properties you've overridden in a specific instance."
+    },
+    {
+      "id": "j-012",
+      "question": "A set of font sizes with a constant ratio (×1.25) is a…",
+      "options": [
+        "Type scale",
+        "Point ruler",
+        "Font pairing",
+        "Bold scales"
+      ],
+      "explanation": "A scale gives clear hierarchy: heading, subheading, body, caption."
+    },
+    {
+      "id": "j-013",
+      "question": "Why shouldn't long text be set in ALL CAPS?",
+      "options": [
+        "Harder to read",
+        "Takes less space",
+        "It's banned",
+        "It shouts"
+      ],
+      "explanation": "Lowercase letters differ in shape, so the eye recognizes words by their outline. Solid caps read slower."
+    },
+    {
+      "id": "j-014",
+      "question": "An error is shown only with a red border. Who will struggle?",
+      "options": [
+        "Color-blind people",
+        "iPhone owners",
+        "Nobody",
+        "Bulls"
+      ],
+      "explanation": "Add error text or an icon. By the way, bulls barely see red — it's the moving cape that annoys them."
+    },
+    {
+      "id": "j-017",
+      "question": "Why does a designer need a persona?",
+      "options": [
+        "User goals",
+        "Profile pic",
+        "Instead of research",
+        "To blame Karen"
+      ],
+      "explanation": "A good persona is built on research, not fantasy. And “Karen, 34” is not to blame."
+    },
+    {
+      "id": "j-021",
+      "question": "What is a UI kit?",
+      "options": [
+        "Component set",
+        "Furniture set",
+        "Figma manual",
+        "Kit Kat"
+      ],
+      "explanation": "A UI kit speeds up work and keeps the interface consistent. A design system is a UI kit plus rules and processes."
+    },
+    {
+      "id": "j-022",
+      "question": "Which format is best for icons that must stay sharp on any screen?",
+      "options": [
+        "SVG",
+        "JPG",
+        "GIF",
+        "Phone photo"
+      ],
+      "explanation": "SVG is vector: it scales without quality loss and weighs little."
+    },
+    {
+      "id": "j-023",
+      "question": "What makes PNG better than JPG for UI graphics?",
+      "options": [
+        "Transparency",
+        "Smaller size",
+        "Brightness",
+        "Biceps"
+      ],
+      "explanation": "JPG is good for photos; PNG is for graphics with transparency and crisp edges."
+    },
+    {
+      "id": "j-024",
+      "question": "Linked screens you can “walk through” like a real app are a…",
+      "options": [
+        "Clickable prototype",
+        "Finished app",
+        "Moodboard",
+        "Auto-clicker"
+      ],
+      "explanation": "A clickable prototype is tested with users before development."
+    },
+    {
+      "id": "j-025",
+      "question": "A window over the page that blocks it until closed is a…",
+      "options": [
+        "Modal",
+        "Browser tab",
+        "Tooltip",
+        "Mood window"
+      ],
+      "explanation": "Modals interrupt the user — use them for things that really matter."
+    },
+    {
+      "id": "j-026",
+      "question": "A screen with no data yet and a hint on what to do is an…",
+      "options": [
+        "Empty state",
+        "404 error",
+        "Splash screen",
+        "Monday morning"
+      ],
+      "explanation": "A good empty state explains what will be here and leads to the first action."
+    },
+    {
+      "id": "j-027",
+      "question": "Error 404 means…",
+      "options": [
+        "Page not found",
+        "Server down",
+        "No access",
+        "Designer on leave"
+      ],
+      "explanation": "A server error is 500, no access is 403. A good 404 helps you find what you need."
+    },
+    {
+      "id": "j-028",
+      "question": "What is onboarding?",
+      "options": [
+        "Newcomer intro",
+        "Logout",
+        "Data deletion",
+        "Boarding pass"
+      ],
+      "explanation": "Onboarding should get the user to the first value fast, not show off every feature."
+    },
+    {
+      "id": "j-029",
+      "question": "Which color most often signals an error in interfaces?",
+      "options": [
+        "Red",
+        "Green",
+        "Blue",
+        "Deadline color"
+      ],
+      "explanation": "But never show an error by color alone — add text or an icon."
+    },
+    {
+      "id": "j-030",
+      "question": "Why does a button need a disabled state?",
+      "options": [
+        "Action unavailable",
+        "To hide it",
+        "Speeds things up",
+        "Button holiday"
+      ],
+      "explanation": "Ideally, it's clear nearby why the button is unavailable and what to do."
+    },
+    {
+      "id": "j-031",
+      "question": "Hover is the state when…",
+      "options": [
+        "Cursor is over",
+        "Element pressed",
+        "Keyboard focus",
+        "Hoverboard"
+      ],
+      "explanation": "Pressing is pressed/active; keyboard focus is focus."
+    },
+    {
+      "id": "j-032",
+      "question": "Is there hover on a touchscreen?",
+      "options": [
+        "Usually not",
+        "Always",
+        "Nights only",
+        "With faith"
+      ],
+      "explanation": "Don't hide important things behind hover — phone users will never see them."
+    },
+    {
+      "id": "j-034",
+      "question": "A trick that pushes users into a choice against their interest is a…",
+      "options": [
+        "Dark pattern",
+        "Dark theme",
+        "Night mode",
+        "Hoodie print"
+      ],
+      "explanation": "Like a hidden subscription or “No, I don't like discounts”. It hurts trust and reputation."
+    },
+    {
+      "id": "j-035",
+      "question": "The tiny site icon in a browser tab is a…",
+      "options": [
+        "Favicon",
+        "Logo",
+        "Emoji",
+        "Designer's pet"
+      ],
+      "explanation": "Short for favorites icon — it used to show up in Favorites."
+    },
+    {
+      "id": "j-101",
+      "question": "What are fonts without serifs called?",
+      "options": [
+        "Sans-serif",
+        "Serif",
+        "Monospace",
+        "Sans fuss"
+      ],
+      "explanation": "Serif fonts have the little feet; sans-serif fonts don't."
+    },
+    {
+      "id": "j-102",
+      "question": "The spacing between a specific pair of letters is…",
+      "options": [
+        "Kerning",
+        "Tracking",
+        "Leading",
+        "Curling"
+      ],
+      "explanation": "Even spacing across all letters is tracking."
+    },
+    {
+      "id": "j-103",
+      "question": "Leading is the space…",
+      "options": [
+        "Between lines",
+        "Between letters",
+        "Between paragraphs",
+        "Hollandaise"
+      ],
+      "explanation": "In CSS it's line-height."
+    },
+    {
+      "id": "j-104",
+      "question": "Navigation like “Home › Courses › UX” is called…",
+      "options": [
+        "Breadcrumbs",
+        "Tabs",
+        "Pagination",
+        "Lunch crumbs"
+      ],
+      "explanation": "It shows where you are and lets you jump a level up."
+    },
+    {
+      "id": "j-105",
+      "question": "CTA stands for Call to…",
+      "options": [
+        "Action",
+        "Attention",
+        "Account",
+        "Cat"
+      ],
+      "explanation": "Call to Action: “Buy”, “Start”. A cat calls too, but for something else."
+    },
+    {
+      "id": "j-106",
+      "question": "In the popular “8pt grid”, sizes and spacing are multiples of…",
+      "options": [
+        "8",
+        "7",
+        "10",
+        "Sleep hours"
+      ],
+      "explanation": "8 divides well and scales cleanly at ×1.5, ×2 and ×3 densities."
+    },
+    {
+      "id": "j-107",
+      "question": "Why does an image need an alt attribute?",
+      "options": [
+        "Screen readers",
+        "Credit author",
+        "Only SEO",
+        "Alter ego"
+      ],
+      "explanation": "Decorative images get an empty alt so screen readers skip them."
+    },
+    {
+      "id": "j-108",
+      "question": "Gray blocks in place of content while loading are a…",
+      "options": [
+        "Skeleton screen",
+        "Splash screen",
+        "Empty state",
+        "Closet skeleton"
+      ],
+      "explanation": "Skeletons show the structure upfront, so the wait feels shorter."
+    },
+    {
+      "id": "j-109",
+      "question": "A map of a customer's steps, thoughts and feelings from first touch to purchase is a…",
+      "options": [
+        "CJM",
+        "Sitemap",
+        "Mind map",
+        "Treasure map"
+      ],
+      "explanation": "A Customer Journey Map shows the whole path: where the customer is happy and where they're ready to quit."
+    },
+    {
+      "id": "j-036",
+      "question": "A usability test participant is stuck. What does the moderator do?",
+      "options": [
+        "Observes",
+        "Gives hints",
+        "Explains",
+        "Panics"
+      ],
+      "explanation": "The moderator doesn't help: a hint hides the real problem. You can ask “What did you expect to see?”"
+    },
+    {
+      "id": "j-110",
+      "question": "A diagram of steps to a goal: screen → action → next screen is a…",
+      "options": [
+        "User flow",
+        "Moodboard",
+        "Guideline",
+        "Flo Rida"
+      ],
+      "explanation": "A user flow shows the path step by step and helps cut extra screens before drawing."
+    },
+    {
+      "id": "j-111",
+      "question": "How a site's sections are organized, labeled and linked is its information…",
+      "options": [
+        "Architecture",
+        "Policy",
+        "Security",
+        "Diet"
+      ],
+      "explanation": "Information architecture answers “where is everything and how do I find it”."
+    },
+    {
+      "id": "j-112",
+      "question": "A progress bar shows the process is running. Which Nielsen heuristic is it?",
+      "options": [
+        "System status",
+        "Flexibility",
+        "Minimalism",
+        "Patience"
+      ],
+      "explanation": "Heuristic #1, visibility of system status: always tell users what's going on, in time and clearly."
+    },
+    {
+      "id": "j-113",
+      "question": "A menu shows options instead of making you remember them. This is…",
+      "options": [
+        "Recognition",
+        "Repetition",
+        "Recall",
+        "Déjà vu"
+      ],
+      "explanation": "Recognizing beats recalling: keep options in sight, not in the user's head."
+    },
+    {
+      "id": "j-114",
+      "question": "Who writes button labels, error messages and hints in an interface?",
+      "options": [
+        "UX writer",
+        "Marketer",
+        "Analyst",
+        "Ghostwriter"
+      ],
+      "explanation": "A UX writer owns microcopy: from “Save” to explaining an error like a human."
+    },
+    {
+      "id": "j-037",
+      "question": "Where should “Invalid email” appear in a form?",
+      "options": [
+        "Below the field",
+        "Top of form",
+        "In a pop-up",
+        "Carrier pigeon"
+      ],
+      "explanation": "An error next to the field shows exactly what to fix and where."
+    },
+    {
+      "id": "j-115",
+      "question": "The user reached the goal with no errors or detours. Which scenario is this?",
+      "options": [
+        "Happy path",
+        "Alternative",
+        "Emergency",
+        "Fairy tale"
+      ],
+      "explanation": "The happy path is the most common route to the goal. Alternatives and errors come next, or the product breaks at the first detour."
+    },
+    {
+      "id": "j-117",
+      "question": "Software that reads the interface aloud for blind users is a…",
+      "options": [
+        "Screen reader",
+        "Voice recorder",
+        "Subtitles",
+        "Town crier"
+      ],
+      "explanation": "A screen reader voices text, buttons and labels. Without labels it reads “button, button, button”."
+    },
+    {
+      "id": "j-038",
+      "question": "How do you move to the next button on a site without a mouse?",
+      "options": [
+        "Tab key",
+        "Esc key",
+        "Double-click",
+        "Mind power"
+      ],
+      "explanation": "Tab moves focus between elements. Everything that works with a mouse must work with a keyboard."
+    },
+    {
+      "id": "j-118",
+      "question": "Design for the small screen first, then expand. This approach is…",
+      "options": [
+        "Mobile first",
+        "Desktop first",
+        "Pixel perfect",
+        "Phone last"
+      ],
+      "explanation": "A small screen forces you to pick what matters — it's easier to add later than to cut."
+    },
+    {
+      "id": "j-119",
+      "question": "Eyes scan text in two horizontal bars, then down the left edge. This is the…",
+      "options": [
+        "F-pattern",
+        "Z-pattern",
+        "Scan effect",
+        "Eagle eye"
+      ],
+      "explanation": "In the F-pattern, line starts and first paragraphs get read, the rest gets scanned. Put key info first."
+    },
+    {
+      "id": "j-039",
+      "question": "You need 500 users' opinions on a new feature. Which method fits?",
+      "options": [
+        "Survey",
+        "Interview",
+        "Usability test",
+        "Ask the cat"
+      ],
+      "explanation": "A survey gives numbers and scale. Interviews give depth with 5–10 people."
+    },
+    {
+      "id": "j-120",
+      "question": "Same elements look and work the same on every screen. This is…",
+      "options": [
+        "Consistency",
+        "Minimalism",
+        "Accessibility",
+        "Copy-paste"
+      ],
+      "explanation": "Nielsen's heuristic #4, consistency and standards: users shouldn't have to guess."
+    },
+    {
+      "id": "j-040",
+      "question": "After submitting a form, users see “Request received”. Why?",
+      "options": [
+        "Confirm result",
+        "Fill the screen",
+        "For SEO",
+        "To brag"
+      ],
+      "explanation": "Without confirmation people aren't sure it worked and submit again."
+    },
+    {
+      "id": "j-121",
+      "question": "The feed loads new posts automatically when you reach the end. This is…",
+      "options": [
+        "Infinite scroll",
+        "Pagination",
+        "Accordion",
+        "Doomscrolling"
+      ],
+      "explanation": "Great for feeds, bad for search: the footer is unreachable and you can't get back to a spot."
+    },
+    {
+      "id": "j-041",
+      "question": "How do you cut the effort of entering a delivery address?",
+      "options": [
+        "Autofill",
+        "More fields",
+        "CAPTCHA",
+        "Telepathy"
+      ],
+      "explanation": "Address suggestions and browser autofill save time and reduce errors."
+    },
+    {
+      "id": "j-122",
+      "question": "A description of how a user completes a specific task with a product is a…",
+      "options": [
+        "Use case",
+        "Backlog",
+        "Sprint",
+        "Pillowcase"
+      ],
+      "explanation": "A use case: who, why and in what steps. It helps you not forget alternative paths."
+    },
+    {
+      "id": "j-123",
+      "question": "What do you call a research participant who answers questions?",
+      "options": [
+        "Respondent",
+        "Moderator",
+        "Stakeholder",
+        "Guinea pig"
+      ],
+      "explanation": "The respondent answers; the moderator runs the session and asks questions."
+    },
+    {
+      "id": "j-124",
+      "question": "Why does an icon without a label need a label or tooltip?",
+      "options": [
+        "To be understood",
+        "For beauty",
+        "For SEO",
+        "To jingle"
+      ],
+      "explanation": "Only a few icons are clear on their own: home, search, cart. People read the rest differently."
+    },
+    {
+      "id": "j-125",
+      "question": "Subtitles for videos in a product are primarily for…",
+      "options": [
+        "Deaf people",
+        "Search engines",
+        "Designers",
+        "Quiet cats"
+      ],
+      "explanation": "For deaf and hard-of-hearing people subtitles are the only access to sound. For everyone else, a bonus on the subway."
+    },
+    {
+      "id": "j-126",
+      "question": "By the ISO standard, usability is effectiveness, efficiency and…",
+      "options": [
+        "Satisfaction",
+        "Performance",
+        "Beauty",
+        "Full belly"
+      ],
+      "explanation": "ISO 9241-11: how well, at what cost and with what feeling the user reaches the goal."
+    },
+    {
+      "id": "j-127",
+      "question": "A prototype hand-drawn on sheets of paper is a…",
+      "options": [
+        "Paper prototype",
+        "Clickable prototype",
+        "Moodboard",
+        "Origami"
+      ],
+      "explanation": "The fastest way to test an idea: redrawing a sheet is cheaper than redoing a mockup."
+    },
+    {
+      "id": "j-128",
+      "question": "Which color model do screens use?",
+      "options": [
+        "RGB",
+        "CMYK",
+        "Pantone",
+        "Rainbow"
+      ],
+      "explanation": "Screens emit red, green and blue light. CMYK is for printing with ink."
+    },
+    {
+      "id": "j-129",
+      "question": "Which color is #FFFFFF?",
+      "options": [
+        "White",
+        "Black",
+        "Red",
+        "Payday green"
+      ],
+      "explanation": "All three channels at max (FF = 255) make white. #000000 is black."
+    },
+    {
+      "id": "j-130",
+      "question": "Colors opposite each other on the color wheel are…",
+      "options": [
+        "Complementary",
+        "Analogous",
+        "Monochromatic",
+        "Feuding"
+      ],
+      "explanation": "A complementary pair gives maximum contrast, like blue and orange."
+    },
+    {
+      "id": "j-043",
+      "question": "How should long article text be aligned to be easy to read?",
+      "options": [
+        "Left",
+        "Justified",
+        "Centered",
+        "Zigzag"
+      ],
+      "explanation": "A straight left edge helps the eye find the start of each line. Justified text on the web leaves gaps between words."
+    },
+    {
+      "id": "j-132",
+      "question": "An icon of three horizontal lines that opens a menu is a…",
+      "options": [
+        "Hamburger",
+        "Kebab",
+        "Meatball",
+        "Burrito"
+      ],
+      "explanation": "Hamburger is three lines, kebab is three vertical dots, meatball is three horizontal dots."
+    },
+    {
+      "id": "j-133",
+      "question": "A short notice at the bottom of the screen that disappears by itself is a…",
+      "options": [
+        "Toast",
+        "Modal",
+        "Alert",
+        "Toaster"
+      ],
+      "explanation": "A toast (snackbar) doesn't block work and leaves on its own. Not for important stuff — it's easy to miss."
+    },
+    {
+      "id": "j-044",
+      "question": "You need to pick exactly one option out of three. Which control fits?",
+      "options": [
+        "Radio buttons",
+        "Checkboxes",
+        "Slider",
+        "Rock-paper-scissors"
+      ],
+      "explanation": "Radio buttons: one of several. Checkboxes: any number."
+    },
+    {
+      "id": "j-134",
+      "question": "How is a toggle switch different from a checkbox?",
+      "options": [
+        "Applies instantly",
+        "It's round",
+        "It's newer",
+        "It's louder"
+      ],
+      "explanation": "A toggle applies the setting at once, like a light switch. A checkbox usually needs “Save”."
+    },
+    {
+      "id": "j-135",
+      "question": "The space from a button's edge to its text is…",
+      "options": [
+        "Padding",
+        "Margin",
+        "Border",
+        "Pillow"
+      ],
+      "explanation": "Padding is inner spacing; margin is outer spacing to neighboring elements."
+    },
+    {
+      "id": "j-136",
+      "question": "What in Figma sets how a layer behaves when its frame is resized?",
+      "options": [
+        "Constraints",
+        "Effects",
+        "Layout grids",
+        "Mood"
+      ],
+      "explanation": "Constraints pin a layer to the frame's edges or center, so it moves or stretches on resize."
+    },
+    {
+      "id": "j-137",
+      "question": "The image broke into little squares when zoomed in. So it is…",
+      "options": [
+        "Raster",
+        "Vector",
+        "Transparent",
+        "Shy"
+      ],
+      "explanation": "Raster is made of pixels, vector of formulas — that's why vector scales without loss."
+    },
+    {
+      "id": "j-138",
+      "question": "The main thing is big and bold, the secondary smaller and quieter. This is…",
+      "options": [
+        "Visual hierarchy",
+        "Grid",
+        "Kerning",
+        "Pecking order"
+      ],
+      "explanation": "Hierarchy controls reading order: size, weight, color and spacing say what matters more."
+    },
+    {
+      "id": "j-139",
+      "question": "Empty space around elements that lets a layout “breathe” is…",
+      "options": [
+        "Negative space",
+        "Dead zone",
+        "Print margins",
+        "Wasted space"
+      ],
+      "explanation": "White (negative) space groups and highlights — it isn't “empty”."
+    },
+    {
+      "id": "j-140",
+      "question": "A list that opens on click and lets you choose an option is a…",
+      "options": [
+        "Dropdown",
+        "Accordion",
+        "Tabs",
+        "Treasure chest"
+      ],
+      "explanation": "A dropdown hides options until clicked. With 2–3 options, better show them right away."
+    },
+    {
+      "id": "j-141",
+      "question": "A person interested in the product who influences decisions is a…",
+      "options": [
+        "Stakeholder",
+        "Respondent",
+        "Freelancer",
+        "Steak holder"
+      ],
+      "explanation": "Stakeholders: client, management, legal, support. Learn their expectations before the mockups."
+    },
+    {
+      "id": "j-142",
+      "question": "The share of visitors who completed the target action is…",
+      "options": [
+        "Conversion",
+        "Reach",
+        "Traffic",
+        "Currency exchange"
+      ],
+      "explanation": "Out of 1,000 visitors, 30 bought — that's 3% conversion."
+    },
+    {
+      "id": "j-143",
+      "question": "DAU is the number of users who come back…",
+      "options": [
+        "Every day",
+        "Every month",
+        "First visit",
+        "In the rain"
+      ],
+      "explanation": "Daily Active Users — active within a day. MAU — within a month."
+    },
+    {
+      "id": "j-144",
+      "question": "A list of product tasks and ideas sorted by priority is a…",
+      "options": [
+        "Backlog",
+        "Checklist",
+        "Deadline",
+        "Backstage"
+      ],
+      "explanation": "A backlog is a living list: what's on top gets picked up first."
+    },
+    {
+      "id": "j-145",
+      "question": "A short fixed work cycle of a team in Scrum is a…",
+      "options": [
+        "Sprint",
+        "Marathon",
+        "Release",
+        "Smoke break"
+      ],
+      "explanation": "A sprint usually lasts 1–4 weeks and ends with a working increment."
+    },
+    {
+      "id": "j-146",
+      "question": "An approach where stages go strictly one after another, no going back, is…",
+      "options": [
+        "Waterfall",
+        "Agile",
+        "Scrum",
+        "Roller coaster"
+      ],
+      "explanation": "Waterfall: requirements → design → development → testing. A mistake made early is found at the very end."
+    },
+    {
+      "id": "j-147",
+      "question": "Two versions of a screen are shown to different people and compared. This is…",
+      "options": [
+        "A/B test",
+        "Usability test",
+        "Survey",
+        "Mockup duel"
+      ],
+      "explanation": "An A/B test answers “which version wins on the metric” but doesn't explain why."
+    },
+    {
+      "id": "j-148",
+      "question": "“As a shopper, I want to save my cart so that…” is the format of a…",
+      "options": [
+        "User story",
+        "Brief",
+        "Spec",
+        "Memoirs"
+      ],
+      "explanation": "A user story: who, what they want and why. The focus is on value, not buttons."
+    },
+    {
+      "id": "j-152",
+      "question": "The answer to “why would a customer choose us over a competitor” is…",
+      "options": [
+        "Value proposition",
+        "Slogan",
+        "Price list",
+        "Friend discount"
+      ],
+      "explanation": "A value proposition: what problem we solve and why we beat the alternatives."
+    },
+    {
+      "id": "j-155",
+      "question": "A short daily team meeting about task status is a…",
+      "options": [
+        "Daily",
+        "Retro",
+        "Demo",
+        "Tea party"
+      ],
+      "explanation": "The daily (daily scrum) is 15 minutes on plans and blockers, not a report to the boss."
+    },
+    {
+      "id": "j-201",
+      "question": "Who coined the term “user experience” while working at Apple in the 90s?",
+      "options": [
+        "Don Norman",
+        "Steve Jobs",
+        "Jakob Nielsen",
+        "Uncle Sam"
+      ],
+      "explanation": "Don Norman became Apple's “User Experience Architect” in 1993 — and the term went global."
+    },
+    {
+      "id": "j-202",
+      "question": "What is the iPhone's built-in screen reader called?",
+      "options": [
+        "VoiceOver",
+        "TalkBack",
+        "Siri",
+        "Whisperer"
+      ],
+      "explanation": "VoiceOver is on iOS and macOS; TalkBack is on Android."
+    },
+    {
+      "id": "j-203",
+      "question": "A big dropdown panel showing all sections and subsections at once is a…",
+      "options": [
+        "Mega menu",
+        "Hamburger",
+        "Tabs",
+        "Gigabyte"
+      ],
+      "explanation": "A mega menu suits large catalogs: everything is visible at once, no nested dropdowns."
+    },
+    {
+      "id": "j-204",
+      "question": "A persona built from the team's guesses without research is a…",
+      "options": [
+        "Proto-persona",
+        "Anti-persona",
+        "Focus group",
+        "Fantasy"
+      ],
+      "explanation": "A proto-persona is a hypothesis. Useful for a start, but it must be checked with real people."
+    },
+    {
+      "id": "j-205",
+      "question": "Participants log their experience with a product for weeks. This is a…",
+      "options": [
+        "Diary study",
+        "Lab study",
+        "Hallway test",
+        "Spy mission"
+      ],
+      "explanation": "A diary study catches habits and context you can't see in an hour-long interview."
+    },
+    {
+      "id": "j-206",
+      "question": "A researcher watches someone work right at their workplace. This is…",
+      "options": [
+        "Contextual inquiry",
+        "Focus group",
+        "Usability lab",
+        "Stalking"
+      ],
+      "explanation": "Contextual inquiry: people describe their work poorly but show it well."
+    },
+    {
+      "id": "j-207",
+      "question": "You check where people click first to complete a task. This is a… test",
+      "options": [
+        "First-click",
+        "Five-second",
+        "Turing",
+        "Mouse"
+      ],
+      "explanation": "If the first click is right, people complete the task in about 87% of cases."
+    },
+    {
+      "id": "j-208",
+      "question": "Users ignore blocks that look like ads. This is…",
+      "options": [
+        "Banner blindness",
+        "Anchoring effect",
+        "Hick's law",
+        "Night blindness"
+      ],
+      "explanation": "The brain learned to filter out ads — and everything that looks like them."
+    },
+    {
+      "id": "j-209",
+      "question": "The ISO standard on human-centred design of systems:",
+      "options": [
+        "ISO 9241-210",
+        "ISO 9001",
+        "ISO 27001",
+        "ISO 42"
+      ],
+      "explanation": "ISO 9241-210 describes the cycle: context → requirements → solutions → evaluation."
+    },
+    {
+      "id": "j-210",
+      "question": "Empathy map: what the user says, thinks, does and…",
+      "options": [
+        "Feels",
+        "Buys",
+        "Promises",
+        "Chews"
+      ],
+      "explanation": "Four quadrants: Says, Thinks, Does, Feels. The gaps between them are the interesting part."
+    },
+    {
+      "id": "j-211",
+      "question": "“Any page within three clicks.” What is this, according to research?",
+      "options": [
+        "A myth",
+        "W3C standard",
+        "Fitts's law",
+        "Commandment"
+      ],
+      "explanation": "Research shows people don't quit after three clicks if every step is clear."
+    },
+    {
+      "id": "j-212",
+      "question": "Up to what delay does a system response feel instant (per Nielsen)?",
+      "options": [
+        "0.1 second",
+        "1 second",
+        "10 seconds",
+        "Five years"
+      ],
+      "explanation": "0.1 s feels instant, 1 s keeps the flow of thought, 10 s is the limit of attention."
+    },
+    {
+      "id": "j-213",
+      "question": "Interview insights are grouped on sticky notes by meaning. What's this method?",
+      "options": [
+        "Affinity diagram",
+        "Ishikawa diagram",
+        "Kanban",
+        "Sticker bombing"
+      ],
+      "explanation": "An affinity diagram turns hundreds of observations into a few themes."
+    },
+    {
+      "id": "j-214",
+      "question": "The cycle “research → design → test → repeat” is…",
+      "options": [
+        "Iterative design",
+        "Waterfall",
+        "Design sprint",
+        "Renovation"
+      ],
+      "explanation": "Each iteration refines the solution with data, not guesses."
+    },
+    {
+      "id": "j-215",
+      "question": "A style imitating real materials — leather, wood, glass — is…",
+      "options": [
+        "Skeuomorphism",
+        "Minimalism",
+        "Brutalism",
+        "Furniturism"
+      ],
+      "explanation": "Early iOS was skeuomorphic: a leather calendar, wooden iBooks shelves."
+    },
+    {
+      "id": "j-216",
+      "question": "How many pixels is 1rem if the user hasn't changed browser settings?",
+      "options": [
+        "16",
+        "10",
+        "12",
+        "One REM"
+      ],
+      "explanation": "rem is based on the root font size; browsers default to 16 px."
+    },
+    {
+      "id": "j-217",
+      "question": "In the HSL color model, H stands for…",
+      "options": [
+        "Hue",
+        "Highlight",
+        "Height",
+        "Hype"
+      ],
+      "explanation": "Hue is the tone (an angle on the wheel), Saturation is intensity, Lightness is brightness."
+    },
+    {
+      "id": "j-218",
+      "question": "The golden ratio is approximately…",
+      "options": [
+        "1.618",
+        "3.14",
+        "1.414",
+        "42"
+      ],
+      "explanation": "φ ≈ 1.618. 1.414 is √2, the aspect ratio of an A4 sheet."
+    },
+    {
+      "id": "j-219",
+      "question": "Two letters joined into one glyph, like “fi”, is a…",
+      "options": [
+        "Ligature",
+        "Small caps",
+        "Kerning",
+        "Literature"
+      ],
+      "explanation": "A ligature replaces a letter pair with one glyph so they don't collide."
+    },
+    {
+      "id": "j-220",
+      "question": "The default system font of Android and Material Design is…",
+      "options": [
+        "Roboto",
+        "SF Pro",
+        "Arial",
+        "Comic Sans"
+      ],
+      "explanation": "Roboto is the font of Android and Material; SF Pro is Apple's system font."
+    },
+    {
+      "id": "j-221",
+      "question": "Which Figma boolean operation cuts the top shape out of the bottom one?",
+      "options": [
+        "Subtract",
+        "Union",
+        "Intersect",
+        "Divorce"
+      ],
+      "explanation": "Union merges, Intersect keeps the overlap, Exclude keeps everything but it."
+    },
+    {
+      "id": "j-222",
+      "question": "What is the Figma mode for developers, with spacing and code, called?",
+      "options": [
+        "Dev Mode",
+        "Prototype",
+        "FigJam",
+        "God Mode"
+      ],
+      "explanation": "Dev Mode shows sizes, spacing, variables and code snippets for development."
+    },
+    {
+      "id": "j-223",
+      "question": "Which icon marks a component instance in Figma's layers panel?",
+      "options": [
+        "Diamond",
+        "Hash",
+        "Square",
+        "Heart"
+      ],
+      "explanation": "An instance is a diamond outline, a main component is four diamonds, a frame is a #."
+    },
+    {
+      "id": "j-224",
+      "question": "Colors that sit next to each other on the color wheel are…",
+      "options": [
+        "Analogous",
+        "Complementary",
+        "Triad",
+        "Neighborly"
+      ],
+      "explanation": "Analogous colors give calm harmony; complementary ones give contrast."
+    },
+    {
+      "id": "j-225",
+      "question": "A frosted-glass effect with the background blurred under a panel is…",
+      "options": [
+        "Glassmorphism",
+        "Neumorphism",
+        "Skeuomorphism",
+        "Glassware"
+      ],
+      "explanation": "Glassmorphism relies on background blur, translucency and a thin light border."
+    },
+    {
+      "id": "j-226",
+      "question": "Soft buttons “pressed” out of the background with two shadows are…",
+      "options": [
+        "Neumorphism",
+        "Glassmorphism",
+        "Flat",
+        "Pillowism"
+      ],
+      "explanation": "Pretty on Dribbble, but neumorphism has weak contrast — buttons are hard to spot."
+    },
+    {
+      "id": "j-227",
+      "question": "What is screen pixel density measured in?",
+      "options": [
+        "PPI",
+        "FPS",
+        "Hz",
+        "Likes"
+      ],
+      "explanation": "PPI is pixels per inch. FPS and hertz are about frame rate."
+    },
+    {
+      "id": "j-228",
+      "question": "Why export images at @2x?",
+      "options": [
+        "Retina screens",
+        "Printing",
+        "Animation",
+        "Twins"
+      ],
+      "explanation": "On high-density screens 1 point = 2 pixels, so a @1x image looks blurry."
+    },
+    {
+      "id": "j-229",
+      "question": "Important/urgent — four quadrants for priorities. Whose matrix is it?",
+      "options": [
+        "Eisenhower",
+        "Kano",
+        "Gantt",
+        "Morpheus"
+      ],
+      "explanation": "The Eisenhower matrix: important and urgent — now; important, not urgent — plan; the rest — delegate or drop."
+    },
+    {
+      "id": "j-230",
+      "question": "Who owns the product backlog in Scrum?",
+      "options": [
+        "Product Owner",
+        "Scrum Master",
+        "Team lead",
+        "Janitor"
+      ],
+      "explanation": "The Product Owner orders the backlog; the Scrum Master helps the team work by Scrum."
+    },
+    {
+      "id": "j-231",
+      "question": "A board with “To do / In progress / Done” columns is a…",
+      "options": [
+        "Kanban board",
+        "Gantt chart",
+        "Roadmap",
+        "Hall of fame"
+      ],
+      "explanation": "Kanban shows the flow of tasks, so you can see where they get stuck."
+    },
+    {
+      "id": "j-232",
+      "question": "The share of users who left the product over a period is…",
+      "options": [
+        "Churn",
+        "Conversion",
+        "Reach",
+        "Brain drain"
+      ],
+      "explanation": "Churn rate is measured per period, e.g. 5% a month. Keeping a user is usually cheaper than getting a new one."
+    },
+    {
+      "id": "j-233",
+      "question": "The cost of acquiring one customer is the metric…",
+      "options": [
+        "CAC",
+        "LTV",
+        "ARPU",
+        "CAC-tus"
+      ],
+      "explanation": "CAC is Customer Acquisition Cost: marketing and sales spend divided by the number of new customers."
+    },
+    {
+      "id": "j-234",
+      "question": "A user pays every month for access to a service. This model is a…",
+      "options": [
+        "Subscription",
+        "One-time purchase",
+        "Ads",
+        "Tribute"
+      ],
+      "explanation": "Subscriptions bring regular income but require proving value all the time — or churn."
+    },
+    {
+      "id": "j-235",
+      "question": "An end-of-sprint meeting where the team discusses how to work better is a…",
+      "options": [
+        "Retro",
+        "Demo",
+        "Planning",
+        "Banquet"
+      ],
+      "explanation": "A retrospective is about the process; a demo is about the result for the client."
+    },
+    {
+      "id": "j-157",
+      "question": "The “Buy” button got bigger and closer to the thumb — easier to hit. Whose law?",
+      "options": [
+        "Fitts's law",
+        "Hick's law",
+        "Moore's law",
+        "Murphy's law"
+      ],
+      "explanation": "The bigger and closer the target, the faster you hit it."
+    },
+    {
+      "id": "j-158",
+      "question": "People expect your site to work like the ones they're used to. Whose law?",
+      "options": [
+        "Jakob's law",
+        "Tesler's law",
+        "Postel's law",
+        "Sod's law"
+      ],
+      "explanation": "Jakob Nielsen: users spend most of their time on other sites."
+    },
+    {
+      "id": "j-159",
+      "question": "“Delete project?” with a confirmation — which Nielsen heuristic is it?",
+      "options": [
+        "Error prevention",
+        "System status",
+        "Aesthetics",
+        "Overcaution"
+      ],
+      "explanation": "Heuristic #5: better to prevent a mistake than to report it nicely."
+    },
+    {
+      "id": "j-160",
+      "question": "How many usability heuristics did Jakob Nielsen define?",
+      "options": [
+        "10",
+        "7",
+        "12",
+        "Infinity"
+      ],
+      "explanation": "Formulated in 1990 with Rolf Molich, refined in 1994."
+    },
+    {
+      "id": "j-161",
+      "question": "According to Nielsen, how many participants are enough for a qualitative test?",
+      "options": [
+        "5",
+        "50",
+        "1",
+        "The whole village"
+      ],
+      "explanation": "Five find about 85% of problems; several small tests beat one big one."
+    },
+    {
+      "id": "j-162",
+      "question": "A participant says out loud everything they think while doing a task. Method:",
+      "options": [
+        "Think aloud",
+        "Focus group",
+        "Questionnaire",
+        "Chatterbox"
+      ],
+      "explanation": "Think aloud is the main usability-testing tool according to Nielsen."
+    },
+    {
+      "id": "j-163",
+      "question": "Participants sort cards with section names into groups. Method:",
+      "options": [
+        "Card sorting",
+        "Tree testing",
+        "Affinity diagram",
+        "Solitaire"
+      ],
+      "explanation": "It helps build navigation the way users see it."
+    },
+    {
+      "id": "j-164",
+      "question": "WCAG principles: perceivable, operable, understandable and…",
+      "options": [
+        "Robust",
+        "Beautiful",
+        "Fast",
+        "Tolerant"
+      ],
+      "explanation": "POUR — Perceivable, Operable, Understandable, Robust."
+    },
+    {
+      "id": "j-165",
+      "question": "Gray hint text inside a field vanishes as soon as you type. This is a…",
+      "options": [
+        "Placeholder",
+        "Label",
+        "Tooltip",
+        "Ghost"
+      ],
+      "explanation": "NN/g: a placeholder doesn't replace a label — it disappears while typing."
+    },
+    {
+      "id": "j-166",
+      "question": "Ctrl+Z saves you from an accidental action. What's this feature called?",
+      "options": [
+        "Undo",
+        "Redo",
+        "Copy",
+        "Time machine"
+      ],
+      "explanation": "Nielsen's heuristic #3: users need an “emergency exit” — undo and redo."
+    },
+    {
+      "id": "j-167",
+      "question": "WCAG AA: what minimum contrast does normal text need?",
+      "options": [
+        "4.5:1",
+        "3:1",
+        "2:1",
+        "50 shades"
+      ],
+      "explanation": "Large text needs 3:1; level AAA needs 7:1."
+    },
+    {
+      "id": "j-168",
+      "question": "Minimum tap target per Apple HIG:",
+      "options": [
+        "44×44 pt",
+        "20×20 pt",
+        "100×100 pt",
+        "Pinky-sized"
+      ],
+      "explanation": "The icon can be smaller, but the touch area should be at least 44×44 pt."
+    },
+    {
+      "id": "j-169",
+      "question": "The print model: cyan, magenta, yellow and…",
+      "options": [
+        "Black",
+        "White",
+        "Green",
+        "Mauve-ish"
+      ],
+      "explanation": "CMYK: K stands for key, the key black."
+    },
+    {
+      "id": "j-170",
+      "question": "Evenly spacing out or tightening letters across a word or line is…",
+      "options": [
+        "Tracking",
+        "Kerning",
+        "Leading",
+        "Trekking"
+      ],
+      "explanation": "Kerning is a letter pair; tracking is the whole run of text."
+    },
+    {
+      "id": "j-171",
+      "question": "A panel that slides up from the bottom over the content is a…",
+      "options": [
+        "Bottom sheet",
+        "Toast",
+        "Popover",
+        "Bedsheet"
+      ],
+      "explanation": "A sheet is a panel attached to the bottom edge of the screen."
+    },
+    {
+      "id": "j-172",
+      "question": "A short hint that appears when you hover over an icon is a…",
+      "options": [
+        "Tooltip",
+        "Popover",
+        "Modal",
+        "Tulip"
+      ],
+      "explanation": "A tooltip must not hide important info: touchscreens have no hover."
+    },
+    {
+      "id": "j-173",
+      "question": "Elements placed close together read as a group. This Gestalt principle is…",
+      "options": [
+        "Proximity",
+        "Similarity",
+        "Closure",
+        "Nosy neighbors"
+      ],
+      "explanation": "Spacing inside a group should be smaller than spacing between groups."
+    },
+    {
+      "id": "j-174",
+      "question": "Which shortcut adds Auto layout in Figma?",
+      "options": [
+        "Shift+A",
+        "Ctrl+G",
+        "Ctrl+D",
+        "Ctrl+Alt+Del"
+      ],
+      "explanation": "Shift+A wraps the selection in a frame with Auto layout."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Caddy сам получает и продлевает HTTPS-сертификат для домена (нужна A-запись на IP сервера).
+{$DOMAIN} {
+	encode zstd gzip
+
+	# Заголовки безопасности. X-Frame-Options не ставим: Telegram Web открывает Mini App во фрейме.
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		-Server
+	}
+
+	# Бэкенд: API Mini App, вебхук бота, проверка живости.
+	handle /api/* {
+		reverse_proxy 127.0.0.1:8787
+	}
+	handle /bot/* {
+		reverse_proxy 127.0.0.1:8787
+	}
+	handle /health {
+		reverse_proxy 127.0.0.1:8787
+	}
+	# Рассылку уведомлений на VPS делает таймер внутри сервера — снаружи закрыто.
+	handle /cron/* {
+		respond 404
+	}
+
+	# Mini App: статика сборки. Роутинг через # — любой путь отдаёт index.html.
+	handle {
+		root * /srv/ux-quiz/app
+		header /assets/* Cache-Control "public, max-age=31536000, immutable"
+		# Не /index.html: header срабатывает до try_files, и запрос «/» под такой матчер не попадает.
+		# Без no-cache Telegram держит старый index.html со ссылками на сборку, которой уже нет.
+		@page not path /assets/*
+		header @page Cache-Control "no-cache"
+		try_files {path} /index.html
+		file_server
+	}
+}
