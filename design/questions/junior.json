@@ -716,7 +716,7 @@
    "funny": [
     3
    ],
-   "explanation": "Например: Главная › Курсы › UX.",
+   "explanation": "Крошки показывают, где вы находитесь, и дают подняться на уровень выше в один клик.",
    "source": "NN/g, «Breadcrumbs: 11 Design Guidelines»",
    "status": "approved"
   },
@@ -1694,19 +1694,19 @@
    "pool": "theory",
    "area": "product",
    "tier": "regular",
-   "question": "DAU — это число пользователей, которые заходят…",
+   "question": "DAU — сколько уникальных пользователей зашло в продукт за…",
    "image": null,
    "options": [
-    "Каждый день",
-    "Каждый месяц",
-    "Впервые",
-    "Под дождём"
+    "Один день",
+    "Один месяц",
+    "Всё время",
+    "Обеденный перерыв"
    ],
    "correct": 0,
    "funny": [
     3
    ],
-   "explanation": "Daily Active Users — активные за день. MAU — за месяц.",
+   "explanation": "Daily Active Users — уникальные активные за день, даже если человек зашёл только раз. MAU — за месяц.",
    "source": "Alistair Croll & Ben Yoskovitz, «Lean Analytics»",
    "status": "approved"
   },

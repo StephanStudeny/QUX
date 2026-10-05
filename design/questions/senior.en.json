@@ -388,7 +388,7 @@
       "id": "s-035",
       "question": "A description of which actions each user role can take in a system is a…",
       "options": [
-        "Role model",
+        "Permission matrix",
         "Persona",
         "Org chart",
         "Timesheet"

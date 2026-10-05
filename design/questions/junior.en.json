@@ -826,14 +826,14 @@
     },
     {
       "id": "j-143",
-      "question": "DAU is the number of users who come back…",
+      "question": "DAU is how many unique users were active in the product within…",
       "options": [
-        "Every day",
-        "Every month",
-        "First visit",
-        "In the rain"
+        "One day",
+        "One month",
+        "All time",
+        "A lunch break"
       ],
-      "explanation": "Daily Active Users — active within a day. MAU — within a month."
+      "explanation": "Daily Active Users: unique users active within a day, even if they came only once. MAU is per month."
     },
     {
       "id": "j-144",

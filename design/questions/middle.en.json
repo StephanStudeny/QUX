@@ -254,7 +254,7 @@
     },
     {
       "id": "m-023",
-      "question": "A tool like Hotjar that records a visitor's actions as a video does…",
+      "question": "Hotjar's feature that replays a visitor's actions like a video is…",
       "options": [
         "Session recording",
         "Heatmaps",
@@ -998,7 +998,7 @@
         "Ticket",
         "Cockroach"
       ],
-      "explanation": "Bugs were already called that back in the era of vacuum-tube computers."
+      "explanation": "Engineers called glitches “bugs” as far back as Edison, in the 1870s."
     },
     {
       "id": "m-091",
