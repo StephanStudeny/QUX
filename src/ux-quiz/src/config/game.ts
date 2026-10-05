@@ -53,8 +53,7 @@ export const LIFE_PACKS = [
 export type LifePack = (typeof LIFE_PACKS)[number]
 
 /**
- * Ссылки. TODO(Степан): имя бота и short name Mini App из BotFather, политика, сбор на донаты.
- * Пока пустые — строки ведут на заглушку.
+ * Ссылки. Бот и short name Mini App — из BotFather. Донаты пусты — строка «Донаты автору» скрыта, пока нет сбора.
  */
 export const LINKS = {
   bot: "ux_quiz_bot",
