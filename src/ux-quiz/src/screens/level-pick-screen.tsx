@@ -22,8 +22,8 @@ export function LevelPickScreen() {
 
   return (
     <ShellLayout tabBar={false} spot="team">
-      {/* Отступ 164 при ширине 375 (0,437 ширины) — заголовок под картинкой. */}
-      <header className="flex flex-col gap-1 pt-[min(43.7vw,164px)]">
+      {/* Отступ 166 при ширине 375 (0,4427 ширины): «QUX» на той же высоте, что на главной (1.1 · v2). */}
+      <header className="flex flex-col gap-1 pt-[min(44.27vw,166px)]">
         <h1 className="text-display font-bold">{t("app.name")}</h1>
         <p className="text-body text-muted-foreground">{t("app.tagline")}</p>
       </header>
