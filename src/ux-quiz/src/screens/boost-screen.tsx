@@ -77,8 +77,8 @@ export function BoostScreen() {
 
   return (
     <>
-      {/* Заголовок на одной высоте с «QUX» на главной: там над ним пилюля жизней 28 + промежуток 16 (оба × масштаб) + отступ 0,288 ширины (≤ 138). */}
-      <h1 className="pt-[calc(44px*var(--s)_+_min(28.8vw,138px))] text-h1 font-bold">{t("boost.title")}</h1>
+      {/* Заголовок на одной высоте с «QUX» на главной: там над ним пилюля жизней 28 + промежуток 16 (оба × масштаб) + отступ 0,3253 ширины (≤ 156). */}
+      <h1 className="pt-[calc(44px*var(--s)_+_min(32.53vw,156px))] text-h1 font-bold">{t("boost.title")}</h1>
       <div className="flex items-center gap-2">
         <LivesStatus />
       </div>

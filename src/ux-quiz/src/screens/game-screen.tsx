@@ -30,8 +30,8 @@ export function GameScreen() {
     <>
       <StatusRow />
 
-      {/* Отступ 108 при ширине 375 (0,288 ширины) — контент уходит ниже, чтобы открыть фон с командой (макет 1.1). */}
-      <header className="flex flex-col gap-1 pt-[min(28.8vw,138px)]">
+      {/* Отступ 122 при ширине 375 (0,3253 ширины) — контент уходит ниже, чтобы открыть фон с командой (макет 1.1 · v2, 241:4245). */}
+      <header className="flex flex-col gap-1 pt-[min(32.53vw,156px)]">
         <h1 className="text-display font-bold">{t("app.name")}</h1>
         <p className="text-body text-muted-foreground">{t("app.tagline")}</p>
       </header>
