@@ -30,4 +30,4 @@ export const AVATARS = {
 export type AvatarId = keyof typeof AVATARS
 export const AVATAR_IDS = Object.keys(AVATARS) as AvatarId[]
 
-export const isAvatarId = (v: string | null): v is AvatarId => v !== null && v in AVATARS
+export const isAvatarId = (v: string | null | undefined): v is AvatarId => v != null && v in AVATARS

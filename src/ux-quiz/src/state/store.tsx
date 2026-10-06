@@ -47,8 +47,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
             : parsed
           : fallback
         const regen = applyRegen(saved.lives, saved.livesAnchor, now)
-        // Друзья — данные бэкенда; пока его нет, список всегда пуст (старые демо-друзья из сохранения не тянем).
-        setState({ ...saved, friends: [], lives: regen.lives, livesAnchor: regen.anchor })
+        // Друзья — данные бэкенда; из сохранения их не тянем (там мог остаться старый демо-список). Исключение — `?demo=friends`.
+        setState({ ...saved, friends: parsed ? [] : saved.friends, lives: regen.lives, livesAnchor: regen.anchor })
         setStatus("ready")
         loaded.current = true
       })

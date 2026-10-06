@@ -93,12 +93,16 @@ export interface Settings {
   showExplanation: boolean
 }
 
-/** Друг: прошёл ли первый блок (0–10 вопросов) и забрана ли награда. */
+/** Друг: прошёл ли первый блок (0–10 вопросов) и забрана ли награда; уровень и блоки — для профиля. */
 export interface Friend {
   id: string
   name: string
   progress: number
   claimed: boolean
+  photoUrl?: string | null
+  avatar?: string | null
+  level?: Level | null
+  blocks?: number
 }
 
 /** Статистика профиля (1.2). Общие «Ответов» и «Верно» считаются из разбивки по уровням. */
@@ -220,6 +224,19 @@ export function applyDemo(s: GameState, demo: string | null): GameState {
       return { ...s, lives: 6, block: { ...s.block, results: ["correct", "wrong", "correct", "timeout"] } }
     case "nine":
       return { ...s, streak: 0, block: { ...s.block, results: R(9) } }
+    case "friends":
+      // Макет 308:7048: игрок с 7 блоками на 3-м месте среди друзей.
+      return {
+        ...s,
+        nickname: "Стёпа",
+        block: { ...s.block, number: 8 },
+        friends: [
+          { id: "1", name: "Аня", avatar: "cat", level: "senior", blocks: 14, progress: 10, claimed: true },
+          { id: "2", name: "Mikhail K.", avatar: "raccoon", level: "middle", blocks: 9, progress: 10, claimed: false },
+          { id: "3", name: "Дизайнер_2007_продуктовый", level: "junior", blocks: 3, progress: 10, claimed: true },
+          { id: "4", name: "Лиса", blocks: 0, progress: 0, claimed: false },
+        ],
+      }
     default:
       return s
   }

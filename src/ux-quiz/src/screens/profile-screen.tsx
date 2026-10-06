@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { backendEnabled, fetchFriends } from "@/api/backend"
+import { blocksDone } from "@/api/sync"
 import heart3d from "@/assets/3d/heart.webp"
 import { Avatar } from "@/components/avatar"
 import { Icon } from "@/components/icon"
 import { AvatarSheet } from "@/components/profile/avatar-sheet"
+import { FriendsBoard } from "@/components/profile/friends-board"
 import { NicknameModal } from "@/components/profile/nickname-modal"
 import { ProgressBar } from "@/components/progress-bar"
 import { Button } from "@/components/ui/button"
@@ -49,6 +52,18 @@ export function ProfileScreen() {
   const [sheetOpen, setSheetOpen] = useState(false)
   const [nickOpen, setNickOpen] = useState(false)
   const levels = useLevelProgress(state.progress)
+
+  // Друзья и их прогресс — с сервера при каждом открытии профиля (как на экране 1.5).
+  useEffect(() => {
+    if (!backendEnabled()) return
+    let cancelled = false
+    fetchFriends(platform)
+      .then(({ friends }) => !cancelled && update((s) => ({ ...s, friends })))
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [platform, update])
 
   const { byLevel, bestStreak, superPlayed, superPassed } = state.stats
   const answered = LEVELS.reduce((s, l) => s + byLevel[l].answered, 0)
@@ -154,6 +169,11 @@ export function ProfileScreen() {
           </p>
         </div>
       </section>
+
+      <FriendsBoard
+        self={{ id: "self", name, avatar: state.avatar, photoUrl: platform.user?.photoUrl, level: state.level, blocks: blocksDone(state) }}
+        friends={state.friends.map((f) => ({ id: f.id, name: f.name, avatar: f.avatar, photoUrl: f.photoUrl, level: f.level, blocks: f.blocks ?? 0 }))}
+      />
 
       <Link
         to="/invite"

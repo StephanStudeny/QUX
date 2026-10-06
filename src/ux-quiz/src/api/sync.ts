@@ -1,12 +1,25 @@
 import { useEffect, useRef } from "react"
-import { GAME, LIFE_PACKS } from "@/config/game"
+import { GAME, LEVELS, LIFE_PACKS } from "@/config/game"
 import type { Platform } from "@/platform/types"
 import type { GameState } from "@/state/game-state"
 import { applyPack } from "@/state/rewards"
-import { backendEnabled, claimPurchase, reportLives, reportProgress, startSession } from "./backend"
+import { backendEnabled, claimPurchase, reportLives, reportProgress, startSession, type ProgressReport } from "./backend"
 
 /** Сколько вопросов первого блока пройдено: после первого блока — весь блок. */
 export const firstBlockProgress = (s: GameState) => (s.block.number > 1 ? GAME.blockSize : Math.min(GAME.blockSize, s.block.results.length))
+
+/** Пройдено блоков целиком: текущий засчитывается, когда дошёл до итогов. */
+export const blocksDone = (s: GameState) => s.block.number - 1 + (s.block.phase === "results" ? 1 : 0)
+
+/** Что видят друзья в профиле и автор в /top. */
+export const progressReport = (s: GameState): ProgressReport => ({
+  firstBlock: firstBlockProgress(s),
+  level: s.level,
+  blocks: blocksDone(s),
+  answered: LEVELS.reduce((n, l) => n + s.stats.byLevel[l].answered, 0),
+  avatar: s.avatar,
+  nickname: s.nickname,
+})
 
 /**
  * Синхронизация с бэкендом поверх локального прогресса (CloudStorage остаётся источником правды
@@ -46,10 +59,11 @@ export function useBackendSync(platform: Platform, state: GameState | null, upda
     return () => window.clearTimeout(id)
   }, [platform, lives, anchor, notify])
 
-  const progress = state ? firstBlockProgress(state) : undefined
+  // Отчёт — строкой: эффект срабатывает, только когда что-то в нём поменялось.
+  const report = state ? JSON.stringify(progressReport(state)) : undefined
   useEffect(() => {
-    if (progress === undefined || !backendEnabled()) return
-    const id = window.setTimeout(() => reportProgress(platform, progress).catch(() => {}), 1500)
+    if (report === undefined || !backendEnabled()) return
+    const id = window.setTimeout(() => reportProgress(platform, JSON.parse(report) as ProgressReport).catch(() => {}), 1500)
     return () => window.clearTimeout(id)
-  }, [platform, progress])
+  }, [platform, report])
 }

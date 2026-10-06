@@ -16,6 +16,40 @@ export interface User {
   firstBlock: number
   /** Пригласивший забрал награду за этого друга. */
   inviteRewardClaimed: boolean
+  /** Прогресс для профиля друзей и статистики автора — присылает клиент. */
+  level: string | null
+  /** Сколько блоков пройдено целиком. */
+  blocks: number
+  answered: number
+  /** id аватара из набора игры; null — фото из Telegram. */
+  avatar: string | null
+  /** Никнейм из профиля игры; null — имя из Telegram. */
+  nickname: string | null
+  lastSeenAt: number | null
+}
+
+export interface PlayerProgress {
+  firstBlock: number
+  level?: string | null
+  blocks?: number
+  answered?: number
+  avatar?: string | null
+  nickname?: string | null
+}
+
+/** Сводка для автора (/stats). */
+export interface AdminStats {
+  users: number
+  newDay: number
+  newWeek: number
+  activeDay: number
+  activeWeek: number
+  byLevel: Record<string, number>
+  starsTotal: number
+  starsWeek: number
+  paidCount: number
+  refundedStars: number
+  invited: number
 }
 
 export type PurchaseStatus = "pending" | "paid" | "claimed" | "refunded"
@@ -43,7 +77,8 @@ export interface Store {
   /** Создаёт пользователя или обновляет имя/фото/язык. `created` — запись новая (для реферала). */
   upsertUser(u: { id: number; name: string; photoUrl: string | null; language: string | null; now: number }): Promise<{ user: User; created: boolean }>
   setInviter(userId: number, inviterId: number): Promise<void>
-  setFirstBlock(userId: number, value: number): Promise<void>
+  /** Прогресс игрока: firstBlock только растёт, остальное — последнее присланное. */
+  setProgress(userId: number, p: PlayerProgress, now: number): Promise<void>
   listFriends(inviterId: number): Promise<User[]>
   /** Помечает награду за друга забранной; false — уже была забрана или это не его друг. */
   claimInviteReward(inviterId: number, friendId: number): Promise<boolean>
@@ -61,6 +96,12 @@ export interface Store {
   listPurchases(userId: number, limit: number): Promise<Purchase[]>
   getPurchaseByCharge(chargeId: string): Promise<Purchase | null>
   markRefunded(id: string): Promise<void>
+  /** Оплаченные покупки (paid/claimed/refunded), новые сверху — для /sales. */
+  listSales(limit: number): Promise<(Purchase & { userName: string })[]>
+  /** Игроки по числу пройденных блоков — для /top. */
+  topPlayers(limit: number): Promise<(User & { friends: number })[]>
+  adminStats(now: number): Promise<AdminStats>
+
   /** Удаляет счета, которые так и не оплатили (старше `before`). Возвращает, сколько удалено. */
   deleteStalePending(before: number): Promise<number>
 
@@ -85,6 +126,12 @@ const toUser = (r: Row): User => ({
   inviterId: r.inviter_id == null ? null : Number(r.inviter_id),
   firstBlock: Number(r.first_block),
   inviteRewardClaimed: Number(r.invite_reward_claimed) === 1,
+  level: (r.level as string | null) ?? null,
+  blocks: Number(r.blocks ?? 0),
+  answered: Number(r.answered ?? 0),
+  avatar: (r.avatar as string | null) ?? null,
+  nickname: (r.nickname as string | null) ?? null,
+  lastSeenAt: r.last_seen_at == null ? null : Number(r.last_seen_at),
 })
 
 const toPurchase = (r: Row): Purchase => ({
@@ -108,7 +155,13 @@ CREATE TABLE IF NOT EXISTS users (
   inviter_id INTEGER,
   first_block INTEGER NOT NULL DEFAULT 0,
   invite_reward_claimed INTEGER NOT NULL DEFAULT 0,
-  support_pending INTEGER NOT NULL DEFAULT 0
+  support_pending INTEGER NOT NULL DEFAULT 0,
+  level TEXT,
+  blocks INTEGER NOT NULL DEFAULT 0,
+  answered INTEGER NOT NULL DEFAULT 0,
+  avatar TEXT,
+  nickname TEXT,
+  last_seen_at INTEGER
 );
 CREATE INDEX IF NOT EXISTS users_inviter ON users(inviter_id);
 CREATE TABLE IF NOT EXISTS purchases (
@@ -136,7 +189,16 @@ export function createSqliteStore(path: string): Store {
   db.exec(SCHEMA)
   // Миграции для баз, созданных ранними версиями схемы.
   const userColumns = (db.prepare("PRAGMA table_info(users)").all() as Row[]).map((c) => c.name)
-  if (!userColumns.includes("support_pending")) db.exec("ALTER TABLE users ADD COLUMN support_pending INTEGER NOT NULL DEFAULT 0")
+  const addColumn = (name: string, def: string) => {
+    if (!userColumns.includes(name)) db.exec(`ALTER TABLE users ADD COLUMN ${name} ${def}`)
+  }
+  addColumn("support_pending", "INTEGER NOT NULL DEFAULT 0")
+  addColumn("level", "TEXT")
+  addColumn("blocks", "INTEGER NOT NULL DEFAULT 0")
+  addColumn("answered", "INTEGER NOT NULL DEFAULT 0")
+  addColumn("avatar", "TEXT")
+  addColumn("nickname", "TEXT")
+  addColumn("last_seen_at", "INTEGER")
 
   const one = (sql: string, ...args: (string | number | null)[]) => db.prepare(sql).get(...args) as Row | undefined
   const all = (sql: string, ...args: (string | number | null)[]) => db.prepare(sql).all(...args) as Row[]
@@ -148,15 +210,26 @@ export function createSqliteStore(path: string): Store {
       return r ? toUser(r) : null
     },
     async upsertUser({ id, name, photoUrl, language, now }) {
-      const created = run("INSERT OR IGNORE INTO users (id, name, photo_url, language, created_at) VALUES (?, ?, ?, ?, ?)", id, name, photoUrl, language, now) > 0
-      if (!created) run("UPDATE users SET name = ?, photo_url = ?, language = ? WHERE id = ?", name, photoUrl, language, id)
+      const created =
+        run("INSERT OR IGNORE INTO users (id, name, photo_url, language, created_at, last_seen_at) VALUES (?, ?, ?, ?, ?, ?)", id, name, photoUrl, language, now, now) > 0
+      if (!created) run("UPDATE users SET name = ?, photo_url = COALESCE(?, photo_url), language = ?, last_seen_at = ? WHERE id = ?", name, photoUrl, language, now, id)
       return { user: toUser(one("SELECT * FROM users WHERE id = ?", id)!), created }
     },
     async setInviter(userId, inviterId) {
       run("UPDATE users SET inviter_id = ? WHERE id = ? AND inviter_id IS NULL", inviterId, userId)
     },
-    async setFirstBlock(userId, value) {
-      run("UPDATE users SET first_block = MAX(first_block, ?) WHERE id = ?", value, userId)
+    async setProgress(userId, p, now) {
+      run("UPDATE users SET first_block = MAX(first_block, ?), last_seen_at = ? WHERE id = ?", p.firstBlock, now, userId)
+      if (p.blocks === undefined) return
+      run(
+        "UPDATE users SET level = ?, blocks = ?, answered = ?, avatar = ?, nickname = ? WHERE id = ?",
+        p.level ?? null,
+        p.blocks,
+        p.answered ?? 0,
+        p.avatar ?? null,
+        p.nickname ?? null,
+        userId,
+      )
     },
     async listFriends(inviterId) {
       return all("SELECT * FROM users WHERE inviter_id = ? ORDER BY created_at", inviterId).map(toUser)
@@ -191,6 +264,38 @@ export function createSqliteStore(path: string): Store {
     },
     async markRefunded(id) {
       run("UPDATE purchases SET status = 'refunded' WHERE id = ?", id)
+    },
+
+    async listSales(limit) {
+      return all(
+        "SELECT p.*, u.name AS user_name FROM purchases p LEFT JOIN users u ON u.id = p.user_id WHERE p.status != 'pending' ORDER BY p.paid_at DESC LIMIT ?",
+        limit,
+      ).map((r) => ({ ...toPurchase(r), userName: String(r.user_name ?? r.user_id) }))
+    },
+    async topPlayers(limit) {
+      return all(
+        "SELECT u.*, (SELECT COUNT(*) FROM users f WHERE f.inviter_id = u.id) AS friends FROM users u ORDER BY u.blocks DESC, u.answered DESC LIMIT ?",
+        limit,
+      ).map((r) => ({ ...toUser(r), friends: Number(r.friends) }))
+    },
+    async adminStats(now) {
+      const DAY = 24 * 60 * 60 * 1000
+      const n = (sql: string, ...args: number[]) => Number(Object.values(one(sql, ...args) ?? {})[0] ?? 0)
+      const byLevel: Record<string, number> = {}
+      for (const r of all("SELECT COALESCE(level, '—') AS level, COUNT(*) AS c FROM users GROUP BY 1")) byLevel[String(r.level)] = Number(r.c)
+      return {
+        users: n("SELECT COUNT(*) FROM users"),
+        newDay: n("SELECT COUNT(*) FROM users WHERE created_at >= ?", now - DAY),
+        newWeek: n("SELECT COUNT(*) FROM users WHERE created_at >= ?", now - 7 * DAY),
+        activeDay: n("SELECT COUNT(*) FROM users WHERE last_seen_at >= ?", now - DAY),
+        activeWeek: n("SELECT COUNT(*) FROM users WHERE last_seen_at >= ?", now - 7 * DAY),
+        byLevel,
+        starsTotal: n("SELECT COALESCE(SUM(stars), 0) FROM purchases WHERE status IN ('paid', 'claimed')"),
+        starsWeek: n("SELECT COALESCE(SUM(stars), 0) FROM purchases WHERE status IN ('paid', 'claimed') AND paid_at >= ?", now - 7 * DAY),
+        paidCount: n("SELECT COUNT(*) FROM purchases WHERE status IN ('paid', 'claimed')"),
+        refundedStars: n("SELECT COALESCE(SUM(stars), 0) FROM purchases WHERE status = 'refunded'"),
+        invited: n("SELECT COUNT(*) FROM users WHERE inviter_id IS NOT NULL"),
+      }
     },
 
     async deleteStalePending(before) {

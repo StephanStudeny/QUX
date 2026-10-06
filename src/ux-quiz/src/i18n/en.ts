@@ -53,6 +53,12 @@ export const en: Dictionary = {
   "profile.superLine": "Passed {passed} of {played} · earned {lives}",
   "profile.superLineA11y": "Passed {passed} of {played}, lives earned: {lives}",
   "profile.invite": "Invite a friend",
+  "profile.friends.title": "Friends",
+  "profile.friends.sorted": "by blocks completed",
+  "profile.friends.blocks": { one: "block", other: "blocks" },
+  "profile.friends.notPlaying": "not playing yet",
+  "profile.friends.you": "you",
+  "profile.friends.empty": "Invite friends to see who gets further.",
 
   "level.junior": "Junior",
   "level.middle": "Middle",

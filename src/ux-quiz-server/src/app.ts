@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto"
 import { Hono, type Context } from "hono"
 import { cors } from "hono/cors"
-import { GAME, LIFE_PACKS } from "../../ux-quiz/src/config/game.ts"
+import { GAME, LEVELS, LIFE_PACKS } from "../../ux-quiz/src/config/game.ts"
 import { validateInitData } from "./auth.ts"
 import { appUrl, handleUpdate, linkReferral, type BotDeps } from "./bot.ts"
 import type { Purchase, Store, User } from "./store.ts"
@@ -39,7 +39,16 @@ interface AuthUser {
 type Env = { Variables: { user: AuthUser } }
 
 /** Строка друга для экрана 1.5 — формат клиентского `Friend`. */
-const toFriend = (u: User) => ({ id: String(u.id), name: u.name, photoUrl: u.photoUrl, progress: u.firstBlock, claimed: u.inviteRewardClaimed })
+const toFriend = (u: User) => ({
+  id: String(u.id),
+  name: u.nickname ?? u.name,
+  photoUrl: u.photoUrl,
+  avatar: u.avatar,
+  progress: u.firstBlock,
+  claimed: u.inviteRewardClaimed,
+  level: u.level,
+  blocks: u.blocks,
+})
 const toGrant = (p: Purchase) => ({ purchaseId: p.id, packId: p.packId })
 
 /** Секрет из заголовка сверяется без утечки по времени ответа. */
@@ -180,11 +189,34 @@ export function createApp(deps: AppDeps) {
     return c.json({ ok: true })
   })
 
-  /** Прогресс первого блока (сколько вопросов пройдено) — по нему пригласивший видит «прошёл 6 из 10». */
+  /**
+   * Прогресс игрока. firstBlock — по нему пригласивший видит «прошёл 6 из 10»; уровень, блоки, ответы,
+   * аватар и никнейм — для профиля друзей и статистики автора. Старые клиенты шлют только firstBlock.
+   */
   app.post("/api/progress", async (c) => {
-    const { firstBlock } = await body<{ firstBlock: number }>(c)
-    if (!Number.isInteger(firstBlock) || firstBlock! < 0) return c.json({ error: "bad firstBlock" }, 400)
-    await store.setFirstBlock(c.get("user").id, Math.min(GAME.blockSize, firstBlock!))
+    const b = await body<{ firstBlock: number; level: string; blocks: number; answered: number; avatar: string | null; nickname: string | null }>(c)
+    const count = (v: unknown) => (Number.isInteger(v) && (v as number) >= 0 ? (v as number) : null)
+    const firstBlock = count(b.firstBlock)
+    if (firstBlock === null) return c.json({ error: "bad firstBlock" }, 400)
+    const blocks = count(b.blocks)
+    const short = (v: unknown, max: number) => (typeof v === "string" && v.trim() ? v.trim().slice(0, max) : null)
+    // Отчёт может обогнать /api/session — без записи игрока UPDATE ничего бы не сохранил.
+    const u = c.get("user")
+    await store.upsertUser({ id: u.id, name: u.name, photoUrl: u.photoUrl, language: u.language, now: now() })
+    await store.setProgress(
+      u.id,
+      blocks === null
+        ? { firstBlock: Math.min(GAME.blockSize, firstBlock) }
+        : {
+            firstBlock: Math.min(GAME.blockSize, firstBlock),
+            level: LEVELS.includes(b.level as never) ? b.level! : null,
+            blocks,
+            answered: count(b.answered) ?? 0,
+            avatar: short(b.avatar, 32),
+            nickname: short(b.nickname, 32),
+          },
+      now(),
+    )
     return c.json({ ok: true })
   })
 

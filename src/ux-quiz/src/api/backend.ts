@@ -1,4 +1,4 @@
-import type { LifePack } from "@/config/game"
+import type { Level, LifePack } from "@/config/game"
 import type { Platform } from "@/platform/types"
 import type { Friend } from "@/state/game-state"
 
@@ -103,8 +103,17 @@ export async function claimFriendReward(platform: Platform, friendId: string): P
   }
 }
 
-/** Сколько вопросов первого блока пройдено — пригласивший видит «прошёл N из 10». */
-export const reportProgress = (platform: Platform, firstBlock: number) => api(platform, "/api/progress", { firstBlock })
+/** Прогресс для сервера: первый блок (награда пригласившему) и сводка для профиля друзей. */
+export interface ProgressReport {
+  firstBlock: number
+  level: Level | null
+  blocks: number
+  answered: number
+  avatar: string | null
+  nickname: string | null
+}
+
+export const reportProgress = (platform: Platform, p: ProgressReport) => api(platform, "/api/progress", p)
 
 /** Состояние жизней для уведомления «Жизнь восстановилась». */
 export const reportLives = (platform: Platform, p: { lives: number; anchor: number; notify: boolean }) => api(platform, "/api/lives", p)

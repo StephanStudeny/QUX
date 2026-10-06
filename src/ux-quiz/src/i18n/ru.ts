@@ -56,6 +56,12 @@ export const ru = {
   "profile.superLine": "Пройдено {passed} из {played} · заработано {lives}",
   "profile.superLineA11y": "Пройдено {passed} из {played}, заработано жизней: {lives}",
   "profile.invite": "Пригласить друга",
+  "profile.friends.title": "Друзья",
+  "profile.friends.sorted": "по пройденным блокам",
+  "profile.friends.blocks": { one: "блок", few: "блока", many: "блоков", other: "блока" },
+  "profile.friends.notPlaying": "пока не играет",
+  "profile.friends.you": "это вы",
+  "profile.friends.empty": "Пригласите друзей — здесь будет видно, кто дальше продвинулся.",
 
   "level.junior": "Джун",
   "level.middle": "Мидл",

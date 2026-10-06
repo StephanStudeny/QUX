@@ -55,6 +55,13 @@ export async function handleUpdate(update: Update, deps: BotDeps): Promise<void>
   if (pay) {
     const ok = await store.markPaid(pay.invoice_payload, pay.telegram_payment_charge_id, now())
     if (!ok) log(`[bot] successful_payment for unknown or non-pending purchase ${pay.invoice_payload}`)
+    else if (deps.adminId) {
+      const p = await store.getPurchase(pay.invoice_payload)
+      const who = msg.from ? `${[msg.from.first_name, msg.from.last_name].filter(Boolean).join(" ")}${msg.from.username ? ` (@${msg.from.username})` : ""}` : "?"
+      await tg
+        .sendMessage(deps.adminId, `💫 Покупка: ${who}, id ${p?.userId ?? "?"}\n${p?.packId ?? "?"} — ${p?.stars ?? pay.total_amount} ⭐\ncharge ${pay.telegram_payment_charge_id}`)
+        .catch((e) => log(`[bot] admin notify failed: ${String(e)}`))
+    }
     return
   }
 
@@ -117,10 +124,64 @@ export async function handleUpdate(update: Update, deps: BotDeps): Promise<void>
   }
 }
 
+/** Дата и время по Москве: «06.10 18:42». */
+const when = (ms: number | null) =>
+  ms == null ? "—" : new Intl.DateTimeFormat("ru-RU", { timeZone: "Europe/Moscow", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).format(ms).replace(",", "")
+
+const ADMIN_HELP = [
+  "Команды автора:",
+  "/stats — игроки, активность, звёзды",
+  "/sales [N] — последние покупки (по умолчанию 20)",
+  "/top [N] — игроки по пройденным блокам (по умолчанию 10)",
+  "/reply <id> <текст> — ответить игроку",
+  "/refund <charge id> — вернуть звёзды",
+].join("\n")
+
+/** Число из аргумента команды в пределах 1..max, иначе — значение по умолчанию. */
+const limitArg = (args: string, def: number, max: number) => {
+  const n = Number(args)
+  return Number.isInteger(n) && n > 0 ? Math.min(n, max) : def
+}
+
 /** Команды автора. true — команда распознана и обработана. */
 async function handleAdminCommand(cmd: string, args: string, deps: BotDeps): Promise<boolean> {
   const { store, tg } = deps
   const admin = deps.adminId!
+  if (cmd === "admin" || cmd === "help") {
+    await tg.sendMessage(admin, ADMIN_HELP)
+    return true
+  }
+  if (cmd === "stats") {
+    const s = await store.adminStats(deps.now())
+    const levels = Object.entries(s.byLevel)
+      .map(([l, c]) => `${l} ${c}`)
+      .join(", ")
+    const lines = [
+      `Игроков: ${s.users} (новых за сутки ${s.newDay}, за неделю ${s.newWeek})`,
+      `Активных: за сутки ${s.activeDay}, за неделю ${s.activeWeek}`,
+      `По уровням: ${levels || "—"}`,
+      `Пришли по приглашению: ${s.invited}`,
+      "",
+      `Звёзд: ${s.starsTotal} ⭐ (за неделю ${s.starsWeek}), покупок ${s.paidCount}`,
+      `Возвращено: ${s.refundedStars} ⭐`,
+    ]
+    await tg.sendMessage(admin, lines.join("\n"))
+    return true
+  }
+  if (cmd === "sales") {
+    const sales = await store.listSales(limitArg(args, 20, 50))
+    const lines = sales.map((p) => `${when(p.paidAt)} · ${p.userName} (${p.userId}) · ${p.packId} · ${p.stars} ⭐${p.status === "refunded" ? " · возврат" : ""}`)
+    await tg.sendMessage(admin, sales.length ? ["Последние покупки:", ...lines].join("\n") : "Покупок пока нет.")
+    return true
+  }
+  if (cmd === "top") {
+    const top = await store.topPlayers(limitArg(args, 10, 50))
+    const lines = top.map(
+      (u, i) => `${i + 1}. ${u.nickname ?? u.name} (${u.id}) · ${u.level ?? "—"} · блоков ${u.blocks} · ответов ${u.answered} · друзей ${u.friends} · был ${when(u.lastSeenAt)}`,
+    )
+    await tg.sendMessage(admin, top.length ? lines.join("\n") : "Игроков пока нет.")
+    return true
+  }
   if (cmd === "reply") {
     const m = /^(\d+)\s+([\s\S]+)$/.exec(args)
     if (!m) {

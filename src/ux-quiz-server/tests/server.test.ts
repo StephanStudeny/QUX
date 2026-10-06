@@ -104,7 +104,24 @@ describe("рефералы и друзья", () => {
     expect((await store.getUser(3))?.inviterId).toBeNull()
     expect((await store.getUser(4))?.inviterId).toBeNull()
     const res = await (await call("/api/session", 1, {})).json()
-    expect(res.friends).toEqual([{ id: "2", name: "User2", photoUrl: null, progress: 0, claimed: false }])
+    expect(res.friends).toEqual([{ id: "2", name: "User2", photoUrl: null, avatar: null, progress: 0, claimed: false, level: null, blocks: 0 }])
+  })
+
+  it("прогресс для профиля: друг видит уровень, блоки, аватар и никнейм; мусор отбрасывается", async () => {
+    const { call, callAs } = setup()
+    await call("/api/session", 1, {})
+    await callAs(initData(2, { start_param: "ref_1" }), "/api/session")
+
+    await call("/api/progress", 2, { firstBlock: 10, level: "senior", blocks: 4, answered: 52, avatar: "fox", nickname: "  Лиса  " })
+    let friends = (await (await call("/api/friends", 1, undefined, "GET")).json()).friends
+    expect(friends[0]).toMatchObject({ name: "Лиса", avatar: "fox", level: "senior", blocks: 4, progress: 10 })
+
+    // Старый клиент шлёт только firstBlock — остальное не затирается; чужой уровень не принимаем.
+    await call("/api/progress", 2, { firstBlock: 10 })
+    await call("/api/progress", 2, { firstBlock: 10, level: "god", blocks: 5, answered: 60, avatar: null, nickname: "" })
+    friends = (await (await call("/api/friends", 1, undefined, "GET")).json()).friends
+    expect(friends[0]).toMatchObject({ name: "User2", avatar: null, level: null, blocks: 5 })
+    expect((await call("/api/progress", 2, { firstBlock: -1 })).status).toBe(400)
   })
 
   it("награда за друга — только после первого блока и один раз", async () => {
@@ -246,6 +263,31 @@ describe("поддержка и возврат", () => {
 
     await handleUpdate(text(ADMIN, "/reply 1 Вернул звёзды"), botDeps)
     expect(sent.find((m) => m.chatId === 1 && m.text.includes("Вернул звёзды"))?.text).toContain(texts("ru").supportReply)
+  })
+
+  it("автору: уведомление о покупке, /stats, /sales, /top; игроку эти команды недоступны", async () => {
+    const { call, store, deps, sent } = setup()
+    const botDeps = { store, tg: deps.tg, appLink: deps.config.appLink, now: () => clock, log: () => {}, adminId: ADMIN }
+    await call("/api/progress", 1, { firstBlock: 10, level: "middle", blocks: 3, answered: 40, avatar: null, nickname: "Стёпа" })
+    const { purchaseId } = await (await call("/api/invoices", 1, { packId: "three" })).json()
+    await handleUpdate(
+      { update_id: 1, message: { message_id: 1, chat: { id: 1, type: "private" }, from: { id: 1, first_name: "User1", username: "u1" }, successful_payment: { currency: "XTR", total_amount: 40, invoice_payload: purchaseId, telegram_payment_charge_id: "ch_9" } } },
+      botDeps,
+    )
+    expect(sent.at(-1)).toMatchObject({ chatId: ADMIN })
+    expect(sent.at(-1)!.text).toContain("User1 (@u1)")
+    expect(sent.at(-1)!.text).toContain("40 ⭐")
+
+    await handleUpdate(text(1, "/stats"), botDeps)
+    expect(sent.some((m) => m.chatId === 1)).toBe(false)
+
+    await handleUpdate(text(ADMIN, "/stats"), botDeps)
+    expect(sent.at(-1)!.text).toContain("Игроков: 1")
+    expect(sent.at(-1)!.text).toContain("Звёзд: 40 ⭐")
+    await handleUpdate(text(ADMIN, "/sales"), botDeps)
+    expect(sent.at(-1)!.text).toContain("User1 (1) · three · 40 ⭐")
+    await handleUpdate(text(ADMIN, "/top 5"), botDeps)
+    expect(sent.at(-1)!.text).toContain("1. Стёпа (1) · middle · блоков 3")
   })
 
   it("/refund — только автору, по charge id, один раз", async () => {
