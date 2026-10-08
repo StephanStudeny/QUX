@@ -138,7 +138,7 @@
         "Guideline",
         "Brief",
         "Backlog",
-        "Manual"
+        "Recipe"
       ],
       "explanation": "Material Design and Apple HIG, for example, are platform guidelines."
     },
@@ -184,7 +184,7 @@
         "20 ± 5",
         "All passwords"
       ],
-      "explanation": "That's why long lists and numbers are broken into chunks."
+      "explanation": "That's why long lists and numbers are broken into chunks. Later research puts it lower — about 4 chunks."
     },
     {
       "id": "m-017",
@@ -313,7 +313,7 @@
       "options": [
         "Push",
         "Toast",
-        "Banner",
+        "Billboard",
         "Pigeon"
       ],
       "explanation": "Push notifications bring users back but quickly get annoying."
@@ -1007,7 +1007,7 @@
         "Scrum Master",
         "Product Owner",
         "Team lead",
-        "Janitor"
+        "Hall monitor"
       ],
       "explanation": "The Product Owner owns the backlog; the Scrum Master owns the process."
     },
@@ -1095,7 +1095,7 @@
         "Product manager",
         "Art director",
         "QA tester",
-        "Caretaker"
+        "Party host"
       ],
       "explanation": "The product manager decides what to build and why; the team decides how."
     },

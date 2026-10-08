@@ -116,7 +116,7 @@
         "Harder to read",
         "Takes less space",
         "It's banned",
-        "It shouts"
+        "Breaks keyboards"
       ],
       "explanation": "Lowercase letters differ in shape, so the eye recognizes words by their outline. Solid caps read slower."
     },
@@ -135,7 +135,7 @@
       "id": "j-017",
       "question": "Why does a designer need a persona?",
       "options": [
-        "User goals",
+        "Understand users",
         "Profile pic",
         "Instead of research",
         "To blame Karen"
@@ -270,7 +270,7 @@
         "Usually not",
         "Always",
         "Nights only",
-        "With faith"
+        "On holidays"
       ],
       "explanation": "Don't hide important things behind hover — phone users will never see them."
     },
@@ -606,7 +606,7 @@
     },
     {
       "id": "j-124",
-      "question": "Why does an icon without a label need a label or tooltip?",
+      "question": "Why does an icon need a label or tooltip?",
       "options": [
         "To be understood",
         "For beauty",

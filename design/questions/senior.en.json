@@ -192,7 +192,7 @@
       "options": [
         "Glossary",
         "Backlog",
-        "Vocabulary list",
+        "ABC book",
         "Phrasebook"
       ],
       "explanation": "So it isn't “cart” in one place and “basket” in another."
@@ -314,7 +314,7 @@
         "Pilot",
         "Final",
         "Blind",
-        "Warm-up lap"
+        "Olympic"
       ],
       "explanation": "A pilot catches script mistakes before the budget is spent."
     },
@@ -853,7 +853,7 @@
         "Story points",
         "Hours",
         "Deadlines",
-        "SAT scores"
+        "Karma points"
       ],
       "explanation": "Complexity is estimated relative to other tasks, not in time."
     },
@@ -919,7 +919,7 @@
         "AOV",
         "LTV",
         "Margin",
-        "Tips"
+        "Pocket change"
       ],
       "explanation": "Average order value. It grows through upsells and bundles."
     },
@@ -1018,7 +1018,7 @@
         "Control",
         "Test",
         "Focus",
-        "Lab-rat"
+        "Lab rats"
       ],
       "explanation": "The new version's result is compared against it."
     },
@@ -1051,7 +1051,7 @@
         "Tech debt",
         "Backlog",
         "Bug",
-        "Mortgage"
+        "Student loan"
       ],
       "explanation": "Technical debt grows if it isn't “paid off”."
     },
@@ -1229,7 +1229,7 @@
         "Anchoring",
         "Jam session"
       ],
-      "explanation": "Too many options paralyze."
+      "explanation": "Too many options paralyze. The classic jam study doesn't always replicate, but with complex choices the effect shows up."
     },
     {
       "id": "s-212",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": "s-217",
-      "question": "A loyalty card fills faster if 2 of 10 stamps are already there. The… effect",
+      "question": "A loyalty card fills faster if 2 of 12 stamps are already there. The… effect",
       "options": [
         "Goal gradient",
         "Anchoring",
@@ -1337,7 +1337,7 @@
         "Compromise",
         "Anchoring",
         "Endowment",
-        "Goldilocks"
+        "Buridan's donkey"
       ],
       "explanation": "The extreme options feel risky."
     },
@@ -1425,7 +1425,7 @@
         "Halo",
         "Anchoring",
         "Decoy",
-        "Nimbus"
+        "Crown"
       ],
       "explanation": "The halo effect."
     },
